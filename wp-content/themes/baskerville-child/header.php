@@ -16,13 +16,26 @@
 
 	<body <?php body_class(); ?>>
 
-		<div class="header section small-padding bg-dark bg-image" style="background-image: url(<?php if (get_header_image() != '') : ?><?php header_image(); ?><?php else : ?><?php echo get_template_directory_uri() . '/images/header.jpg'; ?><?php endif; ?>);">
+		<div class="header section small-padding bg-dark bg-image" style="">
 
-			<div class="cover"></div>
+			<!-- <div class="header section small-padding bg-dark bg-image" style="background-image: url(<?php if (get_header_image() != '') : ?><?php header_image(); ?><?php else : ?><?php echo get_template_directory_uri() . '/images/header.jpg'; ?><?php endif; ?>);"> -->
+				<div class="link-social">
+					<a  href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></a>
+					<a  href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></a>
+					<a  href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></a>
+				</div>
+
+
 
 			<div class="header-search-block bg-graphite hidden">
 
-				<?php get_search_form(); ?>
+				<!-- <?php get_search_form(); ?> -->
+
+				<form method="get" class="searchform" action="http://localhost/web-baenred/">
+						<input type="search" value="" placeholder="Buscar..." name="s" class="s" />
+						<input type="submit" class="searchsubmit" value="Search">
+				</form>
+
 
 			</div> <!-- /header-search-block -->
 
@@ -58,7 +71,7 @@
 
 		<div class="navigation section no-padding bg-dark">
 
-			<div class="navigation-inner section-inner">
+			<div class="navigation-inner section-inner nav-menu">
 
 				<div class="nav-toggle fleft hidden">
 
@@ -72,7 +85,15 @@
 
 				<ul class="main-menu">
 
-					<?php if ( has_nav_menu( 'primary' ) ) {
+
+					<li class="page_item"><a href="">#DanLaNota</a></li>
+					<li class="page_item"><a href="">#Enfoque</a></li>
+					<li class="page_item"><a href="">#Enroscate</a></li>
+					<li class="page_item"><a href="">#Enterate</a></li>
+					<li class="page_item"><a href="">#MapaPorteño</a></li>
+
+
+					<!-- <?php if ( has_nav_menu( 'primary' ) ) {
 
 						wp_nav_menu( array(
 
@@ -90,7 +111,7 @@
 
 						));
 
-					} ?>
+					} ?> -->
 
 				 </ul> <!-- /main-menu -->
 

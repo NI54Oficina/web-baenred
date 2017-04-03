@@ -1,4 +1,14 @@
 <?php
+
+
+function theme_add_bootstrap() {
+	wp_enqueue_style( 'bootstrap-css', site_url() . '/bootstrap/css/bootstrap.min.css' );
+	wp_enqueue_script( 'bootstrap-js', site_url() . '/bootstrap/js/bootstrap.min.js');
+}
+
+add_action( 'wp_enqueue_scripts', 'theme_add_bootstrap' );
+
+
 function my_theme_enqueue_styles() {
 
     $parent_style = 'baskerville-style'; // This is 'twentyfifteen-style' for the Twenty Fifteen theme.
@@ -11,4 +21,10 @@ function my_theme_enqueue_styles() {
     );
 }
 add_action( 'wp_enqueue_scripts', 'my_theme_enqueue_styles' );
+
+
+
+/* Add bootstrap support to the Wordpress theme*/
+
+
 ?>
