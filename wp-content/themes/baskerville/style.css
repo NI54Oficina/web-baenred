@@ -2497,15 +2497,6 @@ img#wpstats { display: none; } /* Silly WordPress stats */
 		padding: 25px 0;
 	}
 
-	.nav-toggle .bar {
-		display: block;
-		width: 26px;
-		height: 3px;
-		margin-top: 5px;
-		background: #8E8E8E;
-		border-radius: 1px;
-	}
-
 	.nav-toggle .bar:first-child { margin-top: 0; }
 
 	.nav-toggle:hover { cursor: pointer; }

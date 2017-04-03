@@ -130,3 +130,21 @@
 	letter-spacing: 1px;
 	font-weight: 700;
 }
+
+.nav-toggle .bar {
+  display: block;
+  width: 26px;
+  height: 3px;
+  margin-top: 5px;
+  background: #df1241;
+  border-radius: 1px;
+}
+
+.main-menu{
+  height: auto;
+  position: absolute;
+  width: auto;
+  left: 0;
+  right: 0;
+  margin: auto;
+}

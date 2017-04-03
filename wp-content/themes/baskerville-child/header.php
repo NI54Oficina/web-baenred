@@ -127,7 +127,17 @@
 
 			<ul class="mobile-menu">
 
-				<?php if ( has_nav_menu( 'primary' ) ) {
+
+					<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="">#DanLaNota</a></li>
+					<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="">#Enfoque</a></li>
+					<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="">#Enroscate</a></li>
+					<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="">#Enterate</a></li>
+					<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="">#MapaPorteño</a></li>
+
+
+
+
+				<!-- <?php if ( has_nav_menu( 'primary' ) ) {
 
 					wp_nav_menu( array(
 
@@ -145,7 +155,7 @@
 
 					));
 
-				} ?>
+				} ?> -->
 
 			 </ul> <!-- /main-menu -->
 
