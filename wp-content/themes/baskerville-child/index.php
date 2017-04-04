@@ -12,70 +12,53 @@
 
  -->
 
+ <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+ 	<p class="col-lg-3 col-md-3 col-sm-3 col-xs-3">TITULO</p>
+	<p class="col-lg-3 col-md-3 col-sm-3 col-xs-3">Titulo nota 1</p>
+	<p class="col-lg-3 col-md-3 col-sm-3 col-xs-3">Titulo nota 2</p>
+	<p class="col-lg-3 col-md-3 col-sm-3 col-xs-3">Titulo nota 3</p>
+ </div>
+
 	<section id="ac-widget-featured-posts-slider-3" class="n-mb container ss-slider builder clearfix">
 
 							<div class="col twelvecol clearfix">
 
-								<div class="ss-nav-btn alignleft"><a href="#" class="ss-prev-3"><span><i class="fa fa-angle-left"></i> </span></a></div>
-								<div class="ss-nav-btn alignright"><a href="#" class="ss-next-3"><span><i class="fa fa-angle-right"></i> </span></a></div>
+								<div class="ss-nav-btn alignleft"><a href="#" class="ss-prev-3"><span class="glyphicon glyphicon-menu-left"></span></a></div>
+								<div class="ss-nav-btn alignright"><a href="#" class="ss-next-3"><span class="glyphicon glyphicon-menu-right"></span></a></div>
 
 								<div class="slider-container slider-number-3 owl-carousel">
 
-											<div class="item">
-										<figure class="sc-thumbnail">
-											<img width="900" height="520" src="http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/house_of_cards_frank_underwood_kevin_spacey_102090_3840x2160.jpg" class="attachment-ac-masonry-2x-thumbnail size-ac-masonry-2x-thumbnail wp-post-image" alt="house_of_cards_frank_underwood_kevin_spacey_102090_3840x2160" srcset="http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/house_of_cards_frank_underwood_kevin_spacey_102090_3840x2160.jpg 900w, http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/house_of_cards_frank_underwood_kevin_spacey_102090_3840x2160-300x173.jpg 300w, http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/house_of_cards_frank_underwood_kevin_spacey_102090_3840x2160-638x368.jpg 638w, http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/house_of_cards_frank_underwood_kevin_spacey_102090_3840x2160-600x347.jpg 600w" sizes="(max-width: 900px) 100vw, 900px" />				<figcaption class="st-overlay">
-												<span class="s-social"><a href="https://twitter.com/intent/tweet?url=http://demo.acosmin.com/themes/justwrite/typography-and-headings-go-so-well-together-all-the-time/" class="social-btn twitter"><i class="fa fa-twitter"></i></a><a href="https://www.facebook.com/sharer/sharer.php?u=http://demo.acosmin.com/themes/justwrite/typography-and-headings-go-so-well-together-all-the-time/" class="social-btn facebook"><i class="fa fa-facebook"></i></a><a href="https://plus.google.com/share?url=http://demo.acosmin.com/themes/justwrite/typography-and-headings-go-so-well-together-all-the-time/" class="social-btn google-plus"><i class="fa fa-google-plus"></i> </a></span>					<a href="http://demo.acosmin.com/themes/justwrite/typography-and-headings-go-so-well-together-all-the-time/" rel="nofollow" class="st-overlay-link"></a>
-												<div class="st-title-wrap">
-																			<aside class="s-info si-center clearfix">
-														<a href="http://demo.acosmin.com/themes/justwrite/typography-and-headings-go-so-well-together-all-the-time/#respond" rel="nofollow" class="com"><i class="fa fa-comment"></i> </a>							<time class="date" datetime="2015-05-26">May 26, 2015</time>							<a href="http://demo.acosmin.com/themes/justwrite/category/business/" class="category" title="View all posts in Business" >Business</a> 						</aside>
-																			<h3 class="section-title st-wrapped st-large st-bold"><a href="http://demo.acosmin.com/themes/justwrite/typography-and-headings-go-so-well-together-all-the-time/" rel="bookmark">Typography and Headings Go So Well Together All the Time</a></h3>					</div>
-											</figcaption>
-										</figure>
+									<div class="item">
+											<figure class="sc-thumbnail">
+												<img width="900" height="520" src="http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/house_of_cards_frank_underwood_kevin_spacey_102090_3840x2160.jpg" class="attachment-ac-masonry-2x-thumbnail size-ac-masonry-2x-thumbnail wp-post-image" alt="house_of_cards_frank_underwood_kevin_spacey_102090_3840x2160"  sizes="(max-width: 900px) 100vw, 900px" />				<figcaption class="st-overlay">
+													<span class="s-social">
+														<a href="" class="social-btn facebook"></a>
+														<a href="https://plus.google.com/share?url=http://demo.acosmin.com/themes/justwrite/typography-and-headings-go-so-well-together-all-the-time/" class="social-btn google-plus">
+															<i class="fa fa-google-plus"></i>
+														</a>
+
+													</span>
+													<a href="" rel="nofollow" class="st-overlay-link"></a>
+													<div class="st-title-wrap">
+															<aside class="s-info si-center clearfix">
+																<!-- <a href="" rel="nofollow" class="com"> </a> -->
+																<!-- <time class="date" datetime="2015-05-26">May 26, 2015</time> -->
+																<a href="" class="category" title="" ><p style="text-align: center;color: white;  margin-bottom: 10%;">#MapeoPorteño</p></a>
+															</aside>
+															<h3 class="section-title st-wrapped st-large st-bold" style="border: none;
+    text-align: center;
+    border: none;
+    background: transparent;
+    color: white;">
+																<a href="" rel="bookmark">#TITULO DE NOTA</a>
+															</h3>
+													</div>
+												</figcaption>
+											</figure>
 									</div>
-											<div class="item">
-										<figure class="sc-thumbnail">
-											<img width="900" height="520" src="http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/4792_house_of_cards.jpg" class="attachment-ac-masonry-2x-thumbnail size-ac-masonry-2x-thumbnail wp-post-image" alt="4792_house_of_cards" srcset="http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/4792_house_of_cards.jpg 900w, http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/4792_house_of_cards-300x173.jpg 300w, http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/4792_house_of_cards-638x368.jpg 638w, http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/4792_house_of_cards-600x347.jpg 600w" sizes="(max-width: 900px) 100vw, 900px" />				<figcaption class="st-overlay">
-												<span class="s-social"><a href="https://twitter.com/intent/tweet?url=http://demo.acosmin.com/themes/justwrite/html-tags-forms-inputs-and-formatting-examples/" class="social-btn twitter"><i class="fa fa-twitter"></i></a><a href="https://www.facebook.com/sharer/sharer.php?u=http://demo.acosmin.com/themes/justwrite/html-tags-forms-inputs-and-formatting-examples/" class="social-btn facebook"><i class="fa fa-facebook"></i></a><a href="https://plus.google.com/share?url=http://demo.acosmin.com/themes/justwrite/html-tags-forms-inputs-and-formatting-examples/" class="social-btn google-plus"><i class="fa fa-google-plus"></i> </a></span>					<a href="http://demo.acosmin.com/themes/justwrite/html-tags-forms-inputs-and-formatting-examples/" rel="nofollow" class="st-overlay-link"></a>
-												<div class="st-title-wrap">
-																			<aside class="s-info si-center clearfix">
-														<a href="http://demo.acosmin.com/themes/justwrite/html-tags-forms-inputs-and-formatting-examples/#respond" rel="nofollow" class="com"><i class="fa fa-comment"></i> </a>							<time class="date" datetime="2015-05-23">May 23, 2015</time>							<a href="http://demo.acosmin.com/themes/justwrite/category/travel/" class="category" title="View all posts in Travel" >Travel</a> 						</aside>
-																			<h3 class="section-title st-wrapped st-large st-bold"><a href="http://demo.acosmin.com/themes/justwrite/html-tags-forms-inputs-and-formatting-examples/" rel="bookmark">HTML Tags, Forms, Inputs and Formatting Examples</a></h3>					</div>
-											</figcaption>
-										</figure>
-									</div>
-											<div class="item">
-										<figure class="sc-thumbnail">
-											<img width="900" height="520" src="http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/162H.jpg" class="attachment-ac-masonry-2x-thumbnail size-ac-masonry-2x-thumbnail wp-post-image" alt="162H" srcset="http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/162H.jpg 900w, http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/162H-300x173.jpg 300w, http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/162H-638x368.jpg 638w, http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/162H-600x347.jpg 600w" sizes="(max-width: 900px) 100vw, 900px" />				<figcaption class="st-overlay">
-												<span class="s-social"><a href="https://twitter.com/intent/tweet?url=http://demo.acosmin.com/themes/justwrite/new-section-widgets-in-a-1-2-3-paginated-post/" class="social-btn twitter"><i class="fa fa-twitter"></i></a><a href="https://www.facebook.com/sharer/sharer.php?u=http://demo.acosmin.com/themes/justwrite/new-section-widgets-in-a-1-2-3-paginated-post/" class="social-btn facebook"><i class="fa fa-facebook"></i></a><a href="https://plus.google.com/share?url=http://demo.acosmin.com/themes/justwrite/new-section-widgets-in-a-1-2-3-paginated-post/" class="social-btn google-plus"><i class="fa fa-google-plus"></i> </a></span>					<a href="http://demo.acosmin.com/themes/justwrite/new-section-widgets-in-a-1-2-3-paginated-post/" rel="nofollow" class="st-overlay-link"></a>
-												<div class="st-title-wrap">
-																			<aside class="s-info si-center clearfix">
-														<a href="http://demo.acosmin.com/themes/justwrite/new-section-widgets-in-a-1-2-3-paginated-post/#respond" rel="nofollow" class="com"><i class="fa fa-comment"></i> </a>							<time class="date" datetime="2015-04-14">Apr 14, 2015</time>							<a href="http://demo.acosmin.com/themes/justwrite/category/politics/" class="category" title="View all posts in Politics" >Politics</a> 						</aside>
-																			<h3 class="section-title st-wrapped st-large st-bold"><a href="http://demo.acosmin.com/themes/justwrite/new-section-widgets-in-a-1-2-3-paginated-post/" rel="bookmark">New Section Widgets in a 1, 2, 3 Paginated Post</a></h3>					</div>
-											</figcaption>
-										</figure>
-									</div>
-											<div class="item">
-										<figure class="sc-thumbnail">
-											<img width="900" height="520" src="http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/b0dd9ca3feba25e12b22c64de894f37f_large.jpg" class="attachment-ac-masonry-2x-thumbnail size-ac-masonry-2x-thumbnail wp-post-image" alt="b0dd9ca3feba25e12b22c64de894f37f_large" srcset="http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/b0dd9ca3feba25e12b22c64de894f37f_large.jpg 900w, http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/b0dd9ca3feba25e12b22c64de894f37f_large-300x173.jpg 300w, http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/b0dd9ca3feba25e12b22c64de894f37f_large-638x368.jpg 638w, http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/b0dd9ca3feba25e12b22c64de894f37f_large-600x347.jpg 600w" sizes="(max-width: 900px) 100vw, 900px" />				<figcaption class="st-overlay">
-												<span class="s-social"><a href="https://twitter.com/intent/tweet?url=http://demo.acosmin.com/themes/justwrite/floating-images-and-alignment-showcase-is-here/" class="social-btn twitter"><i class="fa fa-twitter"></i></a><a href="https://www.facebook.com/sharer/sharer.php?u=http://demo.acosmin.com/themes/justwrite/floating-images-and-alignment-showcase-is-here/" class="social-btn facebook"><i class="fa fa-facebook"></i></a><a href="https://plus.google.com/share?url=http://demo.acosmin.com/themes/justwrite/floating-images-and-alignment-showcase-is-here/" class="social-btn google-plus"><i class="fa fa-google-plus"></i> </a></span>					<a href="http://demo.acosmin.com/themes/justwrite/floating-images-and-alignment-showcase-is-here/" rel="nofollow" class="st-overlay-link"></a>
-												<div class="st-title-wrap">
-																			<aside class="s-info si-center clearfix">
-														<a href="http://demo.acosmin.com/themes/justwrite/floating-images-and-alignment-showcase-is-here/#respond" rel="nofollow" class="com"><i class="fa fa-comment"></i> </a>							<time class="date" datetime="2013-03-13">Mar 13, 2013</time>							<a href="http://demo.acosmin.com/themes/justwrite/category/technology/" class="category" title="View all posts in Technology" >Technology</a> 						</aside>
-																			<h3 class="section-title st-wrapped st-large st-bold"><a href="http://demo.acosmin.com/themes/justwrite/floating-images-and-alignment-showcase-is-here/" rel="bookmark">Floating Images and Alignment Showcase is Here</a></h3>					</div>
-											</figcaption>
-										</figure>
-									</div>
-											<div class="item">
-										<figure class="sc-thumbnail">
-											<img width="900" height="520" src="http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/FVfrkDb.jpg" class="attachment-ac-masonry-2x-thumbnail size-ac-masonry-2x-thumbnail wp-post-image" alt="FVfrkDb" srcset="http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/FVfrkDb.jpg 900w, http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/FVfrkDb-300x173.jpg 300w, http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/FVfrkDb-638x368.jpg 638w, http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/FVfrkDb-600x347.jpg 600w" sizes="(max-width: 900px) 100vw, 900px" />				<figcaption class="st-overlay">
-												<span class="s-social"><a href="https://twitter.com/intent/tweet?url=http://demo.acosmin.com/themes/justwrite/nested-comments-all-around-us-examples/" class="social-btn twitter"><i class="fa fa-twitter"></i></a><a href="https://www.facebook.com/sharer/sharer.php?u=http://demo.acosmin.com/themes/justwrite/nested-comments-all-around-us-examples/" class="social-btn facebook"><i class="fa fa-facebook"></i></a><a href="https://plus.google.com/share?url=http://demo.acosmin.com/themes/justwrite/nested-comments-all-around-us-examples/" class="social-btn google-plus"><i class="fa fa-google-plus"></i> </a></span>					<a href="http://demo.acosmin.com/themes/justwrite/nested-comments-all-around-us-examples/" rel="nofollow" class="st-overlay-link"></a>
-												<div class="st-title-wrap">
-																			<aside class="s-info si-center clearfix">
-														<a href="http://demo.acosmin.com/themes/justwrite/nested-comments-all-around-us-examples/#comments" rel="nofollow" class="com"><i class="fa fa-comment"></i> </a>							<time class="date" datetime="2010-10-05">Oct 05, 2010</time>							<a href="http://demo.acosmin.com/themes/justwrite/category/entertainment/" class="category" title="View all posts in Entertainment" >Entertainment</a> 						</aside>
-																			<h3 class="section-title st-wrapped st-large st-bold"><a href="http://demo.acosmin.com/themes/justwrite/nested-comments-all-around-us-examples/" rel="bookmark">Nested Comments All Around Us Examples</a></h3>					</div>
-											</figcaption>
-										</figure>
-									</div>
+
+
+
 
 								</div><!-- END .owl-carousel -->
 							</div><!-- END .twelvecol -->

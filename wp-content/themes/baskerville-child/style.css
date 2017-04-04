@@ -158,8 +158,8 @@
 .clearfix:after{content:" ";display:table}
 .clearfix:after{clear:both}
 
-.alignleft{float:left}
-.alignright{float:right}
+.alignleft{float:left; margin-left: 15px;}
+.alignright{float:right; margin-right: 15px;}
 .aligncenter{display:block;margin-left:auto;margin-right:auto}
 
 .container{position:relative;width:100%;max-width:1800px;margin:0 auto}
@@ -242,6 +242,19 @@
   .slider-controls{position:relative;width:100%;border-width:1px;border-style:solid;border-top-width:5px;margin-top:25px;line-height:55px}
   .slider-pagination{display:inline-block;float:right;margin:0 25px 0 0}
 
+  a:hover {
+      color: #000;
+      text-decoration: none;
+  }
+
+  a, a:visited {
+      color: #dd3333;
+      text-decoration: none;
+      -webkit-transition: color 0.15s ease-in-out;
+      -o-transition: color 0.15s ease-in-out;
+      -moz-transition: color 0.15s ease-in-out;
+      transition: color 0.15s ease-in-out;
+  }
   .section-title{letter-spacing:-0.04em;line-height:1.3}
   .section-title-2nd{display:inline-block;line-height:1.3;text-transform:uppercase;letter-spacing:0.08em;border-bottom-width:2px;border-bottom-style:solid;padding-bottom:2px}
   .section-title a:hover{text-decoration:underline}
@@ -249,7 +262,13 @@
   .st-overlay:hover .section-title a{text-decoration:underline}
     .st-title-wrap{position:absolute;width:80%;left:10%;right:10%;bottom:15%}
       .st-overlay,.st-overlay-link{position:absolute;width:100%;height:100%;top:0;left:0;z-index:1}
+      .st-overlay:hover, .sc-item:hover .st-overlay {
+          background-color: rgba(255,255,255,0.3);
+      }
 
+      .ss-slider .st-overlay {
+     box-shadow: inset 0 -100px 100px 20px rgba(0,0,0,0.3);
+}
   .ss-slider .st-title-wrap{visibility:hidden;opacity:0;bottom:20%;text-align:center}
   .ss-slider .twelvecol{margin-bottom:0}
   .ss-slider .center .st-title-wrap{visibility:visible;bottom:15%;opacity:1}
@@ -262,4 +281,14 @@
   .ss-nav-btn span{display:inline-block;position:absolute;top:50%;left:50%;width:90px;line-height:80px;border-width:4px;border-style:solid;border-radius:6px;-webkit-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);opacity:1}
   .ss-nav-btn:hover span{opacity:0.9}
   .ss-nav-btn a[class*="ss-"]{color:#fff}
-  
+
+
+  @media screen and (max-width: 1140px){
+    a{
+      transition: none;
+    }
+
+    .ss-nav-btn{
+      display: none;
+    }
+  }
