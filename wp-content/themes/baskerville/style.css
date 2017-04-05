@@ -105,12 +105,12 @@ body {
 }
 
 body a {
-	color: #13C4A5;
+	color: black;
 	text-decoration: none;
 }
 
 body a:hover {
-	color: #13C4A5;
+	color: black;
 	text-decoration: none;
 }
 
@@ -389,7 +389,7 @@ body a {
 
 
 .main-menu {
-	font-family: 'Roboto Slab', sans-serif;
+	/*font-family: 'Roboto Slab', sans-serif;*/
 	font-size: 0.9em;
 	text-align: center;
 }
@@ -546,7 +546,7 @@ body a {
 
 .post-container {
 	width: 33.3%;
-	padding: 0 1.5% 4.5% 1.5%;
+	padding: 4.5% 1.5% 4.5% 1.5%;
 }
 
 .hentry,
@@ -554,7 +554,7 @@ body a {
 	width: 100%;
 	position: relative;
 	background: #fff;
-	border-radius: 3px;
+	/*border-radius: 3px;*/
 	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 	box-shadow: 0 1px 4px rgba(0,0,0,0.1);
@@ -682,7 +682,7 @@ body a {
 
 .posts .post-meta a:first-child { margin-left: 0; }
 
-.posts .post-meta a:hover { color: #13C4A5; }
+/*.posts .post-meta a:hover { color: #13C4A5; }*/
 
 .posts .post-meta a.post-date { background-image: url(images/icons/1x/clock-g.png); }
 .posts .post-meta a.post-date:hover { background-image: url(images/icons/1x/clock-c.png); }
