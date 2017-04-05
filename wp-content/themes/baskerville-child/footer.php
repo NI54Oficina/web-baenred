@@ -14,7 +14,7 @@
 			<p class="title">#Copate</p>
 			<p class="colored">Conocé más sobre la próxima edición</p>
 
-			<button type="button" name="button">Ver</button>
+			<button type="button" name="button" class="caveat">Ver</button>
 
 
 		</div>
@@ -157,7 +157,7 @@
 					<div  class="col-lg-12 colg-md-12 col-sm-12 col-xs-12 footer-info">
 						 © 2016 -2017 BA EN RED [LOGOS]
 
-						 <a class="tothetop" title="<?php _e('To the top', 'baskerville'); ?>" href="#"><?php _e('Up', 'baskerville' ); ?> &uarr;</a>
+						 <a class="tothetop oswald-bold" title="<?php _e('To the top', 'baskerville'); ?>" href="#"><?php _e('Up', 'baskerville' ); ?> &uarr;</a>
 
 					</div>
 

@@ -217,7 +217,7 @@
 
 						<div class="post-header">
 
-							<h2 class="post-title">#DanLaNota</h2><span class="sticky-post"></span>
+							<h2 class="post-title"><a href="#">#DanLaNota</a></h2><span class="sticky-post"></span>
 							<p>etiquetas/etiquetas/etiquetas/etiquetas</p>
 							<h3># EntrevistaCon...</h3>
 
