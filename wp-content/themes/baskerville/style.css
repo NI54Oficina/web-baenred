@@ -396,7 +396,7 @@ body a {
 
 .main-menu li { position: relative; }
 
-.main-menu > li { float: left; }
+
 
 
 .main-menu > li:last-child:before { content: none; }

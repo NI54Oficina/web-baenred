@@ -242,6 +242,7 @@
 								<a class="post-date" href="http://localhost/web-baenred/2017/03/31/hola-mundo/" title="¡Hola mundo!">2017/03/31</a>
 
 								<a href="http://localhost/web-baenred/2017/03/31/hola-mundo/#comments" class="post-comments" >Ver comentario</a>
+
 								<div class="clear"></div>
 
 						</div> <!-- /post-meta -->
@@ -338,7 +339,11 @@
 
 							<a class="post-date" href="http://andersnoren.se/themes/baskerville/the-life-and-works-of-dieter-rams/" title="The life and works of Dieter Rams">2014/02/02</a>
 
-							<a href="#" class="zilla-likes" id="zilla-likes-38" title="Like this"><span class="zilla-likes-count">191</span> <span class="zilla-likes-postfix"></span></a><a href="http://andersnoren.se/themes/baskerville/the-life-and-works-of-dieter-rams/#respond" class="post-comments">0</a>
+								<!-- <a href="#" class="zilla-likes" id="zilla-likes-38" title="Like this">
+									<span class="zilla-likes-count">191</span>
+									<span class="zilla-likes-postfix"></span>
+								</a> -->
+								<a href="http://andersnoren.se/themes/baskerville/the-life-and-works-of-dieter-rams/#respond" class="post-comments">Ver comentarios</a>
 							<div class="clear"></div>
 
 					</div> <!-- /post-meta -->
@@ -379,7 +384,8 @@
 
 					<a class="post-date" href="http://andersnoren.se/themes/baskerville/animation-bob-by-jacob-frey/" title="Animation: Bob by Jacob Frey">2014/01/31</a>
 
-					<a href="#" class="zilla-likes" id="zilla-likes-32" title="Like this"><span class="zilla-likes-count">176</span> <span class="zilla-likes-postfix"></span></a><a href="http://andersnoren.se/themes/baskerville/animation-bob-by-jacob-frey/#comments" class="post-comments">1</a>
+					<!-- <a href="#" class="zilla-likes" id="zilla-likes-32" title="Like this"><span class="zilla-likes-count">176</span> <span class="zilla-likes-postfix"></span></a> -->
+					<a href="http://andersnoren.se/themes/baskerville/animation-bob-by-jacob-frey/#comments" class="post-comments">Ver comentarios</a>
 					<div class="clear"></div>
 
 			</div> <!-- /post-meta -->

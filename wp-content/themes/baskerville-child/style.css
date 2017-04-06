@@ -147,6 +147,8 @@
   color:black;
 }
 
+.main-menu > li { display: inline-block; }
+
 .main-menu {
 	font-family: 'OswaldRegular', sans-serif;
 	/*font-size: 0.9em;
