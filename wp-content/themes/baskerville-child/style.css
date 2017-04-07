@@ -242,6 +242,8 @@
 }
 
 
+/*carrousel en el main*/
+
 .left{float:left }
 .right{float:right }
 .clearfix{*zoom:1}
@@ -373,6 +375,50 @@
   .ss-nav-btn:hover span{opacity:0.9}
   .ss-nav-btn a[class*="ss-"]{color:#fff}
 
+
+/*iconos redes sociales, comentarios, fecha etc*/
+
+  .posts .post-meta a.post-comments {
+      background-image: url(images/comentarios.svg) !important;
+  }
+
+  .posts .post-meta a.post-date {
+    background-image: url(images/reloj.svg) !important;
+  }
+
+  .post .sticky-post {
+    background: #2B3542 url(images/estrella.svg) no-repeat center !important;
+
+}
+
+.link-social .icon-social-fb{
+  background-image: url(images/facebook.svg);
+}
+
+.link-social > a >span{
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.link-social .icon-social-tw{
+  background-image: url(images/twitter.svg);
+}
+
+.link-social .icon-social-utube{
+  background-image: url(images/youtube.svg);
+}
+
+.flecha-bla{
+  color:#df1241;
+}
+
+/*media querys*/
 
   @media screen and (max-width: 1140px){
     a{

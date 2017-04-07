@@ -20,9 +20,10 @@
 
 			<!-- <div class="header section small-padding bg-dark bg-image" style="background-image: url(<?php if (get_header_image() != '') : ?><?php header_image(); ?><?php else : ?><?php echo get_template_directory_uri() . '/images/header.jpg'; ?><?php endif; ?>);"> -->
 				<div class="link-social">
-					<a  href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></span></a>
-					<a  href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></a>
-					<a  href="#"><span class="glyphicon glyphicon-heart" aria-hidden="true"></a>
+					<a  href="#"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/facebook.svg" alt=""></a>
+					<a  href="#"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/twitter.svg" alt=""></a>
+					<a  href="#"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/youtube.svg" alt=""></a>
+					<a  href="#"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/instagram.svg" alt=""></a>
 				</div>
 
 
@@ -90,7 +91,7 @@
 					<li class="page_item"><a href="">#Enfoque</a></li>
 					<li class="page_item"><a href="">#Enroscate</a></li>
 					<li class="page_item"><a href="">#Enterate</a></li>
-					<li class="page_item"><a href="">#MapaPorteño</a></li>
+					<li class="page_item"><a href="">#Mapeo</a></li>
 
 
 					<!-- <?php if ( has_nav_menu( 'primary' ) ) {
@@ -132,7 +133,7 @@
 					<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="">#Enfoque</a></li>
 					<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="">#Enroscate</a></li>
 					<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="">#Enterate</a></li>
-					<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="">#MapaPorteño</a></li>
+					<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="">#Mapeo</a></li>
 
 
 
