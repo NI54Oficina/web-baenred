@@ -414,8 +414,13 @@
   background-image: url(images/youtube.svg);
 }
 
-.flecha-bla{
+.more-link span{
   color:#df1241;
+}
+
+.more-link{
+  font-family: 'Caveat';
+  color: black;
 }
 
 .post-hashtags, .post-hashtags a{
@@ -427,18 +432,24 @@
   border-radius:10px;
   padding: 0;
   font-family: 'OswaldRegular';
+  margin-top: 3.25%;
 }
 
-.widget-home .widget-content p, .widget-home .widget-content h3{
-  padding: 1.5em 2em 1.5em 2em;
+.widget-home .widget-content p,.widget-home .widget-content h3{
+  padding: 1.5em 0 1.5em 2em;
   margin:0;
   font-family: 'OswaldRegular';
+
 }
 
 .widget-home .widget-content p{
   border-bottom: 1px solid black;
 }
 
+.widget-home .widget-content h3{
+  font-size: 1.8em;
+  padding-left: 1em;
+}
 
 
 
