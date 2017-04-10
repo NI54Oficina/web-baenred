@@ -1,16 +1,17 @@
+
 <div class="footer section medium-padding bg-graphite footer-container">
 
 	<div class="section-inner row footer-container-inner">
 
 
-		<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 footer-text-left">
+		<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 footer-text-left" hid="1">
 
 			<p>#Enrredados</p>
 			<p>#BaEnRed llega a la web para contarte lo que pasa y cómo pasa sin vueltas con un lenguaje joven, con otra mirada para saber lo que tenemos, lo que falta y lo que estaría bueno tener. Trae datos interesantes y textos claros, diferentes enfoques que te generen nuevas preguntas y te enteres de lo que pasa de manera simple, entretenida y al ritmo de nuestro tiempo.</p>
 
 		</div>
 
-		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 footer-text-center">
+		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 footer-text-center" hid="1">
 			<p class="title">#Copate</p>
 			<p class="colored">Conocé más sobre la próxima edición</p>
 
@@ -19,7 +20,7 @@
 
 		</div>
 
-		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 footer-text-right">
+		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 footer-text-right" style="background-color:black" hid="1">
 
 			<p class="colored"> */ Publicitá /*</p>
 			<p> Mandanos un mail a baenred@gmail.com </p>
@@ -143,7 +144,7 @@
 
 </div>
 
-<div class="credits section bg-dark small-padding">
+<div class="credits section bg-dark small-padding" >
 
 				<div class="credits-inner section-inner">
 
@@ -171,6 +172,9 @@
 </div> <!-- /credits -->
 
 <?php wp_footer(); ?>
+
+
+
 
 </body>
 </html>

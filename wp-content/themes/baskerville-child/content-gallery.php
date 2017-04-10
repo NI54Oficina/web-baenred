@@ -22,6 +22,6 @@
 
 <?php endif; ?>
 
-<?php baskerville_meta(); ?>
+<?php baskerville_meta_child(); ?>
 
 <div class="clear"></div>

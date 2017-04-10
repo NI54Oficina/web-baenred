@@ -68,10 +68,10 @@
 															<aside class="s-info si-center clearfix">
 																<!-- <a href="" rel="nofollow" class="com"> </a> -->
 																<!-- <time class="date" datetime="2015-05-26">May 26, 2015</time> -->
-																<a href="" class="category"  style="text-align: center;color: white;  margin-bottom: 10%; padding:.8em; border:1px solid white;" title="" >#Mapeo</a>
+																<a href="" class="category caveat"  style="text-align: center;color: white;  margin-bottom: 10%; padding:.8em; border:1px solid white;" title="" >#Mapeo</a>
 															</aside>
 															<h3 class="section-title st-wrapped st-large st-bold" style="border: none; text-align: center; border: none; background: transparent; color: white;font-size:1em;    padding-top: 50px;">
-																<a href="" rel="bookmark" style="color:white">#TITULO DE NOTA</a>
+																<a href="" rel="bookmark" class="oswald-bold" style="color:white">#TITULO DE NOTA</a>
 															</h3>
 													</div>
 												</figcaption>
@@ -94,10 +94,10 @@
 															<aside class="s-info si-center clearfix">
 																<!-- <a href="" rel="nofollow" class="com"> </a> -->
 																<!-- <time class="date" datetime="2015-05-26">May 26, 2015</time> -->
-																<a href="" class="category"  style="text-align: center;color: white;  margin-bottom: 10%; padding:.8em; border:1px solid white;" title="" >#Mapeo</a>
+																<a href="" class="category caveat"  style="text-align: center;color: white;  margin-bottom: 10%; padding:.8em; border:1px solid white;" title="" >#Mapeo</a>
 															</aside>
 															<h3 class="section-title st-wrapped st-large st-bold" style="border: none; text-align: center; border: none; background: transparent; color: white;font-size:1em;    padding-top: 50px;">
-																<a href="" rel="bookmark" style="color:white">#TITULO DE NOTA</a>
+																<a href="" rel="bookmark" class="oswald-bold" style="color:white">#TITULO DE NOTA</a>
 															</h3>
 													</div>
 												</figcaption>
@@ -120,10 +120,10 @@
 															<aside class="s-info si-center clearfix">
 																<!-- <a href="" rel="nofollow" class="com"> </a> -->
 																<!-- <time class="date" datetime="2015-05-26">May 26, 2015</time> -->
-																<a href="" class="category"  style="text-align: center;color: white;  margin-bottom: 10%; padding:.8em; border:1px solid white;" title="" >#Mapeo</a>
+																<a href="" class="category caveat"  style="text-align: center;color: white;  margin-bottom: 10%; padding:.8em; border:1px solid white;" title="" >#Mapeo</a>
 															</aside>
 															<h3 class="section-title st-wrapped st-large st-bold" style="border: none; text-align: center; border: none; background: transparent; color: white;font-size:1em;    padding-top: 50px;">
-																<a href="" rel="bookmark" style="color:white">#TITULO DE NOTA</a>
+																<a href="" rel="bookmark" class="oswald-bold" style="color:white">#TITULO DE NOTA</a>
 															</h3>
 													</div>
 												</figcaption>
@@ -145,10 +145,10 @@
 															<aside class="s-info si-center clearfix">
 																<!-- <a href="" rel="nofollow" class="com"> </a> -->
 																<!-- <time class="date" datetime="2015-05-26">May 26, 2015</time> -->
-																<a href="" class="category"  style="text-align: center;color: white;  margin-bottom: 10%; padding:.8em; border:1px solid white;" title="" >#Mapeo</a>
+																<a href="" class="category caveat"  style="text-align: center;color: white;  margin-bottom: 10%; padding:.8em; border:1px solid white;" title="" >#Mapeo</a>
 															</aside>
 															<h3 class="section-title st-wrapped st-large st-bold" style="border: none; text-align: center; border: none; background: transparent; color: white;font-size:1em;    padding-top: 50px;">
-																<a href="" rel="bookmark" style="color:white">#TITULO DE NOTA</a>
+																<a href="" rel="bookmark" class="oswald-bold" style="color:white">#TITULO DE NOTA</a>
 															</h3>
 													</div>
 												</figcaption>
@@ -226,9 +226,11 @@
 
 		</div> <!-- /posts -->
 
-		
 
-		<!-- ACA POST VIRTUALES -->
+<!-- ACA POST VIRTUALES -->
+
+<!--
+
 
 		<div class="posts">
 
@@ -242,7 +244,7 @@
 										<p>etiquetas/etiquetas/etiquetas/etiquetas</p>
 										<h3># EntrevistaCon...</h3>
 
-									</div> <!-- /post-header -->
+									</div>
 
 									<div class="featured-media" style="">
 										<a href="#">
@@ -255,7 +257,7 @@
 
 										<p>Alguna bajada donde la caja se acomodad en base a la cantidad de caracteres que posea cada una. Alguna bajada donde la caja se acomodad en base a la cantidad de caracteres que posea cada una. Alguna bajada donde la caja se acomodad en base a la cantidad.<a class="more-link" href="">Bla Bla Bla <span class="flecha-bla"> →</span></a></p>
 
-									</div> <!-- /post-excerpt -->
+									</div>
 
 
 									<div class="post-meta">
@@ -266,19 +268,19 @@
 
 											<div class="clear"></div>
 
-									</div> <!-- /post-meta -->
+									</div>
 
 
 									<div class="clear"></div>
 							</div>
-			<!-- /post 1-->
 
 
 
 
-			</div><!-- post container -->
 
-			<!-- termia post 1 -->
+			</div>
+
+
 
 			<div class="post-container" style="position: absolute; left: 379px; top: 1483px;">
 
@@ -289,7 +291,7 @@
 										<h2 class="post-title"><a href="http://andersnoren.se/themes/baskerville/the-life-and-works-of-dieter-rams/" rel="bookmark" title="The life and works of Dieter Rams">The life and works of Dieter Rams</a></h2>
 
 
-								</div> <!-- /post-header -->
+								</div>
 
 								<div class="featured-media">
 
@@ -345,14 +347,14 @@
 														</li>
 												</ul>
 										</div>
-								</div> <!-- /featured-media -->
+								</div>
 
 
 								<div class="post-excerpt">
 
 										<p>Dieter Rams (born 20 May 1932 in Wiesbaden, Hessen) is a German industrial designer closely associated with the consumer products company Braun and the Functionalist school of industrial design. Rams began studies in architecture and interior decoration at Wiesbaden School… <a class="more-link" href="http://andersnoren.se/themes/baskerville/the-life-and-works-of-dieter-rams/">Bla Bla Bla <span class="flecha-bla"> →</span></a></p>
 
-								</div> <!-- /post-excerpt -->
+								</div>
 
 
 
@@ -360,22 +362,22 @@
 
 										<a class="post-date" href="http://andersnoren.se/themes/baskerville/the-life-and-works-of-dieter-rams/" title="The life and works of Dieter Rams">2014/02/02</a>
 
-											<!-- <a href="#" class="zilla-likes" id="zilla-likes-38" title="Like this">
+											<a href="#" class="zilla-likes" id="zilla-likes-38" title="Like this">
 												<span class="zilla-likes-count">191</span>
 												<span class="zilla-likes-postfix"></span>
-											</a> -->
+											</a>
 											<a href="http://andersnoren.se/themes/baskerville/the-life-and-works-of-dieter-rams/#respond" class="post-comments">Comentarios</a>
 										<div class="clear"></div>
 
-								</div> <!-- /post-meta -->
+								</div>
 
 
 								<div class="clear"></div>
-						</div> <!-- /post -->
+						</div>
 
 			</div>
 
-			<!-- OTRO POST -->
+
 
 			<div class="post-container" style="position: absolute; left: 379px; top: 2233px;">
 
@@ -386,35 +388,34 @@
 										<h2 class="post-title"><a href="http://andersnoren.se/themes/baskerville/animation-bob-by-jacob-frey/" rel="bookmark" title="Animation: Bob by Jacob Frey">Animation: Bob by Jacob Frey</a></h2>
 
 
-								</div> <!-- /post-header -->
+								</div>
 
 
 								<div class="featured-media">
 
 										<iframe src="https://player.vimeo.com/video/25845008" height="360" frameborder="0" title="BOB" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" data-origwidth="640" data-origheight="360" style="width:100% !important; height: 196.313px;"></iframe>
-								</div> <!-- /featured-media -->
+								</div>
 
 
 						<div class="post-excerpt">
 
 								<p>Bob tells the story of a little hamster that tries to follow his true love around the globe. Can he catch up?<a class="more-link" href="">Bla Bla Bla <span class="flecha-bla"> →</span></a></p>
-						</div> <!-- /post-excerpt -->
+						</div>
 
 
 						<div class="post-meta">
 
 								<a class="post-date" href="http://andersnoren.se/themes/baskerville/animation-bob-by-jacob-frey/" title="Animation: Bob by Jacob Frey">2014/01/31</a>
 
-								<!-- <a href="#" class="zilla-likes" id="zilla-likes-32" title="Like this"><span class="zilla-likes-count">176</span> <span class="zilla-likes-postfix"></span></a> -->
 								<a href="http://andersnoren.se/themes/baskerville/animation-bob-by-jacob-frey/#comments" class="post-comments">Comentarios</a>
 								<div class="clear"></div>
 
-						</div> <!-- /post-meta -->
+						</div>
 
 
 
 						<div class="clear"></div>
-					</div> <!-- /post -->
+					</div>
 
 			</div>
 
@@ -422,7 +423,9 @@
 
 		</div>
 
-		<!-- ACA FIN POST VIRTUALES -->
+
+	-->
+			<!-- ACA FIN POST VIRTUALES -->
 
 	</div> <!-- /content -->
 

@@ -94,7 +94,7 @@
 					<li class="page_item"><a href="">#Mapeo</a></li>
 
 
-					<?php if ( has_nav_menu( 'primary' ) ) {
+					<!-- <?php if ( has_nav_menu( 'primary' ) ) {
 
 						wp_nav_menu( array(
 
@@ -112,7 +112,7 @@
 
 						));
 
-					} ?>
+					} ?> -->
 
 				 </ul> <!-- /main-menu -->
 

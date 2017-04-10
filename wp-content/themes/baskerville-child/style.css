@@ -147,7 +147,7 @@
   color:black;
 }
 
-.main-menu > li { display: inline-block; }
+.main-menu > li {display:inline-flex;}
 
 .main-menu {
 	font-family: 'OswaldRegular', sans-serif;
@@ -227,15 +227,15 @@
 
 
 .hentry,
-.post {
+.post-container .post {
 	border-radius: 10px;
 }
 
-.post{
+.post-container .post{
   border: 2px solid black;
 }
 
-.post:hover{
+.post-container .post:hover{
   box-shadow: 0px 7px 5px 0px #df1241;
   border: 2px solid #df1241;
   transition: all 1s;
@@ -418,6 +418,9 @@
   color:#df1241;
 }
 
+.post-hashtags, .post-hashtags a{
+  color:#8c8787
+}
 /*media querys*/
 
   @media screen and (max-width: 1140px){
