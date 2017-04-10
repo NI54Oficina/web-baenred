@@ -268,7 +268,7 @@
   .wrap{padding:0 45px}
   .container{margin:45px auto;border-top-width:5px;border-bottom-width:5px;border-top-style:solid;border-bottom-style:solid}
   .container.n-mt{margin-top:0}
-  .container.n-mb{margin-bottom:0}
+  .container.n-mb{margin-bottom:20px}
   .container.p-top{padding-top:45px}
   .container.p-top2{padding-top:10px}
   .container.p-bot{padding-bottom:45px}
@@ -421,6 +421,39 @@
 .post-hashtags, .post-hashtags a{
   color:#8c8787
 }
+
+.widget-home{
+  border: 2px solid black;
+  border-radius:10px;
+  padding: 0;
+  font-family: 'OswaldRegular';
+}
+
+.widget-home .widget-content p, .widget-home .widget-content h3{
+  padding: 1.5em 2em 1.5em 2em;
+  margin:0;
+  font-family: 'OswaldRegular';
+}
+
+.widget-home .widget-content p{
+  border-bottom: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*media querys*/
 
   @media screen and (max-width: 1140px){

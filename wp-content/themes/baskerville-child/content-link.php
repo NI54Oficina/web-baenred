@@ -7,6 +7,8 @@
 
     <?php if( is_sticky() ) { ?> <span class="sticky-post"><?php _e('Sticky post', 'baskerville'); ?></span> <?php } ?>
 
+     <p class="post-hashtags"><?php the_tags( '#', ' #', ' ' ); ?></p>
+
 </div> <!-- /post-header -->
 
 <div class="post-link">
