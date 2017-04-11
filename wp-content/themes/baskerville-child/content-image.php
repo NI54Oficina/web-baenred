@@ -1,19 +1,16 @@
 
 
-		<div class="post-header">
+<div class="post-header">
 
-    <h2 class="post-title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title_attribute(); ?></a></h2>
+    <h3 class="post-seccion"> #Enterate</h3>
 
-		<?php if( is_sticky() ) { ?>
+    <?php if( is_sticky() ) { ?> <span class="sticky-post"><?php _e('Sticky post', 'baskerville'); ?></span> <?php } ?>
 
-			<span class="sticky-post"><?php _e('Sticky post', 'baskerville'); ?></span>
+     <p class="post-hashtags"><?php the_tags( '#', ' #', ' ' ); ?></p>
 
-		 <?php } ?>
+    <h2 class="post-title"><span class="hash-destacada">#HashDestacada </span><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
-		 <p class="post-hashtags"><?php the_tags( '#', ' #', ' ' ); ?></p>
-
-
-	 </div>
+</div> <!-- /post-header -->
 
 <?php if ( has_post_thumbnail() ) : ?>
 

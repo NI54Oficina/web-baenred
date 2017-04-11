@@ -12,14 +12,23 @@
 
  -->
 
- <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
- 	<p class="col-lg-3 col-md-3 col-sm-3 col-xs-3">TITULO</p>
+ <div class="titulos-container col-lg-12 col-md-12 col-sm-12 col-xs-12">
+ 	<p class="col-lg-3 col-md-3 col-sm-3 col-xs-3 titulo">TITULO <span> | </span></p>
+
+	<?php
+		$args = array( 'numberposts' => '5', 'post_status' => 'publish' );
+		$recent_posts = wp_get_recent_posts( $args );
+		for( $i=0; $i<3; $i++){
+			echo '<p class="col-lg-3 col-md-3 col-sm-3 col-xs-3">'. $recent_posts[$i]["post_title"].'</p> ';
+		}
+	?>
+	<!--
 	<p class="col-lg-3 col-md-3 col-sm-3 col-xs-3">Titulo nota 1</p>
 	<p class="col-lg-3 col-md-3 col-sm-3 col-xs-3">Titulo nota 2</p>
-	<p class="col-lg-3 col-md-3 col-sm-3 col-xs-3">Titulo nota 3</p>
+	<p class="col-lg-3 col-md-3 col-sm-3 col-xs-3">Titulo nota 3</p> -->
  </div>
 
-	<section id="ac-widget-featured-posts-slider-3" class="n-mb container ss-slider builder clearfix">
+	<section id="ac-widget-featured-posts-slider-3" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 n-mb container ss-slider builder clearfix">
 
 							<div class="col twelvecol clearfix">
 
@@ -231,7 +240,7 @@
 
 	<div class="widget-home widget widget_recent_entries col-lg-2">
 
-		<!-- <span class="sticky-post"><?php _e('Sticky post', 'baskerville'); ?></span> -->
+		<span class="sticky-eye"><?php _e('Sticky post', 'baskerville'); ?></span>
 
 			<div class="widget-content">
 
@@ -252,6 +261,7 @@
 	</div>
 
 	<div class="clear"></div>
+
 
 </div> <!-- /widget_recent_entries -->
 

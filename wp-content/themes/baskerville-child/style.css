@@ -147,7 +147,7 @@
   color:black;
 }
 
-.main-menu > li {display:inline-flex;}
+
 
 .main-menu {
 	font-family: 'OswaldRegular', sans-serif;
@@ -217,12 +217,32 @@
 }
 
 .main-menu{
-  height: auto;
-  position: absolute;
+  border-top: 2px solid black;
+  border-bottom: 1px solid black;
+  /*height: auto;
+
   width: auto;
   left: 0;
   right: 0;
-  margin: auto;
+  margin: auto;*/
+  /*position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: auto;*/
+}
+
+.main-menu > li {
+  display:inline-flex;
+  /*float:left;*/
+}
+.search-toggle{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.medium-padding {
+    padding: 30px 0;
 }
 
 
@@ -424,7 +444,9 @@
 }
 
 .post-hashtags, .post-hashtags a{
-  color:#8c8787
+  color:#8c8787;
+  font-size: 15px;
+  font-family: 'OswaldRegular';
 }
 
 .widget-home{
@@ -451,11 +473,73 @@
   padding-left: 1em;
 }
 
+.post .post-excerpt p{
+  font-family: "AsapRegular" !important;
+}
+
+.post-date, .post-comments{
+  font-family: 'Caveat';
+  color: black !important;
+}
+
+.post-title{
+  font-family: "OswaldRegular" !important;
+}
+
+.post-seccion{
+  font-family: 'Caveat';
+  font-size: 23px;
+}
+.post-title .hash-destacada{
+  color:#df1241;
+}
+
+.post-header p, .post-header h2, .post-header h3{
+  margin: 15px 0 15px 0;
+}
+
+.posts .format-status .post-excerpt p, .post-quote{
+  font-family: 'OswaldRegular' !important;
+}
+
+.sticky-eye:after {
+    content: "";
+    display: block;
+    border: 13px solid transparent;
+    border-left-color: #2B3542;
+    border-right-color: #2B3542;
+    position: absolute;
+    right: 0;
+    margin-top: -13px;
+    top: 38px;
+}
+
+.sticky-eye{
+    display: block;
+    position: absolute;
+    z-index: 100;
+    right: 5%;
+    height: 38px;
+    width: 26px;
+    background: #2B3542 url(images/ojo.svg) no-repeat center !important;
+    background-size: 12px auto;
+    top: 0;
+    text-indent: -9999px;
+}
 
 
+.titulos-container{
+  border: 1px solid #838383;
+  padding: 1em;
+  font-family: "OswaldRegular";
+}
+.titulos-container p:first-child{
+  color: black
+}
 
-
-
+.titulos-container p{
+  color: #bababa;
+}
 
 
 
@@ -474,5 +558,22 @@
 
     .ss-nav-btn{
       display: none;
+    }
+
+
+    .link-social {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    padding: 0;
+    text-align: center;
+    /* width: 50px; */
+    }
+
+    .link-social a img{
+      width: 20px;
+      height: 20px;
     }
   }
