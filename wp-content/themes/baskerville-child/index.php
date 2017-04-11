@@ -12,14 +12,14 @@
 
  -->
 
- <div class="titulos-container col-lg-12 col-md-12 col-sm-12 col-xs-12">
- 	<p class="col-lg-3 col-md-3 col-sm-3 col-xs-3 titulo">TITULO <span> | </span></p>
+ <div class="titulos-container" style="display:inline-flex; width:100%">
+ 	<p class="titulo" style="width:30%">TITULO <span> | </span></p>
 
 	<?php
 		$args = array( 'numberposts' => '5', 'post_status' => 'publish' );
 		$recent_posts = wp_get_recent_posts( $args );
 		for( $i=0; $i<3; $i++){
-			echo '<p class="col-lg-3 col-md-3 col-sm-3 col-xs-3">'. $recent_posts[$i]["post_title"].'</p> ';
+			echo '<p style="width:30%" ><a href="' . get_permalink($recent_posts[$i]["ID"]) . '" title="'.esc_attr($recent_posts[$i]["post_title"]).'" >' .   $recent_posts[$i]["post_title"].'</a></p> ';
 		}
 	?>
 	<!--
@@ -28,7 +28,7 @@
 	<p class="col-lg-3 col-md-3 col-sm-3 col-xs-3">Titulo nota 3</p> -->
  </div>
 
-	<section id="ac-widget-featured-posts-slider-3" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 n-mb container ss-slider builder clearfix">
+	<section id="ac-widget-featured-posts-slider-3" class=" n-mb container ss-slider builder clearfix">
 
 							<div class="col twelvecol clearfix">
 
@@ -209,7 +209,7 @@
 
 	<?php endif; ?>
 
-	<div class="content section-inner col-lg-10">
+	<div class="content section-inner">
 
 
 
@@ -217,7 +217,7 @@
 
 			<div class="posts">
 
-					<?php while (have_posts()) : the_post(); ?>
+					<?php $count=1; while (have_posts()) : the_post();  $count++;?>
 
 						<div class="post-container">
 
@@ -229,7 +229,37 @@
 
 						</div>
 
-						<?php endwhile; ?>
+						<?php if($count==3){?>
+
+							<!-- corte para que tire los mas visto -->
+							<div class="widget-home widget widget_recent_entries post-container">
+
+								<span class="sticky-eye"><?php _e('Sticky post', 'baskerville'); ?></span>
+
+									<div class="widget-content">
+
+											<h3 class="widget-title">LO MÁS VISITADO</h3>
+
+
+									<?php
+										$args = array( 'numberposts' => '4', 'post_status' => 'publish' );
+										$recent_posts = wp_get_recent_posts( $args );
+										foreach( $recent_posts as $recent ){
+											echo '<p>#<a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </p> ';
+
+
+										}
+									?>
+
+
+							</div>
+
+							<div class="clear"></div>
+
+
+						</div>
+
+						<?php } endwhile; ?>
 
 			<?php endif; ?>
 
@@ -238,32 +268,6 @@
 
 	</div> <!-- /content -->
 
-	<div class="widget-home widget widget_recent_entries col-lg-2">
-
-		<span class="sticky-eye"><?php _e('Sticky post', 'baskerville'); ?></span>
-
-			<div class="widget-content">
-
-					<h3 class="widget-title">LO MÁS VISITADO</h3>
-
-
-			<?php
-				$args = array( 'numberposts' => '4', 'post_status' => 'publish' );
-				$recent_posts = wp_get_recent_posts( $args );
-				foreach( $recent_posts as $recent ){
-					echo '<p>#<a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </p> ';
-
-
-				}
-			?>
-
-
-	</div>
-
-	<div class="clear"></div>
-
-
-</div> <!-- /widget_recent_entries -->
 
 	<?php if ( $wp_query->max_num_pages > 1 ) : ?>
 

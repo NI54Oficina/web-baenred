@@ -85,16 +85,19 @@
 				</div>
 
 				<ul class="main-menu">
+					<?php
+					$test= wp_get_post_terms();
+					var_dump($test) ?>
 
 
-					<li class="page_item"><a href="">#DanLaNota</a></li>
+					<!-- <li class="page_item"><a href="">#DanLaNota</a></li>
 					<li class="page_item"><a href="">#Enfoque</a></li>
 					<li class="page_item"><a href="">#Enroscate</a></li>
 					<li class="page_item"><a href="">#Enterate</a></li>
-					<li class="page_item"><a href="">#Mapeo</a></li>
+					<li class="page_item"><a href="">#Mapeo</a></li> -->
 
 
-					<!-- <?php if ( has_nav_menu( 'primary' ) ) {
+					<?php if ( has_nav_menu( 'primary' ) ) {
 
 						wp_nav_menu( array(
 
@@ -112,7 +115,7 @@
 
 						));
 
-					} ?> -->
+					} ?>
 
 				 </ul> <!-- /main-menu -->
 
