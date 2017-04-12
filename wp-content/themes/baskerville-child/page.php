@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
-<div class="wrapper section medium-padding">
+
+<div class="wrapper section medium-padding enfoque-template">
 
 	<div class="section-inner">
 
@@ -63,6 +64,7 @@
 		</div> <!-- /content -->
 
 		<?php get_sidebar(); ?>
+		
 
 		<div class="clear"></div>
 

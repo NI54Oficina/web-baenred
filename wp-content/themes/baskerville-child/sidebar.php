@@ -10,7 +10,9 @@
 
 	<div class="sidebar fright" role="complementary">
 
-		<div id="search" class="widget widget_search">
+
+
+		<!-- <div id="search" class="widget widget_search">
 
 			<div class="widget-content">
 
@@ -18,20 +20,26 @@
 
 			</div>
 
-	    </div> <!-- /widget_search -->
+	    </div>  -->
+			<!-- /widget_search -->
 
 	    <div class="widget widget_recent_entries">
 
+
+				<span class="sticky-eye"><?php _e('Sticky post', 'baskerville'); ?></span>
+
 	        <div class="widget-content">
 
-	            <h3 class="widget-title"><?php _e("Latest posts", "baskerville") ?></h3>
+	            <h3 class="widget-title">LO MÁS VISITADO</h3>
 
 	            <ul>
 					<?php
 						$args = array( 'numberposts' => '5', 'post_status' => 'publish' );
 						$recent_posts = wp_get_recent_posts( $args );
 						foreach( $recent_posts as $recent ){
-							echo '<li><a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </li> ';
+							echo '<p>#<a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </p> ';
+							// echo '<li><a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </li> ';
+
 						}
 					?>
 				</ul>
@@ -42,7 +50,7 @@
 
 		</div> <!-- /widget_recent_entries -->
 
-		<div class="widget widget_text">
+		<!-- <div class="widget widget_text">
 
 	        <div class="widget-content">
 
@@ -58,7 +66,19 @@
 
 			<div class="clear"></div>
 
-		</div> <!-- /widget_recent_entries -->
+		</div>  -->
+
+		<!-- /widget_recent_entries -->
+
+
+		<div class="tags">
+
+			<h3>TAGS</h3>
+
+			<?php the_tags( '<p>#', '</p><p>#', '</p>' ); ?>
+
+		</div>
+
 
 	</div> <!-- /sidebar -->
 

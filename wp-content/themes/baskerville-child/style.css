@@ -449,28 +449,32 @@
   font-family: 'OswaldRegular';
 }
 
-.widget-home{
+.widget{
   border: 2px solid black;
   border-radius:10px;
   padding: 0;
   font-family: 'OswaldRegular';
   margin-top: 3.25%;
+  background-color: transparent;
 }
 
-.widget-home .widget-content p,.widget-home .widget-content h3{
+
+.widget .widget-content p,.widget .widget-content h3{
   padding: 1.5em 0 1.5em 2em;
   margin:0;
   font-family: 'OswaldRegular';
 
 }
 
-.widget-home .widget-content p{
+.widget .widget-content p{
   border-bottom: 1px solid black;
+  color: black;
 }
 
-.widget-home .widget-content h3{
+.widget .widget-content h3{
   font-size: 1.8em;
   padding-left: 1em;
+  color: black;
 }
 
 .post .post-excerpt p{
@@ -541,6 +545,41 @@
   color: #bababa;
 }
 
+.sidebar{
+  background: transparent;
+}
+
+.sidebar .widget:first-child {
+   border-top: 1px solid black;
+}
+
+.sidebar .widget {
+    padding: 0;
+    border-top: 1px solid black;
+}
+
+
+/*enfoque-template*/
+
+.enfoque-template{
+  padding-left: 40px  !important;
+  padding-right: 40px !important;
+  background-color: #df1241;
+}
+
+
+.tags p{
+  display: inline-flex;
+  padding: 10px;
+  background-color: #e4e4e4;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.tags{
+  padding: 2em 0 2em 0;
+  font-family: 'OswaldRegular';
+}
 
 
 
