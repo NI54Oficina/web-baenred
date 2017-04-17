@@ -68,7 +68,9 @@
 .tothetop{
   float: right;
   text-transform: uppercase;
-  color: #df1241 ;
+  color: #df1241 !important;
+  text-decoration: none !important;
+
 }
 
 .section-inner{
@@ -96,6 +98,7 @@
   font-size: 2em;
   padding: 1em 0 1em 0;
 }
+
 
 .footer-text-center, .footer-text-right{
   padding: 2em 30px 2em 30px;
@@ -607,6 +610,9 @@
       transition: none;
     }
 
+    .footer-container-inner > div {
+      height: auto !important;
+    }
     .ss-nav-btn{
       display: none;
     }

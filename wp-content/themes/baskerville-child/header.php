@@ -133,17 +133,20 @@
 
 			<ul class="mobile-menu">
 
-
-					<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="">#DanLaNota</a></li>
-					<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="">#Enfoque</a></li>
-					<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="">#Enroscate</a></li>
-					<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="">#Enterate</a></li>
-					<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="">#Mapeo</a></li>
+				<?php
+				$categories = wp_list_categories( array('hide_empty' => false,   'title_li'=> ""));
+			//  var_dump($categories);
+			?>
 
 
+				<!-- <li class="page_item"><a href="">#DanLaNota</a></li>
+				<li class="page_item"><a href="">#Enfoque</a></li>
+				<li class="page_item"><a href="">#Enroscate</a></li>
+				<li class="page_item"><a href="">#Enterate</a></li>
+				<li class="page_item"><a href="">#Mapeo</a></li> -->
 
 
-				<!-- <?php if ( has_nav_menu( 'primary' ) ) {
+				<?php if ( has_nav_menu( 'primary' ) ) {
 
 					wp_nav_menu( array(
 
@@ -157,11 +160,13 @@
 					wp_list_pages( array(
 
 						'container' => '',
-						'title_li' => ''
+						'title_li' => '',
+						"post_type"=>"menu"
 
 					));
 
-				} ?> -->
+				} ?>
+
 
 			 </ul> <!-- /main-menu -->
 
