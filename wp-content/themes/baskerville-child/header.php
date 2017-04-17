@@ -113,7 +113,7 @@
 
 							'container' => '',
 							'title_li' => '',
-							"post_type"=>" menu"
+							"post_type"=>"menu"
 
 						));
 

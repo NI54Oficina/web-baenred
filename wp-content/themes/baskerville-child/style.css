@@ -57,6 +57,7 @@
 
 .footer-container{
   color: white ;
+  padding-top: 0 !important;
 }
 
 .footer-info{
@@ -588,8 +589,13 @@
   background-color: black;
 }
 
+.no-sidebar-template h1{
+  font-family: 'OswaldBold';
+}
 
-
+.no-sidebar-template p{
+  font-family: 'AsapRegular';
+}
 
 
 

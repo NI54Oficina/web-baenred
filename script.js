@@ -1,6 +1,6 @@
 $(document).ready( function(){
 	SameHeight();
-	ResetHeight();
+	// ResetHeight();
 });
 function SameHeight(){
   //console.log("entra same height");
