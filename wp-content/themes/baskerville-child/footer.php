@@ -17,7 +17,8 @@
 
 			<!-- <button type="button" name="button" class="caveat">Ver</button> -->
 
-			<a href="localhost/web-baenred/ver/‎">Ver</a>
+
+			<a href='<?php echo site_url()?>/ver‎'>Ver</a>
 
 
 		</div>
