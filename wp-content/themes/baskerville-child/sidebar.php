@@ -23,6 +23,10 @@
 	    </div>  -->
 			<!-- /widget_search -->
 
+			<div class="">
+
+
+
 	    <div class="widget widget_recent_entries">
 
 
@@ -34,7 +38,7 @@
 
 	            <ul>
 					<?php
-						$args = array( 'numberposts' => '5', 'post_status' => 'publish' );
+						$args = array( 'numberposts' => '4', 'post_status' => 'publish' );
 						$recent_posts = wp_get_recent_posts( $args );
 						foreach( $recent_posts as $recent ){
 							echo '<p>#<a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </p> ';
@@ -49,6 +53,8 @@
 			<div class="clear"></div>
 
 		</div> <!-- /widget_recent_entries -->
+
+		</div>
 
 		<!-- <div class="widget widget_text">
 

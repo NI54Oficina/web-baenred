@@ -105,7 +105,7 @@
   padding: 1em 0 1em 0;
 }
 
-.footer-text-center button{
+.footer-text-center a{
   background: black;
   border: 1px solid #df1241;
   color: white;
@@ -113,7 +113,7 @@
   margin: 1em 0 1em 0;
 }
 
-.footer-text-center button:hover{
+.footer-text-center a:hover{
   border-bottom: 2px solid #df1241;
 }
 
@@ -527,7 +527,7 @@
     width: 26px;
     background: #2B3542 url(images/ojo.svg) no-repeat center !important;
     background-size: 12px auto;
-    top: 0;
+    /*top: 0;*/margin-right: 5%;
     text-indent: -9999px;
 }
 

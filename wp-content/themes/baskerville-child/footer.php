@@ -15,7 +15,9 @@
 			<p class="title">#Copate</p>
 			<p class="colored">Conocé más sobre la próxima edición</p>
 
-			<button type="button" name="button" class="caveat">Ver</button>
+			<!-- <button type="button" name="button" class="caveat">Ver</button> -->
+
+			<a href="localhost/web-baenred/ver/‎">Ver</a>
 
 
 		</div>

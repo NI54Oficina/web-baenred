@@ -232,7 +232,10 @@
 						<?php if($count==3){?>
 
 							<!-- corte para que tire los mas visto -->
-							<div class="widget-home widget widget_recent_entries post-container">
+							<div class="post-container">
+
+
+							<div class="widget-home widget widget_recent_entries">
 
 								<span class="sticky-eye"><?php _e('Sticky post', 'baskerville'); ?></span>
 
@@ -257,6 +260,7 @@
 							<div class="clear"></div>
 
 
+							</div>
 						</div>
 
 						<?php } endwhile; ?>

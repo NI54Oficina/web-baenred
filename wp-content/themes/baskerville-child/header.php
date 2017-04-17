@@ -112,7 +112,8 @@
 						wp_list_pages( array(
 
 							'container' => '',
-							'title_li' => ''
+							'title_li' => '',
+							"post_type"=>" menu",
 
 						));
 

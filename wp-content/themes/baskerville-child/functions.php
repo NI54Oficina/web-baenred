@@ -54,4 +54,56 @@ function  baskerville_meta_child() { ?>
 }
 
 
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+  /*register_post_type( 'category_menu',
+    array(
+      'labels' => array(
+        'name' => __( 'Menu' ),
+        'singular_name' => __( 'Menu' )
+      ),
+			"page-attributes"=>array('hierarchical' => true,
+			'capability_type' => 'page'),
+      'public' => true,
+      'has_archive' => true,
+    )
+  );*/
+
+	$labels = array(
+			 "name" => "Menu",
+			 "singular_name" => "Menu",
+			 "menu_name" => "Menu",
+			 "all_items" => "All Menu pages",
+			 "add_new" => "Add New",
+			 "add_new_item" => "Add New Menu page",
+			 "edit" => "Edit",
+			 "edit_item" => "Edit Menu page",
+			 "new_item" => "New Menu page",
+			 "view" => "View",
+			 "view_item" => "View Menu page",
+			 "search_items" => "Search Menu page",
+			 "not_found" => "No Menu page Found",
+			 "not_found_in_trash" => "No Menu page Found in Trash",
+			 "parent" => "Parent Menu page",
+	 );
+
+	 $args = array(
+			 "labels" => $labels,
+				"description" => "",
+			 "public" => true,
+			 "show_ui" => true,
+			 "has_archive" => true,
+			 "show_in_menu" => true,
+			 "exclude_from_search" => false,
+			 "capability_type" => "page",
+			 "map_meta_cap" => true,
+			 "hierarchical" => true,
+			 "rewrite" => array( "slug" => "menu", "with_front" => true ),
+			 "query_var" => true,
+			 "supports" => array( "title", "revisions", "thumbnail" )
+	 );
+
+	 register_post_type( "menu", $args );
+}
+
 ?>
