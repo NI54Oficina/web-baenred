@@ -6,9 +6,14 @@
 
 ?>
 
+
+
+
 <div class="wrapper section medium-padding">
 
-	<div class="section-inner">
+	<?php include 'title.php'; ?>
+
+	<div class="section-inner body-post">
 
 		<div class="content fleft">
 
@@ -16,6 +21,18 @@
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<h2 class="tags-post-inner">
+					<?php
+						$post_categories = wp_get_post_categories( get_the_ID() );
+						foreach($post_categories as $c){
+						$cat = get_category( $c );
+						echo $cat->name."  ";
+						}
+					?>
+
+					</h2>
+
+					<p><?php the_time( 'Y/m/d' ); ?></p>
 
 					<?php if ($format == 'quote' || $format == 'link' || $format == 'audio' || $format == 'status' || $format == 'chat') : ?>
 
@@ -213,7 +230,9 @@
 
 						<div class="post-meta">
 
-							<p class="post-date"><?php the_time( get_option( 'date_format' ) ); ?></p>
+							<p>Link a tu Twitter</p>
+
+							<!-- <p class="post-date"><?php the_time( get_option( 'date_format' ) ); ?></p>
 
 							<?php if( function_exists('zilla_likes') ) zilla_likes(); ?>
 
@@ -249,7 +268,7 @@
 
 								<div class="clear"></div>
 
-							</div>
+							</div> -->
 
 						</div> <!-- /post-meta -->
 

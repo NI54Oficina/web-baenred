@@ -2,7 +2,13 @@
 
 <div class="post-header">
 
-    <h3 class="post-seccion"> <?php get_the_category(); ?></h3>
+  <?php
+    $post_categories = wp_get_post_categories( get_the_ID() );
+    foreach($post_categories as $c){
+    $cat = get_category( $c );
+    echo $cat->name."  ";
+    }
+  ?>
 
     <?php if( is_sticky() ) { ?> <span class="sticky-post"><?php _e('Sticky post', 'baskerville'); ?></span> <?php } ?>
 

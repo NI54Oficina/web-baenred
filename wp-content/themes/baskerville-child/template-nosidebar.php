@@ -6,7 +6,10 @@ Template Name: No sidebar template
 
 <?php get_header(); ?>
 
+
 <div class="wrapper section medium-padding no-sidebar-template">
+
+	<?php include 'title.php'; ?>
 
 	<div class="section-inner">
 

@@ -11,22 +11,25 @@
 #ac-widget-featured-posts-slider-3
 
  -->
+<!-- <div class="" style="padding-left:3.3%; padding-right:3.3%;">
 
- <div class="titulos-container" style="display:inline-flex; width:100%">
- 	<p class="titulo" style="width:30%">TITULO <span> | </span></p>
 
-	<?php
-		$args = array( 'numberposts' => '5', 'post_status' => 'publish' );
-		$recent_posts = wp_get_recent_posts( $args );
-		for( $i=0; $i<3; $i++){
-			echo '<p style="width:30%" ><a href="' . get_permalink($recent_posts[$i]["ID"]) . '" title="'.esc_attr($recent_posts[$i]["post_title"]).'" >' .   $recent_posts[$i]["post_title"].'</a></p> ';
-		}
-	?>
-	<!--
-	<p class="col-lg-3 col-md-3 col-sm-3 col-xs-3">Titulo nota 1</p>
-	<p class="col-lg-3 col-md-3 col-sm-3 col-xs-3">Titulo nota 2</p>
-	<p class="col-lg-3 col-md-3 col-sm-3 col-xs-3">Titulo nota 3</p> -->
- </div>
+		 <div class="titulos-container" style="display:inline-flex; width:100%">
+				 	<p class="titulo" style="width:30%">TITULO <span> | </span></p>
+
+					<?php
+						$args = array( 'numberposts' => '5', 'post_status' => 'publish' );
+						$recent_posts = wp_get_recent_posts( $args );
+						for( $i=0; $i<3; $i++){
+							echo '<p style="width:30%" ><a href="' . get_permalink($recent_posts[$i]["ID"]) . '" title="'.esc_attr($recent_posts[$i]["post_title"]).'" >' .   $recent_posts[$i]["post_title"].'</a></p> ';
+						}
+					?>
+
+		 </div>
+
+ </div> -->
+
+<?php include 'title.php'; ?>
 
 	<section id="ac-widget-featured-posts-slider-3" class=" n-mb container ss-slider builder clearfix">
 
