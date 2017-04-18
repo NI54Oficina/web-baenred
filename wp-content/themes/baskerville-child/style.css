@@ -534,6 +534,10 @@
     /*top: 0;*/margin-right: 5%;
     text-indent: -9999px;
 }
+.post-container {
+    /*width: 33.3%;*/
+    padding: 1% 1.5% 1% 1.5% !important;
+}
 
 
 .titulos-container{
@@ -600,8 +604,48 @@
   font-family: 'AsapRegular';
 }
 
+/*post template*/
 
+.body-post{
+  width: 92%;
+  padding-top: 4.5%;
+}
 
+.body-post .content{
+  border: 1px solid #c31439;
+  border-radius: 5px;
+}
+.single .post-meta-container {
+    background: #262626;
+}
+
+.single .post-meta-container:after {
+    background: #1d1d1b;
+}
+
+.post-author:before {
+    background: #c31439 url(images/icons/1x/author-w.png) no-repeat center 29px;
+}
+
+.post-author:after {
+    border-left-color:  #c31439 ;
+    border-right-color:  #c31439 ;
+}
+
+.tags-post-inner{
+  font-family: 'Caveat';
+  color:black;
+  padding: 50px 0px 0px 10%;
+}
+
+.date-post-body{
+  color:#bebebe;
+  font-family: 'Caveat';
+}
+
+/*.body-post .post-header .post-title a{
+  font-family: 'OswaldBold';
+}*/
 
 /*media querys*/
 
