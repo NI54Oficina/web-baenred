@@ -54,20 +54,7 @@ function  baskerville_meta_child() { ?>
 }
 
 
-add_action( 'init', 'create_post_type' );
 function create_post_type() {
-  /*register_post_type( 'category_menu',
-    array(
-      'labels' => array(
-        'name' => __( 'Menu' ),
-        'singular_name' => __( 'Menu' )
-      ),
-			"page-attributes"=>array('hierarchical' => true,
-			'capability_type' => 'page'),
-      'public' => true,
-      'has_archive' => true,
-    )
-  );*/
 
 	$labels = array(
 			 "name" => "Menu",
@@ -105,5 +92,21 @@ function create_post_type() {
 
 	 register_post_type( "menu", $args );
 }
+
+
+		add_action( 'init', 'create_post_type' );
+
+		function my_theme_deactivate() {
+		    delete_option( 'my_theme_active' );
+		}
+		add_action( 'switch_theme', 'my_theme_deactivation' );
+
+		$is_active = get_option( 'my_theme_active' );
+		if ( 'set' !== $check ) {
+		    create_post_type();
+		    flush_rewrite_rules();
+
+		    add_option( 'my_theme_active', 'set', '', 'no' );
+		}
 
 ?>

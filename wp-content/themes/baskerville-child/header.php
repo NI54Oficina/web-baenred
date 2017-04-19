@@ -40,7 +40,7 @@
 
 			</div> <!-- /header-search-block -->
 
-			<div class="header-inner section-inner">
+			<d iv class="header-inner section-inner">
 
 				<?php if ( get_theme_mod( 'baskerville_logo' ) ) : ?>
 
@@ -65,6 +65,8 @@
 						<?php } ?>
 
 				<?php endif; ?>
+
+				<h3 class="blog-description caveat">lo que pasa en la ciudad</h3>
 
 			</div> <!-- /header-inner -->
 
