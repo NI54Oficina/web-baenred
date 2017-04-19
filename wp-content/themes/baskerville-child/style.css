@@ -664,6 +664,12 @@
   height: auto;
 }
 
+.comment.bypostauthor:after {
+
+    background: black url(images/icons/1x/author-w.png) no-repeat center 8px;
+
+}
+
 /*.body-post .post-header .post-title a{
   font-family: 'OswaldBold';
 }*/
