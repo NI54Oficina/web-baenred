@@ -61,6 +61,8 @@
 					<div class="post-header">
 
 					    <h1 class="post-title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+
+								<?php include 'share.php'; ?>
 							<p class="date-post-body"><?php the_time( 'j F, Y' ); ?></p>
 					</div> <!-- /post-header -->
 

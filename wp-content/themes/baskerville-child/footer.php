@@ -18,7 +18,6 @@
 			<!-- <button type="button" name="button" class="caveat">Ver</button> -->
 
 
-			
 			<a href="<?php echo site_url(); ?>/ver">ver</a>
 
 

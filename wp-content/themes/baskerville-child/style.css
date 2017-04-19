@@ -534,7 +534,7 @@
     display: block;
     position: absolute;
     z-index: 100;
-    right: 5%;
+    right: 1%;
     height: 38px;
     width: 26px;
     background: #2B3542 url(images/ojo.svg) no-repeat center !important;
@@ -608,6 +608,10 @@
   font-family: 'OswaldBold';
 }
 
+.no-sidebar-template .section-inner{
+  padding-top: 50px;
+}
+
 .no-sidebar-template p{
   font-family: 'AsapRegular';
 }
@@ -649,6 +653,15 @@
 .date-post-body{
   color:#bebebe;
   font-family: 'Caveat';
+  display: inline-flex;
+  width: auto;
+  margin-left: 20px !important;
+}
+
+.body-post .content .featured-media img{
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
 /*.body-post .post-header .post-title a{
@@ -667,6 +680,10 @@
     }
     .ss-nav-btn{
       display: none;
+    }
+
+    .single .post-meta {
+    background-color: #1d1d1b;
     }
 
 
