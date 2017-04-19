@@ -87,6 +87,7 @@
 				</div>
 
 				<ul class="main-menu">
+				
 					<?php
 					$categories = wp_list_categories( array('hide_empty' => false,   'title_li'=> ""));
 				//  var_dump($categories);
