@@ -9,7 +9,7 @@
 
 
 
-<div class="wrapper section medium-padding">
+<div class="wrapper section medium-padding <?php $post = get_post(); if($post->post_type=='menu') echo "menu-design"; ?>">
 
 	<?php include 'title.php'; ?>
 
@@ -31,6 +31,8 @@
 					?>
 
 					</h2>
+
+
 
 
 
@@ -174,6 +176,8 @@
 
 					</div> <!-- /post-content -->
 
+					<?php  $post = get_post(); if( comments_open() && $post->post_type!='menu') : ?>
+
 					<div class="post-meta-container">
 
 						<div class="post-author">
@@ -278,11 +282,19 @@
 
 					</div> <!-- /post-meta-container -->
 
+
+
 					<?php comments_template( '', true ); ?>
+
+				<?php endif; ?>  <!-- Termina el chekeoo de si existe o no comentarios  -->
 
 			   	<?php endwhile; else: ?>
 
+
+
 					<p><?php _e("We couldn't find any posts that matched your query. Please try again.", "baskerville"); ?></p>
+
+
 
 				<?php endif; ?>
 

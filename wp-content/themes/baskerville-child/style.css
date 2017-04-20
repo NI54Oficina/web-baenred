@@ -583,6 +583,10 @@
   background-color: #df1241;
 }
 
+.menu-design{
+    background-color: #df1241;
+}
+
 
 .tags p{
   display: inline-flex;
@@ -665,9 +669,7 @@
 }
 
 .comment.bypostauthor:after {
-
     background: black url(images/icons/1x/author-w.png) no-repeat center 8px;
-
 }
 
 /*.body-post .post-header .post-title a{
