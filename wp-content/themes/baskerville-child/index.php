@@ -1,3 +1,6 @@
+<div class="loading-screen"></div>
+
+
 <?php get_header(); ?>
 
 <div class="wrapper section medium-padding">
@@ -28,6 +31,9 @@
 		 </div>
 
  </div> -->
+
+
+
 
 <?php include 'title.php'; ?>
 

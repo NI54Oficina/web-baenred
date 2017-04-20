@@ -701,6 +701,23 @@
   font-family: "OswaldBold";
 }
 
+
+
+
+
+/*LOADING SCREEN*/
+
+.loading-screen{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #df1241;
+  z-index: 9999999999;
+}
+
+/*LOADING SCREEN*/
+
 /*.body-post .post-header .post-title a{
   font-family: 'OswaldBold';
 }*/

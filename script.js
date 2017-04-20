@@ -1,7 +1,20 @@
 $(document).ready( function(){
+
+	setTimeout(function () {
+			$(".loading-screen").fadeOut();
+	}, 1000);
+
 	SameHeight();
 	// ResetHeight();
 });
+
+$(document).load( function(){
+
+
+
+
+});
+
 function SameHeight(){
   //console.log("entra same height");
 
