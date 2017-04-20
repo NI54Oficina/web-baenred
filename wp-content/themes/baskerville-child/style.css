@@ -70,6 +70,7 @@
   text-transform: uppercase;
   color: #df1241 !important;
   text-decoration: none !important;
+  font-size: 17px;
 
 }
 
@@ -97,6 +98,7 @@
   color: white;
   font-size: 2em;
   padding: 1em 0 1em 0;
+  font-family: 'OswaldBold';
 }
 
 
@@ -107,6 +109,7 @@
 .footer-text-center .colored, .footer-text-right  .colored{
   color: #df1241;
   padding: 1em 0 1em 0;
+  font-family: 'OswaldRegular';
 }
 
 .footer-text-center a{
@@ -115,12 +118,26 @@
   color: white;
   padding: 5px 10px 5px 10px;
   margin: 1em 0 1em 0;
+  font-family: 'caveat';
 }
 
 .footer-text-center a:hover{
   border-bottom: 2px solid #df1241;
+  color: white;
 }
 
+
+.footer-info{
+  font-size: 12px;
+}
+
+.footer-info .main-logo-footer{
+  width: 4em;
+}
+
+.footer-info img{
+  margin: 0 10px 0 10px;
+}
 
 /*FIN FOOTER*/
 
@@ -674,6 +691,14 @@
 
 .comment.bypostauthor:after {
     background: black url(images/icons/1x/author-w.png) no-repeat center 8px;
+}
+
+.nombre-secciones h3{
+    font-family: "Caveat";
+}
+
+.nombre-secciones h5{
+  font-family: "OswaldBold";
 }
 
 /*.body-post .post-header .post-title a{

@@ -6,8 +6,8 @@
 
 		<div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 footer-text-left" hid="1">
 
-			<p>#Enrredados</p>
-			<p>#BaEnRed llega a la web para contarte lo que pasa y cómo pasa sin vueltas con un lenguaje joven, con otra mirada para saber lo que tenemos, lo que falta y lo que estaría bueno tener. Trae datos interesantes y textos claros, diferentes enfoques que te generen nuevas preguntas y te enteres de lo que pasa de manera simple, entretenida y al ritmo de nuestro tiempo.</p>
+			<p class="oswald-regular">#Enrredados</p>
+			<p class="asap-regular">#BaEnRed llega a la web para contarte lo que pasa y cómo pasa sin vueltas con un lenguaje joven, con otra mirada para saber lo que tenemos, lo que falta y lo que estaría bueno tener. Trae datos interesantes y textos claros, diferentes enfoques que te generen nuevas preguntas y te enteres de lo que pasa de manera simple, entretenida y al ritmo de nuestro tiempo.</p>
 
 		</div>
 
@@ -18,7 +18,7 @@
 			<!-- <button type="button" name="button" class="caveat">Ver</button> -->
 
 
-			<a href="<?php echo site_url(); ?>/ver">ver</a>
+			<a href="<?php echo site_url(); ?>/ver">Ver</a>
 
 
 		</div>
@@ -26,7 +26,7 @@
 		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 footer-text-right" style="background-color:black" hid="1">
 
 			<p class="colored"> */ Publicitá /*</p>
-			<p> Mandanos un mail a baenred@gmail.com </p>
+			<p class="asap-regular"> Mandanos un mail a baenred@gmail.com </p>
 
 
 		</div>
@@ -158,10 +158,20 @@
 
 					<!-- <p class="credits-right fright"> -->
 
-					<div  class="col-lg-12 colg-md-12 col-sm-12 col-xs-12 footer-info">
-						 © 2016 -2017 BA EN RED [LOGOS]
+					<div  class="col-lg-12 colg-md-12 col-sm-12 col-xs-12 footer-info oswald-regular">
+						 © 2016 -2017
+						 <img class="main-logo-footer" src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/logo_footer.png" alt="">
 
-						 <a class="tothetop oswald-bold" title="<?php _e('To the top', 'baskerville'); ?>" href="#"><?php _e('Up', 'baskerville' ); ?> &uarr;</a>
+						 <img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/facebook_blanco.svg" alt="">
+
+						 <img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/twitter_blanco.svg" alt="">
+
+						 <img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/you_tube_blanco.svg" alt="">
+
+						 <img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/instagram_blanco.svg" alt="">
+
+
+						 <a class="tothetop oswald-bold" title="<?php _e('To the top', 'baskerville'); ?>" href="#">UP &uarr;</a>
 
 					</div>
 

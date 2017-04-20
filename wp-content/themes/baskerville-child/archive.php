@@ -2,7 +2,7 @@
 
 <div class="wrapper section medium-padding">
 
-	<div class="page-title section-inner">
+	<div class="page-title section-inner nombre-secciones">
 
 		<?php if ( is_day() ) : ?>
 			<h5><?php _e( 'Date', 'baskerville' ); ?></h5> <h3><?php echo get_the_date(); ?></h3>
@@ -11,8 +11,8 @@
 		<?php elseif ( is_year() ) : ?>
 			<h5><?php _e( 'Year', 'baskerville' ); ?></h5> <h3><?php echo get_the_date('Y'); ?></h3>
 		<?php elseif ( is_category() ) : ?>
-			<!-- <h5><?php _e( 'Category', 'baskerville' ); ?></h5>
-			 <h3><?php echo single_cat_title( '', false ); ?></h3> -->
+			<h5><?php _e( 'Category', 'baskerville' ); ?></h5>
+			 <h3><?php echo single_cat_title( '', false ); ?></h3>
 		<?php elseif ( is_tag() ) : ?>
 			<h5><?php _e( 'Tag', 'baskerville' ); ?></h5> <h3><?php echo single_tag_title( '', false ); ?></h3>
 		<?php elseif ( is_author() ) : ?>
