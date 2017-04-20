@@ -173,7 +173,7 @@
 						?>
 
 						<div class="clear"></div>
-
+ 
 					</div> <!-- /post-content -->
 
 					<?php  $post = get_post(); if( comments_open() && $post->post_type!='menu') : ?>

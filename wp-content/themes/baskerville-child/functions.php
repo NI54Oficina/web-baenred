@@ -87,7 +87,8 @@ function create_post_type() {
 			 "hierarchical" => true,
 			 "rewrite" => array( "slug" => "menu", "with_front" => true ),
 			 "query_var" => true,
-			 "supports" => array( "title", "revisions", "thumbnail" )
+			 "supports" => array( "title", "revisions", "thumbnail" ),
+			 'taxonomies' => array('post_tag')
 	 );
 
 	 register_post_type( "menu", $args );
