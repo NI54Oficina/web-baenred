@@ -37,6 +37,8 @@
 
 <?php include 'title.php'; ?>
 
+
+
 	<section id="ac-widget-featured-posts-slider-3" class=" n-mb container ss-slider builder clearfix">
 
 							<div class="col twelvecol clearfix">
@@ -46,132 +48,56 @@
 
 								<div class="slider-container slider-number-3 owl-carousel">
 
-									<div class="item">
-											<figure class="sc-thumbnail">
-												<img width="900" height="520" src="http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/house_of_cards_frank_underwood_kevin_spacey_102090_3840x2160.jpg" class="attachment-ac-masonry-2x-thumbnail size-ac-masonry-2x-thumbnail wp-post-image" alt="house_of_cards_frank_underwood_kevin_spacey_102090_3840x2160"  sizes="(max-width: 900px) 100vw, 900px" />				<figcaption class="st-overlay">
-													<span class="s-social">
-														<a href="" class="social-btn facebook"></a>
-														<a href="https://plus.google.com/share?url=http://demo.acosmin.com/themes/justwrite/typography-and-headings-go-so-well-together-all-the-time/" class="social-btn google-plus">
-															<i class="fa fa-google-plus"></i>
-														</a>
 
-													</span>
-													<a href="" rel="nofollow" class="st-overlay-link"></a>
-													<div class="st-title-wrap" style="    bottom: 25%;">
-															<aside class="s-info si-center clearfix">
-																<!-- <a href="" rel="nofollow" class="com"> </a> -->
-																<!-- <time class="date" datetime="2015-05-26">May 26, 2015</time> -->
-																<a href="" class="category caveat"  style="text-align: center;color: white;  margin-bottom: 10%; padding:.8em; border:1px solid white;" title="" >#Mapeo</a>
-															</aside>
-															<h3 class="section-title st-wrapped st-large st-bold" style="border: none; text-align: center; border: none; background: transparent; color: white;font-size:1em;    padding-top: 50px;">
-																<a href="" class="oswald-bold" rel="bookmark" style="color:white;">#TITULO DE NOTA</a>
-															</h3>
+									<?php if (have_posts()) : ?>
+
+											<?php while (have_posts()) : the_post();
+												if(get_post_format()=='image' &&  get_field('publicado') == 'si'){?>
+
+													<div class="item">
+															<figure class="sc-thumbnail">
+																<?php the_post_thumbnail(array(1000, 520)); ?>
+																<!-- la imagen -->
+																<!-- <img width="900" height="520" src="http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/house_of_cards_frank_underwood_kevin_spacey_102090_3840x2160.jpg" class="attachment-ac-masonry-2x-thumbnail size-ac-masonry-2x-thumbnail wp-post-image" alt="house_of_cards_frank_underwood_kevin_spacey_102090_3840x2160"  sizes="(max-width: 900px) 100vw, 900px" /> -->
+																<figcaption class="st-overlay">
+																	<span class="s-social">
+																		<a href="" class="social-btn facebook"></a>
+																		<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"> <!--el link + titulo  -->
+																		<!-- <a href="https://plus.google.com/share?url=http://demo.acosmin.com/themes/justwrite/typography-and-headings-go-so-well-together-all-the-time/" class="social-btn google-plus"> -->
+																			<i class="fa fa-google-plus"></i>
+																		</a>
+
+																	</span>
+																	<a href="" rel="nofollow" class="st-overlay-link"></a>
+																	<div class="st-title-wrap" style="    bottom: 25%;">
+																			<aside class="s-info si-center clearfix">
+																				<!-- <a href="" rel="nofollow" class="com"> </a> -->
+																				<!-- <time class="date" datetime="2015-05-26">May 26, 2015</time> -->
+																				<a href="" class="category caveat"  style="text-align: center;color: white;  margin-bottom: 10%; padding:.8em; border:1px solid white;" title="" >  <?php
+																			      $post_categories = wp_get_post_categories( get_the_ID() );
+																			      foreach($post_categories as $c){
+																			      $cat = get_category( $c );
+																			      echo $cat->name."  ";
+																			      }
+																			    ?>
+																				</a>
+																			</aside>
+																			<h3 class="section-title st-wrapped st-large st-bold" style="border: none; text-align: center; border: none; background: transparent; color: white;font-size:1em;    padding-top: 50px;">
+																				<a href="" class="oswald-bold" rel="bookmark" style="color:white;">#<?php the_title_attribute(); ?></a>
+																			</h3>
+																	</div>
+																</figcaption>
+															</figure>
 													</div>
-												</figcaption>
-											</figure>
-									</div>
-
-									<div class="item">
-											<figure class="sc-thumbnail">
-												<img width="900" height="520" src="http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/house_of_cards_frank_underwood_kevin_spacey_102090_3840x2160.jpg" class="attachment-ac-masonry-2x-thumbnail size-ac-masonry-2x-thumbnail wp-post-image" alt="house_of_cards_frank_underwood_kevin_spacey_102090_3840x2160"  sizes="(max-width: 900px) 100vw, 900px" />				<figcaption class="st-overlay">
-													<span class="s-social">
-														<a href="" class="social-btn facebook"></a>
-														<a href="https://plus.google.com/share?url=http://demo.acosmin.com/themes/justwrite/typography-and-headings-go-so-well-together-all-the-time/" class="social-btn google-plus">
-															<i class="fa fa-google-plus"></i>
-														</a>
-
-													</span>
-													<a href="" rel="nofollow" class="st-overlay-link"></a>
-													<div class="st-title-wrap" style="    bottom: 25%;">
-															<aside class="s-info si-center clearfix">
-																<!-- <a href="" rel="nofollow" class="com"> </a> -->
-																<!-- <time class="date" datetime="2015-05-26">May 26, 2015</time> -->
-																<a href="" class="category caveat"  style="text-align: center;color: white;  margin-bottom: 10%; padding:.8em; border:1px solid white;" title="" >#Mapeo</a>
-															</aside>
-															<h3 class="section-title st-wrapped st-large st-bold" style="border: none; text-align: center; border: none; background: transparent; color: white;font-size:1em;    padding-top: 50px;">
-																<a href="" rel="bookmark" class="oswald-bold" style="color:white">#TITULO DE NOTA</a>
-															</h3>
-													</div>
-												</figcaption>
-											</figure>
-									</div>
 
 
-									<div class="item">
-											<figure class="sc-thumbnail">
-												<img width="900" height="520" src="http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/house_of_cards_frank_underwood_kevin_spacey_102090_3840x2160.jpg" class="attachment-ac-masonry-2x-thumbnail size-ac-masonry-2x-thumbnail wp-post-image" alt="house_of_cards_frank_underwood_kevin_spacey_102090_3840x2160"  sizes="(max-width: 900px) 100vw, 900px" />				<figcaption class="st-overlay">
-													<span class="s-social">
-														<a href="" class="social-btn facebook"></a>
-														<a href="https://plus.google.com/share?url=http://demo.acosmin.com/themes/justwrite/typography-and-headings-go-so-well-together-all-the-time/" class="social-btn google-plus">
-															<i class="fa fa-google-plus"></i>
-														</a>
+											<?php } endwhile; ?>
 
-													</span>
-													<a href="" rel="nofollow" class="st-overlay-link"></a>
-													<div class="st-title-wrap" style="    bottom: 25%;">
-															<aside class="s-info si-center clearfix">
-																<!-- <a href="" rel="nofollow" class="com"> </a> -->
-																<!-- <time class="date" datetime="2015-05-26">May 26, 2015</time> -->
-																<a href="" class="category caveat"  style="text-align: center;color: white;  margin-bottom: 10%; padding:.8em; border:1px solid white;" title="" >#Mapeo</a>
-															</aside>
-															<h3 class="section-title st-wrapped st-large st-bold" style="border: none; text-align: center; border: none; background: transparent; color: white;font-size:1em;    padding-top: 50px;">
-																<a href="" rel="bookmark" class="oswald-bold" style="color:white">#TITULO DE NOTA</a>
-															</h3>
-													</div>
-												</figcaption>
-											</figure>
-									</div>
+									<?php endif; ?>
 
 
-									<div class="item">
-											<figure class="sc-thumbnail">
-												<img width="900" height="520" src="http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/house_of_cards_frank_underwood_kevin_spacey_102090_3840x2160.jpg" class="attachment-ac-masonry-2x-thumbnail size-ac-masonry-2x-thumbnail wp-post-image" alt="house_of_cards_frank_underwood_kevin_spacey_102090_3840x2160"  sizes="(max-width: 900px) 100vw, 900px" />				<figcaption class="st-overlay">
-													<span class="s-social">
-														<a href="" class="social-btn facebook"></a>
-														<a href="https://plus.google.com/share?url=http://demo.acosmin.com/themes/justwrite/typography-and-headings-go-so-well-together-all-the-time/" class="social-btn google-plus">
-															<i class="fa fa-google-plus"></i>
-														</a>
 
-													</span>
-													<a href="" rel="nofollow" class="st-overlay-link"></a>
-													<div class="st-title-wrap" style="    bottom: 25%;">
-															<aside class="s-info si-center clearfix">
-																<!-- <a href="" rel="nofollow" class="com"> </a> -->
-																<!-- <time class="date" datetime="2015-05-26">May 26, 2015</time> -->
-																<a href="" class="category caveat"  style="text-align: center;color: white;  margin-bottom: 10%; padding:.8em; border:1px solid white;" title="" >#Mapeo</a>
-															</aside>
-															<h3 class="section-title st-wrapped st-large st-bold" style="border: none; text-align: center; border: none; background: transparent; color: white;font-size:1em;    padding-top: 50px;">
-																<a href="" rel="bookmark" class="oswald-bold" style="color:white">#TITULO DE NOTA</a>
-															</h3>
-													</div>
-												</figcaption>
-											</figure>
-									</div>
 
-									<div class="item">
-											<figure class="sc-thumbnail">
-												<img width="900" height="520" src="http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/house_of_cards_frank_underwood_kevin_spacey_102090_3840x2160.jpg" class="attachment-ac-masonry-2x-thumbnail size-ac-masonry-2x-thumbnail wp-post-image" alt="house_of_cards_frank_underwood_kevin_spacey_102090_3840x2160"  sizes="(max-width: 900px) 100vw, 900px" />				<figcaption class="st-overlay">
-													<span class="s-social">
-														<a href="" class="social-btn facebook"></a>
-														<a href="https://plus.google.com/share?url=http://demo.acosmin.com/themes/justwrite/typography-and-headings-go-so-well-together-all-the-time/" class="social-btn google-plus">
-															<i class="fa fa-google-plus"></i>
-														</a>
-
-													</span>
-													<a href="" rel="nofollow" class="st-overlay-link"></a>
-													<div class="st-title-wrap" style="    bottom: 25%;">
-															<aside class="s-info si-center clearfix">
-																<!-- <a href="" rel="nofollow" class="com"> </a> -->
-																<!-- <time class="date" datetime="2015-05-26">May 26, 2015</time> -->
-																<a href="" class="category caveat"  style="text-align: center;color: white;  margin-bottom: 10%; padding:.8em; border:1px solid white;" title="" >#Mapeo</a>
-															</aside>
-															<h3 class="section-title st-wrapped st-large st-bold" style="border: none; text-align: center; border: none; background: transparent; color: white;font-size:1em;    padding-top: 50px;">
-																<a href="" rel="bookmark" class="oswald-bold" style="color:white">#TITULO DE NOTA</a>
-															</h3>
-													</div>
-												</figcaption>
-											</figure>
-									</div>
 
 
 
