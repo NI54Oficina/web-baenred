@@ -1,12 +1,21 @@
 $(document).ready( function(){
 
+	setInterval(blinker, 1000);
+
 	setTimeout(function () {
 			$(".loading-screen").fadeOut();
-	}, 1000);
+			$(".loading-screen p").remove();
+	}, 3000);
 
 	SameHeight();
-	// ResetHeight();
+
 });
+
+function blinker() {
+    $(".loading-screen p").fadeOut(500);
+    $('.loading-screen p').fadeIn(500);
+}
+
 
 $(document).load( function(){
 

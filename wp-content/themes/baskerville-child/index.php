@@ -1,4 +1,4 @@
-<div class="loading-screen"></div>
+<div class="loading-screen"><p>SABELO</p></div>
 
 
 <?php get_header(); ?>

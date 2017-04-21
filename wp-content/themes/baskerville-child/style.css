@@ -51,7 +51,9 @@
 
 
 
-
+body{
+  background-color: white !important;
+}
 
 /*COMIENZA HEADER*/
 
@@ -229,7 +231,7 @@
 .main-menu > li > a {
 	display: block;
 	padding: 27px;
-	font-size: 0.85em;
+	font-size: 1em;
 	color: #999;
 
 	letter-spacing: 1px;
@@ -315,7 +317,7 @@
   .menu-wrap,.social-btn,.ac-twitter-tweet-time i,.back-to-top,.close-browse-by,.tagcloud a,.slider .com,.slider .date,.slider .category,.slide-btn,.slider-pagination a,.slider-pagination a span,.slider li,.slider .details,.about-the-author .links a,.menu-wrap .search-submit,.post-content .details .post-format-icon,.st-overlay,.st-title-wrap,.ss-nav-btn,.ss-nav-btn span,.sa-months a,.s-social,.sm-large-masonary .s-info{-webkit-transition:all 200ms ease-in-out;-moz-transition:all 200ms ease-in-out;-o-transition:all 200ms ease-in-out;-ms-transition:all 200ms ease-in-out;transition:all 200ms ease-in-out;-webkit-backface-visibility:hidden}
   .slider .info,.ac-popular-posts .category,.comments-number,.ac-twitter-tweet-time,.ac-featured-posts .thumbnail .details .category,.post-template-1 .details .p-share .contents em,.ac-recent-posts .category,.sidebar #recentcomments a.url,.sidebar #recentcomments,.comment-form-author label,.comment-form-email label,.comment-form-url label,.comment-form-comment label{font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;line-height:1}
   .wrap{padding:0 45px}
-  .container{margin:45px auto;border-top-width:5px;border-bottom-width:5px;border-top-style:solid;border-bottom-style:solid}
+  .container{margin:30px auto;border-top-width:5px;border-bottom-width:5px;border-top-style:solid;border-bottom-style:solid}
   .container.n-mt{margin-top:0}
   .container.n-mb{margin-bottom:20px}
   .container.p-top{padding-top:45px}
@@ -551,7 +553,7 @@
     display: block;
     position: absolute;
     z-index: 100;
-    right: 1%;
+    right: 1.5%;
     height: 38px;
     width: 26px;
     background: #2B3542 url(images/ojo.svg) no-repeat center !important;
@@ -716,6 +718,19 @@
   z-index: 9999999999;
 }
 
+.loading-screen p{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 50vh auto auto auto;
+  text-align: center;
+  font-family: 'caveat';
+  font-size: 25px;
+}
+
+  .search-toggle {
+  background-image: url(images/lupa.svg);
+  }
 /*LOADING SCREEN*/
 
 /*.body-post .post-header .post-title a{
@@ -756,4 +771,6 @@
       width: 20px;
       height: 20px;
     }
+
+
   }
