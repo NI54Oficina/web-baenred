@@ -3,11 +3,11 @@
     <a class="twitter-share-button"
       href="https://twitter.com/share"
       data-size="large"
-      data-text="custom share text"
-      data-url="https://dev.twitter.com/web/tweet-button"
-      data-hashtags="example,demo"
-      data-via="twitterdev"
-      data-related="twitterapi,twitter"
+      data-text=""
+      data-url=
+      data-hashtags=
+      data-via=""
+      data-related=""
       target="_blank">
         <img src="<?php echo site_url(); ?>/wp-content/themes/baskerville-child/images/facebook.svg" alt="">
     </a>
@@ -16,16 +16,17 @@
       href="https://twitter.com/share"
       data-size="large"
       data-text="custom share text"
-      data-url="https://dev.twitter.com/web/tweet-button"
-      data-hashtags="example,demo"
-      data-via="twitterdev"
-      data-related="twitterapi,twitter"
+      data-url=<?php echo home_url(add_query_arg(array(),$wp->request)); ?>
+      data-hashtags=
+      data-via=""
+      data-related=""
       target="_blank">
         <img src="<?php echo site_url(); ?>/wp-content/themes/baskerville-child/images/twitter.svg" alt="">
     </a>
 
 </div>
 
+<?php echo  the_tags( '#', '#', '' ); ?>
 <style >
 
   .share-social{

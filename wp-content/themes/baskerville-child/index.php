@@ -196,7 +196,16 @@
 
 
 							</div>
+
+							<div class="" style="margin-top:20px">
+								<!-- widget twitter -->
+								<a class="twitter-timeline" data-width="420" data-height="500" data-theme="dark" data-link-color="#d6123e" href="https://twitter.com/TwitterDev/lists/national-parks">A Twitter List by TwitterDev</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+								<!-- widget twitter -->
+							</div>
+
+
 						</div>
+
 
 						<?php } endwhile; ?>
 

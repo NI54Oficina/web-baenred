@@ -1,15 +1,19 @@
-$(document).ready( function(){
+$(document).load( function(){
 
 	setInterval(blinker, 1000);
 
-	setTimeout(function () {
-			$(".loading-screen").fadeOut();
-			$(".loading-screen p").remove();
-	}, 3000);
+});
 
-	SameHeight();
+$(document).ready( function(){
+
+		SameHeight();
+		setTimeout(function () {
+				$(".loading-screen").fadeOut();
+				$(".loading-screen p").remove();
+		}, 0);
 
 });
+
 
 function blinker() {
     $(".loading-screen p").fadeOut(500);
@@ -17,12 +21,6 @@ function blinker() {
 }
 
 
-$(document).load( function(){
-
-
-
-
-});
 
 function SameHeight(){
   //console.log("entra same height");

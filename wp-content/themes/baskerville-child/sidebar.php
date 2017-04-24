@@ -56,23 +56,17 @@
 
 		</div>
 
-		<!-- <div class="widget widget_text">
+		<div class="widget widget_text">
 
 	        <div class="widget-content">
 
-	        	<h3 class="widget-title"><?php _e("Text widget", "baskerville") ?></h3>
-
-	        	<div class="textwidget">
-
-	        		<p><?php _e("These widgets are displayed because you haven't added any widgets of your own yet. You can do so at Appearance > Widgets in the WordPress settings.", "baskerville") ?></p>
-
-				</div>
+<a class="twitter-timeline" data-width="420" data-height="500" data-theme="dark" data-link-color="#E81C4F" href="https://twitter.com/TwitterDev/lists/national-parks">A Twitter List by TwitterDev</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 			</div>
 
 			<div class="clear"></div>
 
-		</div>  -->
+		</div>
 
 		<!-- /widget_recent_entries -->
 

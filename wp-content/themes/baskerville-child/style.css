@@ -703,6 +703,11 @@ body{
   font-family: "OswaldBold";
 }
 
+#twitter-widget-0.timeline-Widget {
+    max-width: 1200px;
+    background-color: #d6123e !important;
+    border-radius: 4px;
+}
 
 
 
