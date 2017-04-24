@@ -442,6 +442,14 @@ body{
 
 }
 
+.archive-nav a:hover {
+    background: #df1241;
+    color: #fff;
+}
+
+.archive-nav a{
+  font-family: 'OswaldRegular';
+}
 .link-social .icon-social-fb{
   background-image: url(images/facebook.svg);
 }

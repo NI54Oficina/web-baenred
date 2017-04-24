@@ -68,12 +68,12 @@
 																		</a>
 
 																	</span>
-																	<a href="" rel="nofollow" class="st-overlay-link"></a>
+																	<a href="" rel="nofollow" class="st-overlay-link" ></a>
 																	<div class="st-title-wrap" style="    bottom: 25%;">
 																			<aside class="s-info si-center clearfix">
 																				<!-- <a href="" rel="nofollow" class="com"> </a> -->
 																				<!-- <time class="date" datetime="2015-05-26">May 26, 2015</time> -->
-																				<a href="" class="category caveat"  style="text-align: center;color: white;  margin-bottom: 10%; padding:.8em; border:1px solid white;" title="" >  <?php
+																				<a href="" class="category caveat"  style="text-align: center;color: white;  margin-bottom: 10%; padding:.8em; border:1px solid white; background-color:rgba(0,0,0,0.5)" title="" >  <?php
 																			      $post_categories = wp_get_post_categories( get_the_ID() );
 																			      foreach($post_categories as $c){
 																			      $cat = get_category( $c );
