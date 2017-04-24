@@ -4,8 +4,15 @@
       href="https://twitter.com/share"
       data-size="large"
       data-text=""
-      data-url=
-      data-hashtags=
+      data-url=<?php echo home_url(add_query_arg(array(),$wp->request)); ?>
+      data-hashtags=<?php
+      $posttags = get_the_tags();
+      if ($posttags) {
+        foreach($posttags as $tag) {
+          echo $tag->name.", ";
+        }
+      }
+      ?>
       data-via=""
       data-related=""
       target="_blank">
@@ -15,9 +22,16 @@
     <a class="twitter-share-button"
       href="https://twitter.com/share"
       data-size="large"
-      data-text="custom share text"
+      data-text=""
       data-url=<?php echo home_url(add_query_arg(array(),$wp->request)); ?>
-      data-hashtags=
+      data-hashtags=<?php
+      $posttags = get_the_tags();
+      if ($posttags) {
+        foreach($posttags as $tag) {
+          echo $tag->name.", ";
+        }
+      }
+      ?>
       data-via=""
       data-related=""
       target="_blank">
@@ -26,8 +40,8 @@
 
 </div>
 
-<?php echo  the_tags( '#', '#', '' ); ?>
 <style >
+
 
   .share-social{
     width: 50%;

@@ -148,66 +148,151 @@
 
 
 
-		<?php if (have_posts()) : ?>
+		<?php $count=1; if (have_posts()) : ?>
 
 			<div class="posts">
 
-					<?php $count=1; while (have_posts()) : the_post();  $count++;?>
+					<?php  while (have_posts()) : the_post();  ?>
 
-						<div class="post-container">
 
-						<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+						<?php if(get_field('nota_destacada')==1){
 
-								<?php get_template_part( 'content', get_post_format() ); ?>
+							$count++;?>
 
-							</div> <!-- /post -->
-
-						</div>
-
-						<?php if($count==3){?>
-
-							<!-- corte para que tire los mas visto -->
 							<div class="post-container">
 
+							<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-							<div class="widget-home widget widget_recent_entries">
+									<?php get_template_part( 'content', get_post_format() ); ?>
 
-								<span class="sticky-eye"><?php _e('Sticky post', 'baskerville'); ?></span>
+								</div> <!-- /post -->
 
-									<div class="widget-content">
-
-											<h3 class="widget-title">LO MÁS VISITADO</h3>
-
-
-									<?php
-										$args = array( 'numberposts' => '4', 'post_status' => 'publish' );
-										$recent_posts = wp_get_recent_posts( $args );
-										foreach( $recent_posts as $recent ){
-											echo '<p>#<a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </p> ';
+							</div>
 
 
-										}
-									?>
+							<?php if($count==3){?>
+
+								<!-- corte para que tire los mas visto -->
+								<div class="post-container">
+
+
+								<div class="widget-home widget widget_recent_entries">
+
+									<span class="sticky-eye"><?php _e('Sticky post', 'baskerville'); ?></span>
+
+										<div class="widget-content">
+
+												<h3 class="widget-title">LO MÁS VISITADO</h3>
+
+
+										<?php
+											$args = array( 'numberposts' => '4', 'post_status' => 'publish' );
+											$recent_posts = wp_get_recent_posts( $args );
+											foreach( $recent_posts as $recent ){
+												echo '<p>#<a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </p> ';
+
+
+											}
+										?>
+
+
+								</div>
+
+								<div class="clear"></div>
+
+
+								</div>
+
+								<div class="" style="margin-top:20px; height:500px;">
+									<!-- widget twitter -->
+									<a class="twitter-timeline" data-width="420" data-height="500" data-theme="dark" data-link-color="#d6123e" href="https://twitter.com/TwitterDev/lists/national-parks">A Twitter List by TwitterDev</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+									<!-- widget twitter -->
+								</div>
 
 
 							</div>
 
-							<div class="clear"></div>
+							<?php }  	} ?>
 
 
-							</div>
-
-							<div class="" style="margin-top:20px">
-								<!-- widget twitter -->
-								<a class="twitter-timeline" data-width="420" data-height="500" data-theme="dark" data-link-color="#d6123e" href="https://twitter.com/TwitterDev/lists/national-parks">A Twitter List by TwitterDev</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-								<!-- widget twitter -->
-							</div>
 
 
-						</div>
 
 
-						<?php } endwhile; ?>
+
+
+						<?php  endwhile; ?>
+
+
+						<?php while (have_posts()) : the_post();?>
+
+
+							<?php if(get_field('nota_destacada')!=1){$count++;?>
+
+								<div class="post-container">
+
+								<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+										<?php get_template_part( 'content', get_post_format() ); ?>
+
+									</div> <!-- /post -->
+
+								</div>
+
+
+								<?php if($count==3){?>
+
+									<!-- corte para que tire los mas visto -->
+									<div class="post-container">
+
+
+									<div class="widget-home widget widget_recent_entries">
+
+										<span class="sticky-eye"><?php _e('Sticky post', 'baskerville'); ?></span>
+
+											<div class="widget-content">
+
+													<h3 class="widget-title">LO MÁS VISITADO</h3>
+
+
+											<?php
+												$args = array( 'numberposts' => '4', 'post_status' => 'publish' );
+												$recent_posts = wp_get_recent_posts( $args );
+												foreach( $recent_posts as $recent ){
+													echo '<p>#<a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </p> ';
+
+
+												}
+											?>
+
+
+									</div>
+
+									<div class="clear"></div>
+
+
+									</div>
+
+									<div class="" style="margin-top:20px; height:500px;">
+										<!-- widget twitter -->
+										<a class="twitter-timeline" data-width="420" data-height="500" data-theme="dark" data-link-color="#d6123e" href="https://twitter.com/TwitterDev/lists/national-parks">A Twitter List by TwitterDev</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+										<!-- widget twitter -->
+									</div>
+
+
+								</div>
+
+								<?php } } ?>
+
+
+
+
+
+
+
+
+							<?php  endwhile; ?>
+
 
 			<?php endif; ?>
 
