@@ -68,7 +68,7 @@
 																		</a>
 
 																	</span>
-																	<a href="" rel="nofollow" class="st-overlay-link" ></a>
+																	<a href="<?php the_permalink(); ?>" rel="nofollow" class="st-overlay-link" ></a>
 																	<div class="st-title-wrap" style="    bottom: 25%;">
 																			<aside class="s-info si-center clearfix">
 																				<!-- <a href="" rel="nofollow" class="com"> </a> -->
@@ -83,7 +83,7 @@
 																				</a>
 																			</aside>
 																			<h3 class="section-title st-wrapped st-large st-bold" style="border: none; text-align: center; border: none; background: transparent; color: white;font-size:1em;    padding-top: 50px;">
-																				<a href="" class="oswald-bold" rel="bookmark" style="color:white;">#<?php the_title_attribute(); ?></a>
+																				<a href="<?php the_permalink(); ?>" class="oswald-bold" rel="bookmark" style="color:white;">#<?php the_title_attribute(); ?></a>
 																			</h3>
 																	</div>
 																</figcaption>
