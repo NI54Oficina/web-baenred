@@ -767,6 +767,22 @@ section.container.builder{
   }
 /*LOADING SCREEN*/
 
+
+.archive-nav.section-inner a{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 50px;
+  background-color: transparent;
+  background-image: url(images/mas_articulos.svg);
+  background-repeat: no-repeat;
+}
+
+.archive-nav.section-inner a:hover{
+  opacity: .5;
+}
+
 /*.body-post .post-header .post-title a{
   font-family: 'OswaldBold';
 }*/

@@ -307,11 +307,39 @@
 
 	<?php if ( $wp_query->max_num_pages > 1 ) : ?>
 
-		<div class="archive-nav section-inner">
+		<div class="archive-nav section-inner" style="height:50px;">
 
-			<?php echo get_next_posts_link( '&laquo; ' . __('Older posts', 'baskerville')); ?>
 
-			<?php echo get_previous_posts_link( __('Newer posts', 'baskerville') . ' &raquo;'); ?>
+			<p id="test-click">hOLA GENTE</p>
+
+			<div class="" id="ajax-response">
+
+			</div>
+			<?php echo get_next_posts_link( '' . __('', 'baskerville')); ?>
+
+			<?php echo get_previous_posts_link( __('', 'baskerville') . ''); ?>
+
+
+			<script>
+$(document).ready(function(){
+    $('#test-click').click(function(){
+
+
+           $.ajax({
+               url: '/wp-content/themes/baskerville-child/test.php',
+               type: 'post',
+               data: {
+                    task: 'show-more'
+               },
+               success: function(response){
+                  console.log(response);
+               }
+           })
+
+    });
+});
+</script>
+
 
 			<div class="clear"></div>
 
