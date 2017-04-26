@@ -58,6 +58,10 @@ body{
 /*COMIENZA HEADER*/
 
 .footer-container{
+  padding-bottom: 0 !important;
+}
+
+  .footer-container{
   color: white ;
   padding-top: 0 !important;
 }
@@ -88,7 +92,8 @@ body{
 }
 
 .footer-text-left p{
-    line-height: 1.3em;
+    line-height: 1.2em;
+    padding-top: 10px;
 }
 
 .footer-container-inner, .footer-container{
@@ -295,6 +300,11 @@ body{
 
 /*carrousel en el main*/
 
+.sc-thumbnail img{
+  height: 520px !important;
+
+}
+
 .left{float:left }
 .right{float:right }
 .clearfix{*zoom:1}
@@ -432,6 +442,9 @@ section.container.builder{
 
 
 /*iconos redes sociales, comentarios, fecha etc*/
+  .posts .post-meta{
+      background-color: #e0e0e0;
+  }
 
   .posts .post-meta a.post-comments {
       background-image: url(images/comentarios.svg) !important;
@@ -439,6 +452,10 @@ section.container.builder{
 
   .posts .post-meta a.post-date {
     background-image: url(images/reloj.svg) !important;
+  }
+
+  .posts .post-meta a{
+    font-size: .9em;
   }
 
   .post .sticky-post {
@@ -553,8 +570,8 @@ section.container.builder{
     content: "";
     display: block;
     border: 13px solid transparent;
-    border-left-color: #2B3542;
-    border-right-color: #2B3542;
+    border-left-color: #000;
+    border-right-color: #000;
     position: absolute;
     right: 0;
     margin-top: -13px;
@@ -568,7 +585,7 @@ section.container.builder{
     right: 1.5%;
     height: 38px;
     width: 26px;
-    background: #2B3542 url(images/ojo.svg) no-repeat center !important;
+    background: #000 url(images/ojo.svg) no-repeat center !important;
     background-size: 12px auto;
     /*top: 0;*/margin-right: 5%;
     text-indent: -9999px;
@@ -664,7 +681,7 @@ section.container.builder{
 
 .body-post .content{
   border: 1px solid #c31439;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .single .post-meta-container {
     background: #262626;
@@ -792,6 +809,11 @@ section.container.builder{
     section.container.builder{
           max-width: 100%;
           width: auto;
+    }
+
+    .sc-thumbnail img{
+      height: 200px !important;
+
     }
 
 

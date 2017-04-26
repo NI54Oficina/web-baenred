@@ -161,13 +161,16 @@
 
 							<div class="post-container">
 
+
 							<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 									<?php get_template_part( 'content', get_post_format() ); ?>
 
 								</div> <!-- /post -->
 
+
 							</div>
+
 
 
 							<?php if($count==3){?>
