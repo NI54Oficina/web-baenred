@@ -308,6 +308,10 @@ body{
 
 .container{position:relative;width:100%;max-width:1800px;margin:0 auto}
 
+section.container.builder{
+      max-width: 92.6%;
+      width: 1440px;
+}
 
   body,.post-content,.content-wrap,.menu-main,.menu-main ul,.menu-wrap,.slider-pagination a,.slide-btn,.slider .title,.slider .com,.container,.search-wrap,.menu-wrap,.ac-ad-title-300px:before,.post-template-1 .details .post-small-button,#wp-calendar,.menu-main li:hover .sub-menu,textarea,input,.bsmall-title a,.comment-list .comment-avatar,.ac-featured-posts .thumbnail .details,.st-wrapped,.sh-large h2,.sc-title-hover .section-title,.sc-popular-position,.s-info .com{}
   /*{box-shadow:0 5px 0 #fff, 0 -5px 0 #fff, 15px 0 0 #fff, -15px 0 0 #fff, 15px 5px 0 #fff, -15px -5px 0 #fff, -15px 5px 0 #fff, 15px -5px 0 #fff}*/
@@ -783,6 +787,11 @@ body{
     .link-social a img{
       width: 20px;
       height: 20px;
+    }
+
+    section.container.builder{
+          max-width: 100%;
+          width: auto;
     }
 
 

@@ -66,7 +66,7 @@
 
 				<?php endif; ?>
 
-				<h3 class="blog-description caveat">lo que pasa en la ciudad</h3>
+				<h3 class="blog-description caveat">Lo que pasa en la ciudad</h3>
 
 			</div> <!-- /header-inner -->
 
@@ -87,7 +87,7 @@
 				</div>
 
 				<ul class="main-menu">
-				
+
 					<?php
 					$categories = wp_list_categories( array('hide_empty' => false,   'title_li'=> ""));
 				//  var_dump($categories);

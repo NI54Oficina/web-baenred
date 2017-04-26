@@ -73,7 +73,7 @@
 																			<aside class="s-info si-center clearfix">
 																				<!-- <a href="" rel="nofollow" class="com"> </a> -->
 																				<!-- <time class="date" datetime="2015-05-26">May 26, 2015</time> -->
-																				<a href="" class="category caveat"  style="text-align: center;color: white;  margin-bottom: 10%; padding:.8em; border:1px solid white; background-color:rgba(0,0,0,0.5)" title="" >  <?php
+																				<a href="" class="category caveat"  style="text-align: center;color: white;  margin-bottom: 10%; padding:0 .3em; border:1px solid white; background-color:rgba(0,0,0,0.5)" title="" >  <?php
 																			      $post_categories = wp_get_post_categories( get_the_ID() );
 																			      foreach($post_categories as $c){
 																			      $cat = get_category( $c );
@@ -82,7 +82,7 @@
 																			    ?>
 																				</a>
 																			</aside>
-																			<h3 class="section-title st-wrapped st-large st-bold" style="border: none; text-align: center; border: none; background: transparent; color: white;font-size:1em;    padding-top: 50px;">
+																			<h3 class="section-title st-wrapped st-large st-bold" style="border: none; text-align: center; border: none; background: transparent; color: white;font-size:1em;    padding-top: 50px; font-size:32px;">
 																				<a href="<?php the_permalink(); ?>" class="oswald-bold" rel="bookmark" style="color:white;">#<?php the_title_attribute(); ?></a>
 																			</h3>
 																	</div>
