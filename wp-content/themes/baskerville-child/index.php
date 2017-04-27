@@ -161,6 +161,8 @@
 
 							<div class="post-container">
 
+								<a href="<?php the_permalink(); ?>" style="position:absolute; height:100%; width:100%">
+
 
 							<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -168,6 +170,7 @@
 
 								</div> <!-- /post -->
 
+								</a>
 
 							</div>
 
@@ -232,19 +235,24 @@
 
 							<?php if(get_field('nota_destacada')!=1){$count++;?>
 
-								<a class="">
+
 
 
 								<div class="post-container">
+
+									<a href="<?php the_permalink(); ?>" style="position:absolute; height:100%; width:100%">
+
 
 								<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 										<?php get_template_part( 'content', get_post_format() ); ?>
 
-								</div> <!-- /post -->
+									</div> <!-- /post -->
+
+									</a>
 
 								</div>
-							</a>
+
 							<!-- </a> -->
 
 
