@@ -61,7 +61,7 @@
 																<!-- <img width="900" height="520" src="http://demo.acosmin.com/themes/justwrite/wp-content/uploads/2015/10/house_of_cards_frank_underwood_kevin_spacey_102090_3840x2160.jpg" class="attachment-ac-masonry-2x-thumbnail size-ac-masonry-2x-thumbnail wp-post-image" alt="house_of_cards_frank_underwood_kevin_spacey_102090_3840x2160"  sizes="(max-width: 900px) 100vw, 900px" /> -->
 																<figcaption class="st-overlay">
 																	<span class="s-social">
-																		<a href="" class="social-btn facebook"></a>
+
 																		<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"> <!--el link + titulo  -->
 																		<!-- <a href="https://plus.google.com/share?url=http://demo.acosmin.com/themes/justwrite/typography-and-headings-go-so-well-together-all-the-time/" class="social-btn google-plus"> -->
 																			<i class="fa fa-google-plus"></i>
@@ -232,21 +232,26 @@
 
 							<?php if(get_field('nota_destacada')!=1){$count++;?>
 
+								<a class="">
+
+
 								<div class="post-container">
 
 								<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 										<?php get_template_part( 'content', get_post_format() ); ?>
 
-									</div> <!-- /post -->
+								</div> <!-- /post -->
 
 								</div>
+							</a>
+							<!-- </a> -->
 
 
 								<?php if($count==3){?>
 
 									<!-- corte para que tire los mas visto -->
-									<div class="post-container">
+								<div class="post-container">
 
 
 									<div class="widget-home widget widget_recent_entries">
@@ -308,9 +313,9 @@
 	<?php if ( $wp_query->max_num_pages > 1 ) : ?>
 
 		<div class="archive-nav section-inner" style="height:50px;">
+<!--
 
-
-			<p id="test-click">hOLA GENTE</p>
+			<p id="test-click-hola">hOLA GENTE</p> -->
 
 			<div class="" id="ajax-response">
 
@@ -319,26 +324,6 @@
 
 			<?php echo get_previous_posts_link( __('', 'baskerville') . ''); ?>
 
-
-			<script>
-$(document).ready(function(){
-    $('#test-click').click(function(){
-
-
-           $.ajax({
-               url: '/wp-content/themes/baskerville-child/test.php',
-               type: 'post',
-               data: {
-                    task: 'show-more'
-               },
-               success: function(response){
-                  console.log(response);
-               }
-           })
-
-    });
-});
-</script>
 
 
 			<div class="clear"></div>

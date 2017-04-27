@@ -32,7 +32,7 @@
 
 				<!-- <?php get_search_form(); ?> -->
 
-				<form method="get" class="searchform" action="http://localhost/web-baenred/">
+				<form method="get" class="searchform" action="<?php echo site_url()?>">
 						<input type="search" value="" placeholder="Buscar..." name="s" class="s" />
 						<input type="submit" class="searchsubmit" value="Search">
 				</form>
@@ -47,7 +47,7 @@
 					<div class="blog-logo">
 
 				        <a class="logo" href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'title' ) ); ?> &mdash; <?php echo esc_attr( get_bloginfo( 'description' ) ); ?>' rel='home'>
-				        	<img src='<?php echo esc_url( get_theme_mod( 'baskerville_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'title' ) ); ?>'>
+				        	<img src='<?php echo site_url(); ?>/wp-content/themes/baskerville-child/images/logo-web.png' alt='<?php echo esc_attr( get_bloginfo( 'title' ) ); ?>'>
 				        </a>
 
 					</div>
@@ -89,8 +89,21 @@
 				<ul class="main-menu">
 
 					<?php
-					$categories = wp_list_categories( array('hide_empty' => false,   'title_li'=> ""));
+					$categories = wp_list_categories( array('hide_empty' => false,   'title_li'=> "", "echo"=> false));
 				//  var_dump($categories);
+				$cat= explode("</li>", $categories);
+
+				echo $cat[2];
+				echo $cat[3];
+				echo $cat[0];
+				echo $cat[1];
+
+
+
+				//
+				// 	foreach($categories as $cat){
+				//
+				// 	}
   			?>
 
 

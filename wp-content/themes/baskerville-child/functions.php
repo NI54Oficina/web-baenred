@@ -6,6 +6,9 @@ function theme_add_bootstrap() {
 	wp_enqueue_style( 'bootstrap-css', site_url() . '/bootstrap/css/bootstrap.min.css' );
 	wp_enqueue_script( 'bootstrap-js', site_url() . '/bootstrap/js/bootstrap.min.js');
 	wp_enqueue_script( 'script-js', site_url() . '/script.js');
+
+	wp_enqueue_script( 'lightslider-js', site_url() . '/lightslider.js');
+		wp_enqueue_style( 'lightslider-css', site_url() . '/lightslider.css');
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_add_bootstrap' );
@@ -109,5 +112,6 @@ function create_post_type() {
 
 		    add_option( 'my_theme_active', 'set', '', 'no' );
 		}
+
 
 ?>

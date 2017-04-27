@@ -711,29 +711,29 @@ body a {
 
 .post .post-header:before,
 .page .post-header:before {
-	content: "";
-	display: block;
-	border: 12px solid transparent;
+	content: "" !important;
+	display: block !important	;
+	border: 12px solid transparent!important;
 	border-top-color: #eee;
-	position: absolute;
-	z-index: 10;
-	bottom: 0;
-	left: 10%;
-	margin-bottom: -24px;
+	position: absolute!important;
+	z-index: 10!important;
+	bottom: 0!important;
+	left: 10%!important;
+	margin-bottom: -24px!important;
 }
 
 .post .post-header:after,
 .page .post-header:after {
-	content: "";
-	display: block;
-	border: 11px solid transparent;
-	border-top-color: #fff;
-	position: absolute;
-	z-index: 11;
-	bottom: 0;
-	left: 10%;
-	margin-left: 1px;
-	margin-bottom: -21px;
+	content: ""!important;
+	display: block!important;
+	border: 11px solid transparent!important;
+	border-top-color: #fff!important;
+	position: absolute!important;
+	z-index: 11!important;
+	bottom: 0!important;
+	left: 10%!important;
+	margin-left: 1px!important;
+	margin-bottom: -21px!important;
 }
 
 
@@ -2450,7 +2450,7 @@ img#wpstats { display: none; } /* Silly WordPress stats */
 @media (max-width: 1440px) {
 
 
-	.wrapper.section { padding: 5% 0; }
+	/*.wrapper.section { padding: 5% 0; }*/
 
 	/* pagination */
 

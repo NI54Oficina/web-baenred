@@ -30,9 +30,11 @@
 	    <div class="widget widget_recent_entries">
 
 
-				<span class="sticky-eye"><?php _e('Sticky post', 'baskerville'); ?></span>
 
-	        <div class="widget-content">
+
+	        <div class="widget-content" style="position:relative">
+
+								<span class="sticky-eye"><?php _e('Sticky post', 'baskerville'); ?></span>
 
 	            <h3 class="widget-title">LO MÁS VISITADO</h3>
 
@@ -56,7 +58,7 @@
 
 		</div>
 
-		<div class="widget widget_text">
+		<div class="widget widget_text" style="border:none;">
 
 	        <div class="widget-content">
 

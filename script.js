@@ -1,4 +1,4 @@
-$(document).load( function(){
+$(window).load( function(){
 
 	setInterval(blinker, 1000);
 
@@ -7,10 +7,39 @@ $(document).load( function(){
 $(document).ready( function(){
 
 		SameHeight();
-		setTimeout(function () {
-				$(".loading-screen").fadeOut();
-				$(".loading-screen p").remove();
-		}, 0);
+
+
+
+
+		    $('#test-click-hola').click(function(){
+
+					var ajaxpagination = {"ajaxurl":"http:\/\/wordpress.local\/wp-admin\/admin-ajax.php"};
+
+		           $.ajax({
+		               url: ajaxpagination.ajaxurl,
+		               type: 'post',
+		               data: {
+										 	action:'ajax_pagination'
+		               },
+		               success: function(response){
+		                  console.log(response);
+		               }
+		           })
+
+		    });
+
+
+				lightsliderTest();
+
+});
+
+$(window).bind('load', function()
+{
+
+	setTimeout(function () {
+			$(".loading-screen").fadeOut();
+			$(".loading-screen p").remove();
+	}, 1000);
 
 });
 
@@ -49,4 +78,61 @@ function ResetHeight(){
     $("[hid="+id+"]").css("height","auto");
     id++;
 }
+}
+
+function lightsliderTest(){
+
+    $("#lightSlider").lightSlider({
+        item: 2,
+        autoWidth: false,
+        slideMove: 1, // slidemove will be 1 if loop is true
+        slideMargin: 20,
+
+        addClass: '',
+        mode: "slide",
+        useCSS: true,
+        cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
+        easing: 'linear', //'for jquery animation',////
+
+        speed: 600, //ms'
+        auto: true,
+        loop: true,
+        slideEndAnimation:false,
+        pause: 2000,
+
+        keyPress: false,
+        controls: true,
+        prevHtml: '',
+        nextHtml: '',
+
+        rtl:false,
+        adaptiveHeight:false,
+
+        vertical:false,
+        verticalHeight:500,
+        vThumbWidth:100,
+
+        thumbItem:10,
+        pager: true,
+        gallery: false,
+        galleryMargin: 5,
+        thumbMargin: 5,
+        currentPagerPosition: 'middle',
+
+        enableTouch:false,
+        enableDrag:false,
+        freeMove:true,
+        swipeThreshold: 40,
+
+        responsive : [],
+
+        onBeforeStart: function (el) {},
+        onSliderLoad: function (el) {},
+        onBeforeSlide: function (el) {},
+        onAfterSlide: function (el) {},
+        onBeforeNextSlide: function (el) {},
+        onBeforePrevSlide: function (el) {}
+    });
+
+
 }
