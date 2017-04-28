@@ -62,10 +62,13 @@
 
 					<div class="post-header">
 
-					    <h1 class="post-title"><a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+					    <h1 class="post-title"><?php the_title(); ?></h1>
+
 
 								<?php include 'share.php'; ?>
-							<p class="date-post-body"><?php the_time( 'j F, Y' ); ?></p>
+							<p class="date-post-body"><?php the_time( 'j F, Y' ); ?>    Edición #<?php echo get_field('numero_de_edicion') ?></p>
+
+							<img class="icono-enfoque" src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/enfoque-icono.svg" alt="">
 					</div> <!-- /post-header -->
 
 					<?php if ($format == 'link') : ?>
@@ -107,6 +110,7 @@
 					<?php elseif ($format == 'gallery') : ?>
 
 						<div class="featured-media">
+
 
 							<?php baskerville_flexslider('post-image'); ?>
 
@@ -173,7 +177,7 @@
 						?>
 
 						<div class="clear"></div>
- 
+
 					</div> <!-- /post-content -->
 
 					<?php  $post = get_post(); if( comments_open() && $post->post_type!='menu') : ?>

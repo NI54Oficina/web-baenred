@@ -562,7 +562,7 @@ section.container.builder{
   color:#df1241;
 }
 
-.post-header p, .post-header h2, .post-header h3{
+.post-header  p, .post-header  h2, .post-header  h3{
   margin: 15px 0 15px 0;
 }
 
@@ -582,6 +582,9 @@ section.container.builder{
     top: 38px;
 }
 
+.post-header a, .featured-media a{
+  position: relative !important;
+}
 .sticky-eye{
     display: block;
     position: absolute;
@@ -677,8 +680,25 @@ section.container.builder{
   padding-top: 50px;
 }
 
+/*
+.featured-media a img {
+	-webkit-transition: all 0.3s ease-in-out;
+	 -moz-transition: all 0.3s ease-in-out;
+	 -ms-transition: all 0.3s ease-in-out;
+	 -o-transition: all 0.3s ease-in-out;
+	 transition: all 0.3s ease-in-out;
+}*/
+
 .no-sidebar-template p{
   font-family: 'AsapRegular';
+}
+
+.icono-enfoque{
+  position: absolute;
+  right: 0;
+  padding-right: 2em;
+  padding-top: 2em;
+  top:0;
 }
 
 /*post template*/
@@ -750,7 +770,35 @@ section.container.builder{
 }
 
 
+/*biblio*/
 
+.biblio h1, .biblio .titulo-biblio{
+  font-family: 'OswaldRegular';
+  color: black;
+}
+
+.biblio h1{
+    margin:30px 0;
+}
+.biblio div{
+  border-bottom: 1px solid black;
+}
+
+.biblio div:last-child{
+  border-bottom: none;
+}
+
+.biblio .titulo-biblio{
+  font-size: .8em;
+    margin:15px 0;
+}
+
+.biblio .link-biblio{
+  font-family: 'Asap';
+  color: #5b5b5b;
+  margin:15px 0;
+  font-size: .8em;
+}
 
 /*LOADING SCREEN*/
 

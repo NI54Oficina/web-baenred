@@ -39,7 +39,7 @@ $(window).bind('load', function()
 	setTimeout(function () {
 			$(".loading-screen").fadeOut();
 			$(".loading-screen p").remove();
-	}, 1000);
+	}, 500);
 
 });
 

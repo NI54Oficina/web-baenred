@@ -164,7 +164,7 @@
 
 							<div class="post-container">
 
-								<a href="<?php the_permalink(); ?>" style="position:absolute; height:100%; width:100%">
+								<!-- <a href="<?php the_permalink(); ?>" style="position:absolute;height:100%; width:100%; z-index:99"></a> -->
 
 
 							<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -173,7 +173,7 @@
 
 								</div> <!-- /post -->
 
-								</a>
+
 
 							</div>
 
@@ -243,7 +243,7 @@
 
 								<div class="post-container">
 
-									<a href="<?php the_permalink(); ?>" style="position:absolute; height:100%; width:100%">
+									<!-- <a href="<?php the_permalink(); ?>" style="position:absolute; height:100%; width:100%"></a> -->
 
 
 								<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -252,7 +252,7 @@
 
 									</div> <!-- /post -->
 
-									</a>
+
 
 								</div>
 

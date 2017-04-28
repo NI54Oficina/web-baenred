@@ -8,7 +8,7 @@
 
 <?php endif; ?>
 
-<?php if( is_sticky() ) { ?> <span class="sticky-post"><?php _e('Sticky post', 'baskerville'); ?></span> <?php } ?>
+<?php if( get_field('nota_destacada')==1 ) { ?> <span class="sticky-post"><?php _e('Sticky post', 'baskerville'); ?></span> <?php } ?>
 
 <?php baskerville_meta_child(); ?>
 
