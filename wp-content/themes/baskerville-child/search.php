@@ -52,7 +52,7 @@
 
 					<div class="post-content">
 
-						<p><?php _e('No results. Try again, would you kindly?', 'baskerville'); ?></p>
+						<p style="margin-bottom:5%;"><?php _e('No results. Try again, would you kindly?', 'baskerville'); ?></p>
 
 					</div> <!-- /post-content -->
 

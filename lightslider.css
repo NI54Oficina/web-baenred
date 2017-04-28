@@ -16,6 +16,10 @@
     content: " ";
     display: table;
 }
+
+#lightSlider{
+  height: 20px !important;
+}
 .lightSlider {
     overflow: hidden;
     margin: 0;

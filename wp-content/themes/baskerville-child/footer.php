@@ -12,8 +12,8 @@
 		</div>
 
 		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 footer-text-center" style="background-color:black" hid="1">
-			<p class="title">#Copate</p>
-			<p class="colored">Conocé más sobre la próxima edición</p>
+			<p class="title" style="padding-bottom:0">#Copate</p>
+			<p class="colored"  style="padding-bottom:3em">Conocé más sobre la próxima edición</p>
 
 			<!-- <button type="button" name="button" class="caveat">Ver</button> -->
 
@@ -162,13 +162,13 @@
 						 © 2016 -2017
 						 <img class="main-logo-footer" src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/logo_footer.png" alt="">
 
-						 <img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/facebook_blanco.svg" alt="">
+						 <a href="#"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/facebook_blanco.svg" alt=""></a>
 
-						 <img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/twitter_blanco.svg" alt="">
+						 <a href="#"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/twitter_blanco.svg" alt=""></a>
 
-						 <img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/you_tube_blanco.svg" alt="">
+						 <a href="#"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/you_tube_blanco.svg" alt=""></a>
 
-						 <img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/instagram_blanco.svg" alt="">
+						 <a href="#"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/instagram_blanco.svg" alt=""></a>
 
 
 						 <a class="tothetop oswald-bold" title="<?php _e('To the top', 'baskerville'); ?>" href="#">UP &uarr;</a>

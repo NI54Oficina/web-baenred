@@ -142,7 +142,7 @@ body{
   width: 4em;
 }
 
-.footer-info img{
+.footer-info a img{
   margin: 0 10px 0 10px;
 }
 
@@ -646,6 +646,10 @@ section.container.builder{
   background-color: #e4e4e4;
   border-radius: 5px;
   margin-left: 5px;
+  color:black;
+}
+.tags p a{
+  color: black;
 }
 
 .tags{
@@ -655,6 +659,7 @@ section.container.builder{
 
 .tags h3{
   margin:5px 0 10px 0;
+  color:black;
 }
 
 /*ver template*/
@@ -798,11 +803,12 @@ section.container.builder{
 }
 
 .post .post-header:before,
-.page .post-header:before {
+.page .post-header:before ,.type-menu.post-header:before,
+.type-menu .post-header:before{
 	content: "" !important;
 	display: block !important	;
 	border: 12px solid transparent!important;
-	border-top-color: black !important;
+	border-top-color: #c3c3c3!important;
 	position: absolute!important;
 	z-index: 10!important;
 	bottom: 0!important;
@@ -811,7 +817,8 @@ section.container.builder{
 }
 
 .post .post-header:after,
-.page .post-header:after {
+.page .post-header:after  , .type-menu.post-header:after,
+.type-menu .post-header:after {
 	content: ""!important;
 	display: block!important;
 	border: 11px solid transparent!important;
@@ -827,7 +834,7 @@ section.container.builder{
 
 .post-header {
       padding: 2% 10%;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #c3c3c3;
 }
 
 .widget .widget-content p:last-child {

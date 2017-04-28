@@ -94,7 +94,7 @@ function lightsliderTest(){
         cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
         easing: 'linear', //'for jquery animation',////
 
-        speed: 600, //ms'
+        speed: 1000, //ms'
         auto: true,
         loop: true,
         slideEndAnimation:false,
