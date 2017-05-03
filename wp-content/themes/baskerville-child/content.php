@@ -1,5 +1,20 @@
 <div class="post-header">
 
+  <h3 class="post-seccion">
+    <?php
+      $post_categories = wp_get_post_categories( get_the_ID() );
+      foreach($post_categories as $c){
+      $cat = get_category( $c );
+      echo $cat->name."  ";
+      }
+    ?>
+  </h3>
+
+
+  <?php if( get_field('nota_destacada')==1 ) { ?> <span class="sticky-post"><?php _e('Sticky post', 'baskerville'); ?></span> <?php } ?>
+
+   <p class="post-hashtags"><?php the_tags( '#', ' #', ' ' ); ?></p>
+
   <h2 class="post-title"><?php $title= get_the_title();
     $words= explode(" ", $title);
 
@@ -44,13 +59,15 @@
 	</div> <!-- /featured-media -->
 
 <?php endif; ?>
-
+<a href="<?php the_permalink(); ?>">
 <div class="post-excerpt">
+
+
 
 	<?php the_excerpt('100'); ?>
 
 </div> <!-- /post-excerpt -->
-
+</a>
 <?php baskerville_meta_child(); ?>
 
 <div class="clear"></div>

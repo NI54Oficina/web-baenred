@@ -292,9 +292,11 @@ body{
   position: relative;
 }
 
+
+
 .post-container .post:hover{
   box-shadow: 0px 7px 0px 0px #df1241;
-  border: 2px solid #df1241;
+  border-color:#df1241;
   transition: all 1s;
 }
 
@@ -535,6 +537,11 @@ section.container.builder{
   color: black;
 }
 
+.widget .widget-content p:last-child{
+  border-bottom: none;
+  color: black;
+}
+
 .widget .widget-content h3{
   font-size: 1.8em;
   padding-left: 1em;
@@ -628,13 +635,10 @@ section.container.builder{
   background: transparent;
 }
 
-.sidebar .widget:first-child {
-   border-top: 1px solid black;
-}
+
 
 .sidebar .widget {
-    padding: 0;
-    border-top: 1px solid black;
+    border: 2px solid black;
 }
 
 
@@ -719,7 +723,7 @@ section.container.builder{
 }
 
 .body-post .content{
-  border: 1px solid #c31439;
+  border: 2px solid #c31439;
   border-radius: 10px;
 }
 .single .post-meta-container {
