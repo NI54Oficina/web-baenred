@@ -187,3 +187,6 @@
 			 </ul> <!-- /main-menu -->
 
 		</div> <!-- /mobile-navigation -->
+		<script>
+		var urlBase="<?php echo site_url(); ?>";
+		</script>

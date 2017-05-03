@@ -17,7 +17,7 @@
     </h3>
      <p class="post-hashtags"><?php the_tags( '#', ' #', ' ' ); ?></p>
 
-    <h2 class="post-title"><span class="hash-destacada">#HashDestacada </span><?php the_title($ echo = false); ?></h2>
+    <h2 class="post-title"><span class="hash-destacada">#HashDestacada </span><?php //the_title($ echo = false); ?></h2>
 
 </div> <!-- /post-header -->
 

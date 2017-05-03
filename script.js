@@ -30,6 +30,25 @@ $(document).ready( function(){
 
 
 				lightsliderTest();
+				
+			
+$("body").on("click",".morePost",function(){
+	//mostrar cargando
+	console.log("click clicka");
+	$.post(urlBase+"/ajax/",{offset:postOffset,category:postCategory},function(data){
+	//quitar cargando
+	data=data.replace(/\r?\n|\r/g,"").replace(/\t/g,'');
+	
+	data= $(data.trim());
+	
+  $blocks.append( data );
+  SameHeight();
+    $blocks.masonry( 'appended', data );
+	
+	});
+	//if data=="" --> quitar boton de cargar más post
+	postOffset+=10;
+});
 
 });
 
@@ -133,6 +152,15 @@ function lightsliderTest(){
         onBeforeNextSlide: function (el) {},
         onBeforePrevSlide: function (el) {}
     });
+	
+	
+
+
+
 
 
 }
+
+
+	var postOffset=10;
+var postCategory=0;

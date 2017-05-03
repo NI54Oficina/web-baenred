@@ -212,14 +212,16 @@
 
 								</div>
 
-								<div class="" style="margin-top:20px; height:500px;">
-									<!-- widget twitter -->
-									<a class="twitter-timeline" data-width="420" data-height="500" data-theme="dark" data-link-color="#d6123e" href="https://twitter.com/TwitterDev/lists/national-parks">A Twitter List by TwitterDev</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-									<!-- widget twitter -->
-								</div>
-
 
 							</div>
+							
+							<div class="post-container">
+									<div class="" style=" height:400px;overflow:auto;border-radius:10px;">
+										<!-- widget twitter -->
+										<?php echo do_shortcode("[custom-twitter-feeds]"); ?>
+										<!-- widget twitter -->
+									</div>
+									</div>
 
 							<?php }  	} ?>
 
@@ -291,15 +293,17 @@
 
 
 									</div>
-
-									<div class="" style="margin-top:20px; height:500px;">
-										<!-- widget twitter -->
-										<a class="twitter-timeline" data-width="420" data-height="500" data-theme="dark" data-link-color="#d6123e" href="https://twitter.com/TwitterDev/lists/national-parks">A Twitter List by TwitterDev</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-										<!-- widget twitter -->
-									</div>
+									
 
 
 								</div>
+								<div class="post-container">
+									<div class="" style=" height:400px;overflow:auto;border-radius:10px;">
+										<!-- widget twitter -->
+										<?php echo do_shortcode("[custom-twitter-feeds]"); ?>
+										<!-- widget twitter -->
+									</div>
+									</div>
 
 								<?php } } ?>
 
@@ -320,7 +324,7 @@
 
 	</div> <!-- /content -->
 
-
+	<?php if(false){ ?>
 	<?php if ( $wp_query->max_num_pages > 1 ) : ?>
 
 		<div class="archive-nav section-inner" style="height:50px;">
@@ -331,9 +335,9 @@
 			<div class="" id="ajax-response">
 
 			</div>
-			<?php echo get_next_posts_link( '' . __('', 'baskerville')); ?>
+			<?php //echo get_next_posts_link( '' . __('', 'baskerville')); ?>
 
-			<?php echo get_previous_posts_link( __('', 'baskerville') . ''); ?>
+			<?php //echo get_previous_posts_link( __('', 'baskerville') . ''); ?>
 
 
 
@@ -342,9 +346,15 @@
 		</div> <!-- /post-nav archive-nav -->
 
 	<?php endif; ?>
+	<?php } ?>
+	<?php //echo do_shortcode("[ajax_load_more pause=true scroll=false offset=10 post_type='post, portfolio' ]") ?>
+	
+	<div class="morePost">+ post</div>
 
 	<div class="clear"></div>
 
 </div> <!-- /wrapper -->
+
+
 
 <?php get_footer(); ?>

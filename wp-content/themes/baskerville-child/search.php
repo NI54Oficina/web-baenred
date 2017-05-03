@@ -9,7 +9,6 @@
 				<h3><?php echo ' "' . get_search_query() . '"'; ?></h3> -->
 
 			</div>
-
 		<div class="content section-inner">
 
 			<?php if ( have_posts() ) : ?>

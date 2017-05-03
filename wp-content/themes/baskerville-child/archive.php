@@ -76,7 +76,20 @@
 		<?php endif; ?>
 
 	</div> <!-- /content -->
+	
+	<div class="morePost">+ post</div>
 
 </div> <!-- /wrapper -->
+
+<script>
+
+postCategory=<?php $categories=get_the_category();
+	if ( ! empty( $categories ) ) {
+	 echo get_cat_ID($categories[0]->name );   
+	}
+ ?>;
+postOffset=0;
+ 
+</script>
 
 <?php get_footer(); ?>

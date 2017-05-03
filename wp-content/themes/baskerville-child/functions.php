@@ -113,5 +113,4 @@ function create_post_type() {
 		    add_option( 'my_theme_active', 'set', '', 'no' );
 		}
 
-
 ?>

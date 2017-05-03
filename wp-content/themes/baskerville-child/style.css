@@ -948,3 +948,10 @@ section.container.builder{
 
 
   }
+  
+  
+/** Twitter**/
+.feed-container{padding:10px;}
+.ctf-author-screenname,.ctf-tweet-date{opacity:0.7 !important;}
+
+/**End twitter **/
