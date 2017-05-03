@@ -88,7 +88,7 @@ postCategory=<?php $categories=get_the_category();
 	 echo get_cat_ID($categories[0]->name );   
 	}
  ?>;
-postOffset=0;
+postOffset=10;
  
 </script>
 
