@@ -17,7 +17,32 @@
     </h3>
      <p class="post-hashtags"><?php the_tags( '#', ' #', ' ' ); ?></p>
 
-    <h2 class="post-title"><span class="hash-destacada">#HashDestacada </span><?php //the_title($ echo = false); ?></h2>
+    <h2 class="post-title"><?php $title= get_the_title();
+      $words= explode(" ", $title);
+
+      for($i=0; $i<count($words); $i++){
+        if($words[$i][0]=="#"){
+            $hashtags= explode("#", $words[$i]);
+
+            // echo var_dump($hastags);
+
+            for($j=0;$j< count($hashtags); $j++ ){
+              if(strlen($hashtags[$j])>1){
+                echo "<a class='hash-title' href='?s=".$hashtags[$j]."' >#".$hashtags[$j]."</a>";
+              }
+
+            }
+
+            echo " ";
+        }else{
+          echo $words[$i]." ";
+        }
+      }
+
+
+
+    ?>
+    </h2>
 
 </div> <!-- /post-header -->
 
