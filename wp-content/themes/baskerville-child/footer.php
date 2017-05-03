@@ -6,7 +6,7 @@
 
 		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 footer-text-left" hid="1">
 
-			<h1 class="oswald-regular">#Enrredados</h1>
+			<h1 class="oswald-regular">#Enredados</h1>
 			<p class="asap-regular">#BaEnRed llega a la web para contarte lo que pasa y cómo pasa sin vueltas con un lenguaje joven, con otra mirada para saber lo que tenemos, lo que falta y lo que estaría bueno tener. Trae datos interesantes y textos claros, diferentes enfoques que te generen nuevas preguntas y te enteres de lo que pasa de manera simple, entretenida y al ritmo de nuestro tiempo.</p>
 
 		</div>

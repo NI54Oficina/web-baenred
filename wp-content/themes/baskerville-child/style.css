@@ -94,6 +94,7 @@ body{
 .footer-text-left p{
     line-height: 1.2em;
     padding-top: 10px;
+    font-size: .8em;
 }
 
 .footer-container-inner, .footer-container{
@@ -104,7 +105,7 @@ body{
 .footer-text-center .title{
   color: white;
   font-size: 2em;
-  padding: 1em 0 1em 0;
+  padding: .5em 0 1em 0;
   font-family: 'OswaldBold';
 }
 
@@ -290,15 +291,21 @@ body{
 .post-container .post{
   border: 2px solid black;
   position: relative;
+  -webkit-transition-property: box-shadow,border-color,top;
+  -webkit-transition-duration: 1s;
+  top:0px;
 }
 
 
 
 .post-container .post:hover{
   box-shadow: 0px 7px 0px 0px #df1241;
+  top:-20px;
   border-color:#df1241;
-  transition: all 1s;
+  transition: all .9s;
 }
+
+
 
 
 /*carrousel en el main*/
