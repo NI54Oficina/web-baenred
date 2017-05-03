@@ -214,7 +214,7 @@
 
 
 							</div>
-							
+
 							<div class="post-container">
 									<div class="" style=" height:400px;overflow:auto;border-radius:10px;">
 										<!-- widget twitter -->
@@ -293,7 +293,7 @@
 
 
 									</div>
-									
+
 
 
 								</div>
@@ -332,9 +332,6 @@
 
 			<p id="test-click-hola">hOLA GENTE</p> -->
 
-			<div class="" id="ajax-response">
-
-			</div>
 			<?php //echo get_next_posts_link( '' . __('', 'baskerville')); ?>
 
 			<?php //echo get_previous_posts_link( __('', 'baskerville') . ''); ?>
@@ -348,8 +345,13 @@
 	<?php endif; ?>
 	<?php } ?>
 	<?php //echo do_shortcode("[ajax_load_more pause=true scroll=false offset=10 post_type='post, portfolio' ]") ?>
-	
-	<div class="morePost">+ post</div>
+<div style="padding: 50px 0">
+	<div class="morePost" style="text-align:center; position:absolute; left:0; right:0; margin:auto; width: 50px; height:50px;background-image:url('<?php echo site_url(); ?>/wp-content/themes/baskerville-child/images/mas_articulos.svg'); background-repeat:no-repeat; background-position:center; cursor:pointer"></div>
+	<img class="load-post" style="position:absolute; left:0; right:0; margin:auto;width:60px; display:none "src="<?php echo site_url(); ?>/wp-content/themes/baskerville-child/images/giphy.gif" alt="">
+</div>
+
+
+
 
 	<div class="clear"></div>
 

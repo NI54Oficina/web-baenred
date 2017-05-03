@@ -76,8 +76,11 @@
 		<?php endif; ?>
 
 	</div> <!-- /content -->
-	
-	<div class="morePost">+ post</div>
+
+	<div style="padding: 50px 0">
+		<div class="morePost" style="text-align:center; position:absolute; left:0; right:0; margin:auto; width: 50px; height:50px;background-image:url('<?php echo site_url(); ?>/wp-content/themes/baskerville-child/images/mas_articulos.svg'); background-repeat:no-repeat; background-position:center; cursor:pointer"></div>
+		<img class="load-post" style="position:absolute; left:0; right:0; margin:auto;width:60px; display:none "src="<?php echo site_url(); ?>/wp-content/themes/baskerville-child/images/giphy.gif" alt="">
+	</div>
 
 </div> <!-- /wrapper -->
 
@@ -85,11 +88,11 @@
 
 postCategory=<?php $categories=get_the_category();
 	if ( ! empty( $categories ) ) {
-	 echo get_cat_ID($categories[0]->name );   
+	 echo get_cat_ID($categories[0]->name );
 	}
  ?>;
 postOffset=10;
- 
+
 </script>
 
 <?php get_footer(); ?>
