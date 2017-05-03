@@ -58,7 +58,7 @@
 	?>
 
 </div> <!-- /post-quote -->
-
+<a href="<?php the_permalink(); ?>">
 <div class="post-excerpt">
 
 	<?php
@@ -70,7 +70,7 @@
 	?>
 
 </div> <!-- /post-excerpt -->
-
+</a>
 <?php baskerville_meta_child(); ?>
 
 <div class="clear"></div>

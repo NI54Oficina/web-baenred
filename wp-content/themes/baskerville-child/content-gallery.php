@@ -41,23 +41,22 @@
      ?>
      </h2>
 </div> <!-- /post-header -->
-
+<a href="<?php the_permalink(); ?>">
 <div class="featured-media">
 
 	<?php baskerville_flexslider('post-thumbnail'); ?>
 
 </div> <!-- /featured-media -->
-
+  </a>
 <?php if($post->post_content != "") : ?>
 
-<a href="<?php the_permalink(); ?>">
-	<div class="post-excerpt">
 
+<div class="post-excerpt">
 		<?php the_excerpt('100'); ?>
 
 	</div> <!-- /post-excerpt -->
 
-  </a>
+
 
 <?php endif; ?>
 
