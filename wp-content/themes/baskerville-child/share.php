@@ -1,35 +1,29 @@
 <div class="share-social">
     <p>Compartir</p>
-    <a class="twitter-share-button"
+	<?php if(false){ ?>
+    <a class="facebook-share-button"
       href="https://twitter.com/share"
-      data-size="large"
-      data-text=""
-      data-url=<?php echo home_url(add_query_arg(array(),$wp->request)); ?>
-      data-hashtags=<?php
-      $posttags = get_the_tags();
-      if ($posttags) {
-        foreach($posttags as $tag) {
-          echo $tag->name.", ";
-        }
-      }
-      ?>
-      data-via=""
-      data-related=""
       target="_blank">
         <img src="<?php echo site_url(); ?>/wp-content/themes/baskerville-child/images/facebook.svg" alt="">
     </a>
-
+	<?php } ?>
+	<p class="facebook-share-button" onclick="window.open('http://www.facebook.com/sharer.php?u=<?php echo wp_get_shortlink(get_the_ID()); ?>','','width=500,height=400')" >
+         <img src="<?php echo site_url(); ?>/wp-content/themes/baskerville-child/images/facebook.svg" alt="">
+    </p>
+	<?php if(false){ ?>
     <a class="twitter-share-button"
       href="https://twitter.com/share"
       data-size="large"
       data-text=""
-      data-url=<?php echo home_url(add_query_arg(array(),$wp->request)); ?>
+      data-url=<?php echo wp_get_shortlink(get_the_ID()); ?>
       data-hashtags=<?php
       $posttags = get_the_tags();
       if ($posttags) {
+		  $tagText="";
         foreach($posttags as $tag) {
-          echo $tag->name.", ";
+          $tagText.=$tag->name.", ";
         }
+		echo $tagText;
       }
       ?>
       data-via=""
@@ -37,6 +31,14 @@
       target="_blank">
         <img src="<?php echo site_url(); ?>/wp-content/themes/baskerville-child/images/twitter.svg" alt="">
     </a>
+	<?php } ?>
+	  <p class="twitter-custom" onclick="window.open('https://twitter.com/intent/tweet?url=<?php echo wp_get_shortlink(get_the_ID()); ?>&original_referer=<?php 
+	  echo home_url(add_query_arg(array(),$wp->request)); 
+	  ?>&hashtags=<?php echo $tagText; 
+	  ?>&text=<?php echo the_title(); ?>','','width=500,height=400')" >
+        <img src="<?php echo site_url(); ?>/wp-content/themes/baskerville-child/images/twitter.svg" alt="">
+    </p>
+	
 
 </div>
 
@@ -73,10 +75,11 @@ blockquotea.twitter-timeline {
     margin:0;
     padding:3px;
   }
-  .share-social a img{
+  .share-social a img,.share-social .twitter-custom img,.share-social .facebook-share-button img{
     height: 17px;
     width: auto;
     position: relative;
+	top:2px;
     margin-left:5px;
     margin-right: 5px;
   }
@@ -85,5 +88,6 @@ blockquotea.twitter-timeline {
     width: auto;
     display: inline-flex;
   }
-
+  .share-social .twitter-custom,.share-social .facebook-share-button{background:transparent; cursor:pointer;}
+	
 </style>
