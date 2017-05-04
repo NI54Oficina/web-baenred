@@ -61,8 +61,9 @@
 		<div class="widget widget_text" style="border:none;">
 
 	        <div class="widget-content">
-
+<div class="twitter-container">
 <?php echo do_shortcode("[custom-twitter-feeds]"); ?>
+</div>
 			</div>
 
 			<div class="clear"></div>

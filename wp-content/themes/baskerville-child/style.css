@@ -640,6 +640,9 @@ section.container.builder{
 
 .sidebar{
   background: transparent;
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0);
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0);
+	box-shadow: 0 1px 4px rgba(0,0,0,0);
 }
 
 
@@ -971,5 +974,7 @@ section.container.builder{
 /** Twitter**/
 .feed-container{padding:10px;}
 .ctf-author-screenname,.ctf-tweet-date{opacity:0.7 !important;}
-
+.twitter-container{  height:400px;overflow:auto;border-radius:10px;margin: 8px 0 8px 0;}
 /**End twitter **/
+
+.sidebar div:first-child .widget{margin-top:0;}

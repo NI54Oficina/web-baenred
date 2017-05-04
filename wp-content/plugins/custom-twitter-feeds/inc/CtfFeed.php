@@ -1066,13 +1066,15 @@ class CtfFeed
         $html = '';
 
         $html .= '<div class="ctf-out-of-tweets">';
-        $html .= '<p>That\'s all! No more Tweets to load</p>';
+        $html .= '<p>No hay más tweets.</p>';
+		if(false){
         $html .= '<p>';
         $html .= '<a class="twitter-share-button" href="https://twitter.com/share" target="_blank" data-size="large" data-url="<?php echo get_home_url(); ?>">Share</a>';
         if ( !empty( $feed_options['screenname'] ) ) {
             $html .= '<a class="twitter-follow-button" href="https://twitter.com/' . $feed_options['screenname'] . '" target="_blank" data-show-count="false" data-size="large" data-dnt="true">Follow</a>';
         }
         $html .= '</p>';
+		}
         $html .= "<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>";
         $html .= '</div>';
 

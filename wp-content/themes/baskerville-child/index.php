@@ -216,7 +216,7 @@
 							</div>
 
 							<div class="post-container">
-									<div class="" style=" height:400px;overflow:auto;border-radius:10px;">
+									<div class="twitter-container">
 										<!-- widget twitter -->
 										<?php echo do_shortcode("[custom-twitter-feeds]"); ?>
 										<!-- widget twitter -->
@@ -287,22 +287,22 @@
 											?>
 
 
+										</div>
+
+										<div class="clear"></div>
+
+
 									</div>
-
-									<div class="clear"></div>
-
-
-									</div>
-
-
-
-								</div>
-								<div class="post-container">
-									<div class="" style=" height:400px;overflow:auto;border-radius:10px;">
+									<br>
+									<div class="twitter-container">
 										<!-- widget twitter -->
 										<?php echo do_shortcode("[custom-twitter-feeds]"); ?>
 										<!-- widget twitter -->
 									</div>
+
+								</div>
+								<div class="post-container">
+									
 									</div>
 
 								<?php } } ?>
