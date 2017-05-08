@@ -1,4 +1,4 @@
-/*
+c/*
  Theme Name:   Baskerville Child
  Theme URI:    http://localhost/baskerville-child/
  Description:  Baskerville Child Theme
@@ -909,7 +909,53 @@ section.container.builder{
   opacity: .5;
 }
 
+/*PAGINA DE ERROR*/
 
+.error-404{
+  background-color: #df1241;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top:0;
+  left:0;
+  z-index: 999999;
+  text-align: center;
+}
+
+
+.error-404 h1{
+  color:black;
+  font-family: "Caveat";
+  text-align: center;
+  font-size: 5em;
+  padding-top: 3em;
+}
+
+.error-404 h2{
+  color:white;
+  font-family: "Caveat";
+  text-align: center;
+  font-size: 3em;
+  padding: 10px 0 50px 0;
+}
+
+.error-404 p.button-404{
+  background-color: transparent;
+  color:black;
+  font-family: "OswaldBold";
+  border:2px solid black;
+  font-size: 3em;
+  border-radius: 2px;
+  padding: 10px 60px;
+  text-align: center;
+  margin: auto;
+    width: 300px;
+}
+
+.error-404 img{
+  text-align: center;
+  padding: 3em 0;
+}
 
 /*media querys*/
 
