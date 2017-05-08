@@ -2,7 +2,7 @@
 
 
 		 <div class="titulos-container" style="display:inline-flex; width:100%; background-color:white;">
-				 	<p class="titulo" style="width:33%; padding-right:20px;">TITULO <span> | </span></p>
+				 	<p class="titulo" style="width:33%; padding-right:20px;">Edición #01 <span> | </span></p>
 
 					<div id="lightSlider" class="" style="width:70%">
 

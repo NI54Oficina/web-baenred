@@ -184,6 +184,9 @@ body{
   color:black;
 }
 
+.nav-menu .main-menu > li > a:hover {
+  color:#df1a48;
+}
 
 
 .main-menu {
@@ -472,8 +475,15 @@ section.container.builder{
   }
 
   .post .sticky-post {
-    background: #2B3542 url(images/estrella.svg) no-repeat center !important;
+    background: #000 url(images/estrella.svg) no-repeat center !important;
 
+}
+
+
+.post .sticky-post:after {
+
+    border-left-color: black !important;
+    border-right-color: black !important;
 }
 
 .archive-nav a:hover {
@@ -527,7 +537,8 @@ section.container.builder{
   border-radius:10px;
   padding: 0;
   font-family: 'OswaldRegular';
-  margin-top: 3.25%;
+  /*margin-top: 3.25%;*/
+  margin-top: 20%;
   background-color: transparent;
 }
 
@@ -542,6 +553,7 @@ section.container.builder{
 .widget .widget-content p{
   border-bottom: 1px solid black;
   color: black;
+  line-height: 24px;
 }
 
 .widget .widget-content p:last-child{
@@ -632,6 +644,12 @@ section.container.builder{
 }
 .titulos-container p:first-child{
   color: black
+}
+
+.post-header .post-title {
+
+    line-height: 140%;
+
 }
 
 .titulos-container p{
@@ -928,7 +946,7 @@ section.container.builder{
   font-family: "Caveat";
   text-align: center;
   font-size: 5em;
-  padding-top: 3em;
+  padding-top: 25vh;
 }
 
 .error-404 h2{

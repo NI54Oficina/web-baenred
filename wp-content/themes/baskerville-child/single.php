@@ -66,7 +66,7 @@
 
 
 								<?php include 'share.php'; ?>
-							<p class="date-post-body"><?php the_time( 'j F, Y' ); ?>    Edición #<?php echo get_field('numero_de_edicion') ?></p>
+							<p class="date-post-body"><?php the_time( 'j F, Y' ); ?> &nbsp &nbsp Edición #<?php echo get_field('numero_de_edicion') ?></p>
 
 							<img class="icono-enfoque" src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/enfoque-icono.svg" alt="">
 					</div> <!-- /post-header -->

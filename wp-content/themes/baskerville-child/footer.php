@@ -159,12 +159,14 @@
 					<!-- <p class="credits-right fright"> -->
 
 					<div  class="col-lg-12 colg-md-12 col-sm-12 col-xs-12 footer-info oswald-regular">
-						 © 2016 -2017
-						 <img class="main-logo-footer" src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/logo_footer.png" alt="">
+
+
 
 						 <a href="#"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/facebook_blanco.svg" alt=""></a>
 
 						 <a href="#"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/twitter_blanco.svg" alt=""></a>
+
+						 <img class="main-logo-footer" src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/logo_footer.png" alt="">
 
 						 <a href="#"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/you_tube_blanco.svg" alt=""></a>
 
