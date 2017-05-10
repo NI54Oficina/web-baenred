@@ -7,6 +7,8 @@
       $cat = get_category( $c );
       echo $cat->name."  ";
       }
+
+      if(  get_field('categoria_personalizada'))echo "  #".get_field('categoria_personalizada');
     ?>
   </h3>
 

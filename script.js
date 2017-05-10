@@ -1,6 +1,8 @@
 $(window).load( function(){
 
-	setInterval(blinker, 1000);
+	// setInterval(tipear(), 1000);
+
+	tipear();
 
 });
 
@@ -71,7 +73,7 @@ $(window).bind('load', function()
 	setTimeout(function () {
 			$(".loading-screen").fadeOut();
 			$(".loading-screen p").remove();
-	}, 500);
+	}, 5000);
 
 });
 
@@ -177,3 +179,13 @@ function lightsliderTest(){
 
 	var postOffset=10;
 var postCategory=0;
+
+
+function tipear(){
+ $(function(){
+     $("#dinamic-content").typed({
+       strings: ["ENTERATE", "SABELO", "CONECTATE"],
+       typeSpeed: 100
+     });
+ });
+}

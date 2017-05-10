@@ -21,13 +21,29 @@
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+
 					<h2 class="tags-post-inner">
 					<?php
+
+					if(get_post_type( get_the_ID())!="menu"){
+
+
+
+					if( $format !== 'status'){
 						$post_categories = wp_get_post_categories( get_the_ID() );
 						foreach($post_categories as $c){
 						$cat = get_category( $c );
 						echo $cat->name."  ";
 						}
+
+					}else{
+						echo "#LetrasSueltas";
+					}
+
+					if(  get_field('categoria_personalizada'))echo "  #".get_field('categoria_personalizada');
+
+					}
 					?>
 
 					</h2>

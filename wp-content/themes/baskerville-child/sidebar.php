@@ -43,7 +43,7 @@
 						$args = array( 'numberposts' => '4', 'post_status' => 'publish' );
 						$recent_posts = wp_get_recent_posts( $args );
 						foreach( $recent_posts as $recent ){
-							echo '<p>#<a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </p> ';
+							echo '<p><a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </p> ';
 							// echo '<li><a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </li> ';
 
 						}
@@ -58,7 +58,7 @@
 
 		</div>
 
-		<div class="widget widget_text" style="border:none;">
+		<div class="widget widget_text" style="border:none;  margin-top: 20%;">
 
 	        <div class="widget-content">
 <div class="twitter-container">

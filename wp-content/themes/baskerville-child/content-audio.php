@@ -8,6 +8,8 @@
     $cat = get_category( $c );
     echo $cat->name."  ";
     }
+
+    if(  get_field('categoria_personalizada'))echo "  #".get_field('categoria_personalizada');
   ?>
 
     <?php if( get_field('nota_destacada')==1 ) { ?> <span class="sticky-post"><?php _e('Sticky post', 'baskerville'); ?></span> <?php } ?>

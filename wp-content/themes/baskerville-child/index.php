@@ -1,4 +1,4 @@
-<div class="loading-screen"><p>SABELO</p></div>
+<div class="loading-screen"><p id="dinamic-content"></p></div>
 
 
 <?php get_header(); ?>
@@ -84,7 +84,7 @@
 
 																			</aside>
 																			<h3 class="section-title st-wrapped st-large st-bold" style="color:white;font-family:'OswaldBold';border: none; text-align: center; border: none; background: transparent; color: white;font-size:1em;    padding-top: 50px; font-size:32px;">
-																				#<?php the_title_attribute(); ?>
+																				<?php the_title_attribute(); ?>
 																			</h3>
 																	</div>
 
@@ -198,7 +198,7 @@
 											$args = array( 'numberposts' => '4', 'post_status' => 'publish' );
 											$recent_posts = wp_get_recent_posts( $args );
 											foreach( $recent_posts as $recent ){
-												echo '<p>#<a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </p> ';
+												echo '<p><a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </p> ';
 
 
 											}
@@ -280,7 +280,7 @@
 												$args = array( 'numberposts' => '4', 'post_status' => 'publish' );
 												$recent_posts = wp_get_recent_posts( $args );
 												foreach( $recent_posts as $recent ){
-													echo '<p>#<a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </p> ';
+													echo '<p><a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </p> ';
 
 
 												}
@@ -302,7 +302,7 @@
 
 								</div>
 								<div class="post-container">
-									
+
 									</div>
 
 								<?php } } ?>

@@ -8,6 +8,7 @@ function theme_add_bootstrap() {
 	wp_enqueue_script( 'script-js', site_url() . '/script.js');
 
 	wp_enqueue_script( 'lightslider-js', site_url() . '/lightslider.js');
+	wp_enqueue_script( 'tipeo-js', site_url() . '/tipeo.js');
 		wp_enqueue_style( 'lightslider-css', site_url() . '/lightslider.css');
 }
 
