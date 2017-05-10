@@ -306,6 +306,7 @@ body{
   top:-20px;
   border-color:#df1241;
   transition: all .9s;
+  cursor: pointer !important;
 }
 
 
@@ -537,8 +538,8 @@ section.container.builder{
   border-radius:10px;
   padding: 0;
   font-family: 'OswaldRegular';
-  /*margin-top: 3.25%;*/
-  margin-top: 20%;
+  margin-top: 3.25%;
+  /*margin-top: 20%;*/
   background-color: transparent;
 }
 
@@ -578,6 +579,7 @@ section.container.builder{
 
 .post-title{
   font-family: "OswaldRegular" !important;
+  color:black !important;
 }
 
 .hash-title{
@@ -623,7 +625,7 @@ section.container.builder{
     display: block;
     position: absolute;
     z-index: 100;
-    right: 1.5%;
+    right: 20px;
     height: 38px;
     width: 26px;
     background: #000 url(images/ojo.svg) no-repeat center !important;
@@ -857,7 +859,10 @@ section.container.builder{
   text-align: center;
   font-family: 'caveat';
   font-size: 25px;
+  color:black;
 }
+
+
 
   .search-toggle {
   background-image: url(images/lupa.svg);
