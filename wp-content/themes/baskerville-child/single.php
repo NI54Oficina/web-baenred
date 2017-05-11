@@ -83,8 +83,12 @@
 
 								<?php include 'share.php'; ?>
 							<p class="date-post-body"><?php the_time( 'j F, Y' ); ?> &nbsp &nbsp Edición #<?php echo get_field('numero_de_edicion') ?></p>
+							<?php
+							if(get_field('imagen_cabecera')){?>
 
-							<img class="icono-enfoque" src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/enfoque-icono.svg" alt="">
+								<img class="icono-enfoque" src="<?php echo get_field('imagen_cabecera')["url"] ?>" alt="">
+
+							<?php } ?>
 					</div> <!-- /post-header -->
 
 					<?php if ($format == 'link') : ?>

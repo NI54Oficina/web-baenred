@@ -72,7 +72,7 @@
 																	<div class="st-title-wrap" style="    bottom: 25%;">
 																			<aside class="s-info si-center clearfix">
 																				<div class="">
-																					<p  style="font-family:'Caveat';text-align: center;color: white; padding:0 .3em;border:1px solid white;background-color:rgba(0,0,0,0.5);width:100px; margin:auto" title="" >  <?php
+																					<p  style="font-family:'Caveat';text-align: center;color: white; padding:5px .3em;border:1px solid white;background-color:rgba(0,0,0,0.5);width:100px; margin:auto" title="" >  <?php
 																				      $post_categories = wp_get_post_categories( get_the_ID() );
 																				      foreach($post_categories as $c){
 																				      $cat = get_category( $c );
@@ -301,9 +301,7 @@
 									</div>
 
 								</div>
-								<div class="post-container">
 
-									</div>
 
 								<?php } } ?>
 

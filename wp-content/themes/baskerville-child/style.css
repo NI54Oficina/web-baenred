@@ -635,10 +635,18 @@ section.container.builder{
 }
 .post-container {
     /*width: 33.3%;*/
-    padding: 1% 1.5% 1% 1.5% !important;
+    padding: 25px 1.5% 25px 1.5% !important;
 }
 
 
+.twitter-container {
+
+    margin: 25px 0 8px 0 !important;
+}
+
+.widget {
+margin-top: 0;
+}
 .titulos-container{
   border: 1px solid #838383;
   padding: 1em;
@@ -741,6 +749,8 @@ section.container.builder{
   padding-right: 2em;
   padding-top: 2em;
   top:0;
+  max-width: 150px;
+max-height: 120px;
 }
 
 /*post template*/
@@ -752,6 +762,10 @@ section.container.builder{
   max-width:92.6%
 }
 
+
+.body-post .content .post-meta-container p, .body-post .content .post-meta-container h4{
+  font-family: "OswaldBold";
+}
 .body-post .content{
   border: 2px solid #c31439;
   border-radius: 10px;
