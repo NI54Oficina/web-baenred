@@ -2,6 +2,5 @@
 
 /* Here you can override any CSS which causes layout or visibility problems in the editor, */
 /* and duplicate any Theme-CSS to make the editor display look more like the real frontend */
-.thirdText p{display:block !important; width:initial !important; border-bottom:black 1px solid;font-size:40px;}
-.thirdSub p{display:block !important; width:initial !important; margin:2.2%;font-size:20px;margin-top:0;}
-.test h3{border-bottom: black solid 1px;}
+.listTercio{display:block !important;}
+.listTercio .inferiorTest{display:initial !important;border-top:none !important;font-size:10px;font-weight:initial;}

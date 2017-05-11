@@ -37,9 +37,6 @@ strong, .strong, .fett, .bold, .smallBold, .smallerBold { font-weight: bold; }
 
 /* Append your site-specific styles here */
 
-.thirdText p{display:inline-block; width:28%; border-bottom:black 1px solid;margin:2.2%;font-size:40px;margin-bottom:0;}
-.post-content .thirdText p{margin-bottom:0;}
-.thirdSub p{display:inline-block; width:28%; margin:2.2%;font-size:20px;margin-top:0;}
-.post-content .thirdSub p{margin-top:0;}
-.fourthText p{display:inline-block; width:22%; border-bottom:black 1px solid;margin:1.2%;font-size:40px;}
-.halfText p{display:inline-block; width:45%; border-bottom:black 1px solid;margin:2%;font-size:40px;}
+
+.listTercio .inferiorTest{display:block;border-top:1px solid black;font-size:10px;font-weight:initial;}
+.listTercio {display:inline-block;width:30%;margin:5px;font-size:1.5em;}
