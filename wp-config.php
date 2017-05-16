@@ -1,5 +1,5 @@
 <?php
-/** 
+/**
  * Configuración básica de WordPress.
  *
  * Este archivo contiene las siguientes configuraciones: ajustes de MySQL, prefijo de tablas,
@@ -26,6 +26,8 @@ define('DB_PASSWORD', '');
 
 /** Host de MySQL (es muy probable que no necesites cambiarlo) */
 define('DB_HOST', 'localhost');
+
+define('CONCATENATE_SCRIPTS', false);
 
 /** Codificación de caracteres para la base de datos. */
 define('DB_CHARSET', 'utf8mb4');
@@ -79,4 +81,3 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
-

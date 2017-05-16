@@ -1102,3 +1102,19 @@ max-height: 120px;
 .footer-info img:hover, .facebook-share-button img:hover, .twitter-custom img:hover{
     opacity: 0.8 !important;
   }
+
+
+  /*carrousel*/
+
+.owl-theme .owl-controls .owl-pagination .active span,  #sample_slider .owl-item .owl-theme .owl-controls .owl-pagination span:hover{
+      border-radius: 2px !important;
+      background-color: black !important;
+      border: 1px solid black !important;
+  }
+
+
+ .owl-item .owl-theme .owl-controls .owl-pagination span{
+      border-radius: 2px !important;
+      background-color: white !important;
+      border: 1px solid black !important;
+  }
