@@ -78,7 +78,31 @@
 
 					<div class="post-header">
 
-					    <h1 class="post-title"><?php the_title(); ?></h1>
+					    <h1 class="post-title"><?php $title= get_the_title();
+					      $words= explode(" ", $title);
+
+					      for($i=0; $i<count($words); $i++){
+					        if($words[$i][0]=="#"){
+					            $hashtags= explode("#", $words[$i]);
+
+					            // echo var_dump($hastags);
+
+					            for($j=0;$j< count($hashtags); $j++ ){
+					              if(strlen($hashtags[$j])>1){
+					                echo "<a class='hash-title' href='?s=".$hashtags[$j]."' >#".$hashtags[$j]."</a>";
+					              }
+
+					            }
+
+					            echo " ";
+					        }else{
+					          echo $words[$i]." ";
+					        }
+					      }
+
+
+
+					    ?></h1>
 
 
 								<?php include 'share.php'; ?>
@@ -260,7 +284,8 @@
 
 						<div class="post-meta">
 
-							<p>Link a tu Twitter</p>
+							<p>Twitter</p>
+							<img class="tw-author" src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/twitter_blanco.svg" alt="">
 
 							<!-- <p class="post-date"><?php the_time( get_option( 'date_format' ) ); ?></p>
 

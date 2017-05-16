@@ -70,7 +70,7 @@
 
 		<p class="image-caption"><?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?></p>
 
-	<?php else : the_excerpt('100'); endif; ?>
+	<?php else : the_excerpt("20"); endif; ?>
 
 </div>
 

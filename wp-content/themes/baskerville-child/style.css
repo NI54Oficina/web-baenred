@@ -1061,3 +1061,8 @@ max-height: 120px;
 /**End twitter **/
 
 .sidebar div:first-child .widget{margin-top:0;}
+
+
+.tw-author{
+  padding-left: 23px;
+}
