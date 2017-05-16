@@ -19,11 +19,11 @@
 		<div class="header section small-padding bg-dark bg-image" style="">
 
 			<!-- <div class="header section small-padding bg-dark bg-image" style="background-image: url(<?php if (get_header_image() != '') : ?><?php header_image(); ?><?php else : ?><?php echo get_template_directory_uri() . '/images/header.jpg'; ?><?php endif; ?>);"> -->
-				<div class="link-social">
-					<a  href="#"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/facebook.svg" alt=""></a>
-					<a  href="#"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/twitter.svg" alt=""></a>
+				<div class="link-social hidden-xs">
+					<a  href="https://www.fb.com/BAenRedOK"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/facebook.svg" alt=""></a>
+					<a  href="https://twitter.com/BAenredOK"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/twitter.svg" alt=""></a>
 					<a  href="#"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/youtube.svg" alt=""></a>
-					<a  href="#"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/instagram.svg" alt=""></a>
+					<a  href="https://www.instagram.com/baEnRed/"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/instagram.svg" alt=""></a>
 				</div>
 
 
@@ -77,16 +77,26 @@
 			<div class="navigation-inner section-inner nav-menu">
 
 				<div class="nav-toggle fleft hidden">
+					<span class="glyphicon glyphicon-menu-hamburger"></span>
+					<!-- <div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
 
-					<div class="bar"></div>
-					<div class="bar"></div>
-					<div class="bar"></div>
-
-					<div class="clear"></div>
+					<div class="clear"></div> -->
 
 				</div>
 
+				<div class="link-social hidden-lg hidden-md hidden-sm">
+					<a  href="https://www.fb.com/BAenRedOK"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/facebook.svg" alt=""></a>
+					<a  href="https://twitter.com/BAenredOK"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/twitter.svg" alt=""></a>
+					<a  href="#"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/youtube.svg" alt=""></a>
+					<a  href="https://www.instagram.com/baEnRed/"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/instagram.svg" alt=""></a>
+				</div>
+
+
 				<ul class="main-menu">
+
+
 
 					<?php
 					$categories = wp_list_categories( array('hide_empty' => false,   'title_li'=> "", "echo"=> false));
@@ -137,7 +147,9 @@
 
 				 </ul> <!-- /main-menu -->
 
+
 				 <a class="search-toggle fright" href="#"></a>
+
 
 				 <div class="clear"></div>
 
@@ -148,6 +160,8 @@
 		<div class="mobile-navigation section bg-graphite no-padding hidden">
 
 			<ul class="mobile-menu">
+
+				<li class="cat-item cat-item-1"><a href="http://localhost/web-baenred">#Menu</a></li>
 
 				<?php
 				$categories = wp_list_categories( array('hide_empty' => false,   'title_li'=> ""));

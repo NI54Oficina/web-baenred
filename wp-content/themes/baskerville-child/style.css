@@ -71,6 +71,10 @@ body{
   text-align: center;
 }
 
+.footer-info a:hover, .facebook-share-button:hover, .twitter-custom:hover{
+    opacity: 0.5;
+  }
+
 .tothetop{
   float: right;
   text-transform: uppercase;
@@ -859,7 +863,7 @@ max-height: 120px;
   .loading-screen{
     display: block;
     width: 100%;
-    height: 100%;
+    height: 150vh;
     position: fixed;
     background-color: #df1241;
     z-index: 9999999999;
@@ -997,6 +1001,16 @@ max-height: 120px;
 /*media querys*/
 
   @media screen and (max-width: 1140px){
+
+    .search-toggle.fright{
+      margin-right: 15px;
+    }
+
+    .nav-menu {
+        background-color: white;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     a{
       transition: none;
     }
@@ -1014,14 +1028,31 @@ max-height: 120px;
 
 
     .link-social {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin:auto;
-    padding: 0;
-    text-align: center;
-    /* width: 50px; */
+      position: relative;
+      text-align: center;
+      display: inline-flex;
+
+    }
+
+    .nav-toggle span{
+      color: #d6113e;
+      font-size: 25px;
+      cursor: pointer;
+    }
+
+    .nav-toggle {
+      cursor: pointer;
+    }
+    .body-post .post-title{
+      margin-bottom: 15px;
+    }
+
+    .date-post-body{
+      margin-left: 0 !important;
+    }
+
+    .titles-displayed{
+      width: auto !important;
     }
 
     .link-social a img{
@@ -1066,3 +1097,8 @@ max-height: 120px;
 .tw-author{
   padding-left: 23px;
 }
+
+
+.footer-info img:hover, .facebook-share-button img:hover, .twitter-custom img:hover{
+    opacity: 0.8 !important;
+  }

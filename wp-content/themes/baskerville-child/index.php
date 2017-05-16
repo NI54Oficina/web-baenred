@@ -167,7 +167,7 @@
 								<!-- <a href="<?php the_permalink(); ?>" style="position:absolute;height:100%; width:100%; z-index:99"></a> -->
 
 
-							<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+							<div id="post-<?php the_ID(); ?>" onclick="add_link('<?php the_permalink(); ?>')" <?php post_class(); ?>>
 
 									<?php get_template_part( 'content', get_post_format() ); ?>
 
@@ -248,7 +248,7 @@
 									<!-- <a href="<?php the_permalink(); ?>" style="position:absolute; height:100%; width:100%"></a> -->
 
 
-								<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+								<div id="post-<?php the_ID(); ?>" onclick="add_link('<?php the_permalink(); ?>')" <?php post_class(); ?>>
 
 										<?php get_template_part( 'content', get_post_format() ); ?>
 

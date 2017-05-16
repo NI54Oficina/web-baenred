@@ -8,6 +8,8 @@ $(window).load( function(){
 
 $(document).ready( function(){
 
+	change_class();
+
 		SameHeight();
 
 
@@ -188,4 +190,25 @@ function tipear(){
        typeSpeed: 100
      });
  });
+}
+
+function add_link(link){
+	$(location).attr('href', link);
+}
+
+
+function change_class(){
+		$(".nav-toggle").click(function(){
+			if($( ".nav-toggle span").is( ".glyphicon-menu-hamburger" )){
+
+				$( ".nav-toggle span" ).removeClass( "glyphicon-menu-hamburger" );
+				$( ".nav-toggle span" ).addClass( "glyphicon-remove");
+			}else{
+
+					$( ".nav-toggle span" ).removeClass("glyphicon-remove" );
+				  $( ".nav-toggle span" ).addClass( "glyphicon-menu-hamburger");
+
+
+			}
+		});
 }

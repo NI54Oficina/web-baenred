@@ -162,15 +162,15 @@
 
 
 
-						 <a href="#"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/facebook_blanco.svg" alt=""></a>
+						 <a href="https://www.fb.com/BAenRedOK"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/facebook_blanco.svg" alt=""></a>
 
-						 <a href="#"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/twitter_blanco.svg" alt=""></a>
+						 <a href="https://twitter.com/BAenredOK"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/twitter_blanco.svg" alt=""></a>
 
 						 <img class="main-logo-footer" src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/logo_footer.png" alt="">
 
 						 <a href="#"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/you_tube_blanco.svg" alt=""></a>
 
-						 <a href="#"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/instagram_blanco.svg" alt=""></a>
+						 <a href="https://www.instagram.com/baEnRed/"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/instagram_blanco.svg" alt=""></a>
 
 
 						 <a class="tothetop oswald-bold" title="<?php _e('To the top', 'baskerville'); ?>" href="#">UP &uarr;</a>

@@ -19,6 +19,7 @@
 
 #lightSlider{
   height: 20px !important;
+      margin-bottom: 15px !important;
 }
 .lightSlider {
     overflow: hidden;
