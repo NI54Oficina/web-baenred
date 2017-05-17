@@ -161,7 +161,7 @@
 
 			<ul class="mobile-menu">
 
-				<li class="cat-item cat-item-1"><a href="http://localhost/web-baenred">#Menu</a></li>
+				<li class="cat-item cat-item-1"><a href="<?php echo site_url()?>">#Inicio</a></li>
 
 				<?php
 				$categories = wp_list_categories( array('hide_empty' => false,   'title_li'=> ""));

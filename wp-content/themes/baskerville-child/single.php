@@ -232,7 +232,7 @@
 
 							<div class="post-author-content">
 
-								<h4><?php the_author_meta('display_name'); ?></h4>
+								<h4><?php if(strlen(get_field('name_author'))==0){ the_author_meta('display_name');}else{ echo get_field('name_author');} ?></h4>
 
 								<p><?php the_author_meta('description'); ?></p>
 
@@ -285,7 +285,9 @@
 						<div class="post-meta">
 
 							<p>Twitter</p>
-							<img class="tw-author" src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/twitter_blanco.svg" alt="">
+
+							<a style="padding:0" href="<?php echo get_field('tw_author')?>"><img class="tw-author" src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/twitter_blanco.svg" alt=""> -></a>
+
 
 							<!-- <p class="post-date"><?php the_time( get_option( 'date_format' ) ); ?></p>
 

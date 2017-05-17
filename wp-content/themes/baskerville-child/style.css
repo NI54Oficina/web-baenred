@@ -1136,12 +1136,17 @@ max-height: 120px;
 }
 
 #sample_slider p{
-  font-family: "AsapRegular";
-  font-size: 14px;
+  font-family: "AsapRegular" !important;
+  font-size: 14px !important;
+  margin-bottom: 0.1em !important;
 }
 
 
 #sample_slider h1{
-  font-size: 48px;
-  font-family: "OswaldBold";
+  font-size: 48px !important;
+  font-family: "OswaldBold" !important;
+}
+
+@media screen and (max-width: 767px){
+  .owl-carousel .owl-item img{max-height:220px}
 }
