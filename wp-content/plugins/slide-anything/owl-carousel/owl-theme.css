@@ -8,6 +8,7 @@
 .owl-theme .owl-controls .owl-pagination {
 	position:absolute;
 	width:100%;
+	    /*width: 50vw;*/
 	padding:10px 0px 0px !important;
 	bottom:-22px !important;
 	text-align:center !important;
@@ -56,6 +57,7 @@
 .autohide-arrows:hover .owl-controls .owl-buttons {
 	display:block !important;
 }
+
 .owl-theme .owl-controls .owl-buttons div {
 	position:absolute;
 	top:50%;

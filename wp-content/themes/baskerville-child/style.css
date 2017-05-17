@@ -1080,7 +1080,9 @@ max-height: 120px;
      padding-top: 30px !important;
     }
 
-
+    #sample_slider{
+          max-width: 300px !important;
+    }
 
   }
 
@@ -1118,3 +1120,28 @@ max-height: 120px;
       background-color: white !important;
       border: 1px solid black !important;
   }
+
+
+  .post-content th, .post-content td {
+       padding: 0 !important;
+     }
+
+
+#sample_slider{
+  max-width: 650px;
+}
+
+#sample_slider p,#sample_slider h1 {
+  text-align: center;
+}
+
+#sample_slider p{
+  font-family: "AsapRegular";
+  font-size: 14px;
+}
+
+
+#sample_slider h1{
+  font-size: 48px;
+  font-family: "OswaldBold";
+}
