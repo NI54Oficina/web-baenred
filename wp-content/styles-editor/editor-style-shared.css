@@ -1,4 +1,4 @@
-/* These styles are used in the backend editor AND in the Theme (frontend) */
+  /* These styles are used in the backend editor AND in the Theme (frontend) */
 
 /* CSS is provided by the theme itself, and modified by any custom css you add to the theme. */
 /* But that CSS is not active when using the backend-editor, so here is a good place to put  */
@@ -38,5 +38,79 @@ strong, .strong, .fett, .bold, .smallBold, .smallerBold { font-weight: bold; }
 /* Append your site-specific styles here */
 
 
-.listTercio .inferiorTest{display:block;border-top:1px solid black;font-size:10px;font-weight:initial;}
-.listTercio {display:inline-block;width:30%;margin:5px;font-size:1.5em;}
+.listTercio .inferiorTest{
+  display:block;
+  border-top:1px solid #5b5b5b;
+  font-weight:initial;
+  font-family: "AsapRegular";
+  font-size: 14px;
+  color: #5b5b5b;
+  margin-top: 15px;
+  }
+
+.listTercio {
+  display:inline-block;
+  width:30%;
+  margin:5px;
+  overflow: hidden;
+  font-family: "OswaldBold";
+  font-size: 36px;
+  color: black;
+  line-height: 40px;
+  }
+
+.frase-destacada p{
+  text-align: center;
+  font-family: "Caveat";
+  font-size: 36px;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /*border-top: 1px solid black;
+  border-bottom: 1px solid black;*/
+}
+
+.frase-destacada:before,.frase-destacada:after  {
+  content : "";
+  position: absolute;
+  left    : 0;
+  right   : 0;
+  top  : 50;
+  height  : 1px;
+  margin: auto;
+  width   : 150px;  /* or 100px */
+  border-bottom:2px solid black;
+}
+
+.tabla-datos{
+  font-family: "AsapRegular";
+}
+.titulo-tabla{
+  color: #df1241;
+  font-size: 36px;
+}
+
+.fila-tabla p:first-child{
+  color:#df1241;
+  text-align: left;
+  display: inline-block;
+  width: 45%;
+  margin-bottom: 5px;
+}
+
+.fila-tabla p:last-child{
+  color: #5b5b5b;
+  text-align: right;
+  display: inline-block;
+  width: 50%;
+
+}
+
+.fila-tabla{
+  border-bottom: 1px solid #989898;
+  padding: 10px 0;
+}
+
+.fila-tabla:nth-child(odd){
+  background-color: #f9f9f9;
+}

@@ -4,3 +4,21 @@
 /* and duplicate any Theme-CSS to make the editor display look more like the real frontend */
 .listTercio{display:block !important;}
 .listTercio .inferiorTest{display:initial !important;border-top:none !important;font-size:10px;font-weight:initial;}
+
+.tabla-datos{
+  border: 1px solid black;
+}
+
+.titulo-tabla{
+  font-weight: bold;
+  color: black;
+}
+
+.fila-tabla{
+  color: gray;
+  border: 1px solid gray;
+}
+
+.fila-tabla:nth-child(even){
+  background-color: #f9f9f9;
+}

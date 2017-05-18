@@ -705,6 +705,12 @@ margin-top: 0;
   margin-left: 5px;
   color:black;
 }
+
+.tags p:hover, .biblio .titulo-biblio:hover{
+  opacity: .5;
+  transition: all .8s;
+}
+
 .tags p a{
   color: black;
 }
@@ -998,6 +1004,11 @@ max-height: 120px;
   padding: 3em 0;
 }
 
+.single .post-meta a:hover {
+    color:inherit !important;
+    opacity: .5;
+}
+
 /*media querys*/
 
   @media screen and (max-width: 1140px){
@@ -1147,6 +1158,18 @@ max-height: 120px;
   font-family: "OswaldBold" !important;
 }
 
+.body-post .post_format-post-format-status .post-content{
+  font-family: "AsapRegular";
+  font-size: 18px;
+}
+
 @media screen and (max-width: 767px){
   .owl-carousel .owl-item img{max-height:220px}
+}
+
+
+/*hidding the first ph*/
+
+.post_format-post-format-status .post-content > p:first-child{
+  display: none;
 }
