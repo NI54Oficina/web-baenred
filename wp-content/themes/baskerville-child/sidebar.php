@@ -106,7 +106,7 @@
 		</style>
 
 		<!-- /widget_recent_entries -->
-
+<?php if(has_tag()){ ?>
 
 		<div class="tags">
 
@@ -116,6 +116,7 @@
 
 		</div>
 
+<?php } ?>
 
 		<?php if(get_field('link_de_notas')){ ?>
 

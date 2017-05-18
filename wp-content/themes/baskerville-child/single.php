@@ -213,7 +213,18 @@
 								$content = $content_parts['extended'];
 								$content = apply_filters('the_content', $content);
 								echo $content;
-							} else {
+							}
+							// else if($format == 'status'){
+							// 			$contentFull=get_the_content();
+							// 			$contentSplit=explode("<!-more->",$contentFull);
+							// 			$beforeMore=$contentSplit[0];
+							// 			for ($i=1; $i<count($contentSplit); $i++) {
+							// 			$afterMore.=$contentSplit[$i];
+							// 			}
+							//
+							// 			echo $contentSplit[1] ;
+							// }
+							else {
 								the_content();
 							}
 
