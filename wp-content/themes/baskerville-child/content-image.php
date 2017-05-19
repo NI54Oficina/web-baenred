@@ -30,7 +30,7 @@
 
             for($j=0;$j< count($hashtags); $j++ ){
               if(strlen($hashtags[$j])>1){
-                echo "<a class='hash-title' href='?s=".$hashtags[$j]."' >#".$hashtags[$j]."</a>";
+                echo "<span class='hash-title' >#".$hashtags[$j]."</span>";
               }
 
             }
@@ -54,11 +54,11 @@
 
 		<?php if( is_sticky() ) { ?> <span class="sticky-post"><?php _e('Sticky post', 'baskerville'); ?></span> <?php } ?>
 
-		<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+		<!-- <a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"> -->
 
 			<?php the_post_thumbnail('post-thumbnail'); ?>
 
-		</a>
+		<!-- </a> -->
 
 	</div> <!-- /featured-media -->
 

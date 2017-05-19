@@ -20,7 +20,7 @@
 
              for($j=0;$j< count($hashtags); $j++ ){
                if(strlen($hashtags[$j])>1){
-                 echo "<a class='hash-title' href='?s=".$hashtags[$j]."' >#".$hashtags[$j]."</a>";
+                 echo "<span class='hash-title' >#".$hashtags[$j]."</span>";
                }
 
              }

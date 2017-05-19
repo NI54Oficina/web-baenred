@@ -27,7 +27,7 @@
 
              for($j=0;$j< count($hashtags); $j++ ){
                if(strlen($hashtags[$j])>1){
-                 echo "<a class='hash-title' href='?s=".$hashtags[$j]."' >#".$hashtags[$j]."</a>";
+                 echo "<span class='hash-title' >#".$hashtags[$j]."</span>";
                }
 
              }
@@ -43,13 +43,13 @@
      ?>
      </h2>
 </div> <!-- /post-header -->
-<a href="<?php the_permalink(); ?>">
+<!-- <a href="<?php the_permalink(); ?>"> -->
 <div class="featured-media">
 
 	<?php baskerville_flexslider('post-thumbnail'); ?>
 
 </div> <!-- /featured-media -->
-  </a>
+  <!-- </a> -->
 <?php if($post->post_content != "") : ?>
 
 

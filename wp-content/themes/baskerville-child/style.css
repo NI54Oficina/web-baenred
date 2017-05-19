@@ -313,6 +313,18 @@ body{
   cursor: pointer !important;
 }
 
+.header .logo img {
+    max-height: 200px;
+    width: auto;
+}
+
+.blog-description{
+  font-size: 1.4em;
+}
+
+.header {
+    padding: 45px;
+}
 
 
 
@@ -435,8 +447,8 @@ section.container.builder{
   /*.section-title-2nd{display:inline-block;line-height:1.3;text-transform:uppercase;letter-spacing:0.08em;border-bottom-width:2px;border-bottom-style:solid;padding-bottom:2px}*/
   .section-title a:hover {font-size: 1.5em;}
 
-  .st-overlay-link{ background-color: rgba(0,0,0,.5);}
-    .st-overlay-link:hover{ background-color: rgba(0,0,0,0);}
+  .st-overlay-link{ background-color: rgba(0,0,0,.7);}
+    .st-overlay-link:hover{ background-color: rgba(0,0,0,.2); transition: all 1s;}
   .st-overlay:hover,.sc-item:hover .st-overlay{background-color:rgba(255,255,255,0.3)}
   /*.st-overlay:hover .section-title a{text-decoration:underline}*/
     .st-title-wrap{position:absolute;width:80%;left:10%;right:10%;bottom:15%}
@@ -590,9 +602,9 @@ section.container.builder{
   color:#df1241 !important;
 }
 
-.hash-title:hover{
+/*.hash-title:hover{
   color: #a90e31 !important;
-}
+}*/
 
 .post-seccion{
   font-family: 'Caveat';
@@ -738,6 +750,10 @@ margin-top: 0;
 
 .no-sidebar-template .section-inner{
   padding-top: 50px;
+}
+
+.format-image .post-excerpt {
+    font-size: 0.95em;
 }
 
 /*
@@ -1137,6 +1153,9 @@ max-height: 120px;
        padding: 0 !important;
      }
 
+     .single .post-content {
+         padding-bottom: 5% !important;
+     }
 
 #sample_slider{
   max-width: 650px;
@@ -1165,6 +1184,20 @@ max-height: 120px;
 
 @media screen and (max-width: 767px){
   .owl-carousel .owl-item img{max-height:220px}
+
+  .post-container {
+    margin-top: 0;
+    padding: 15px 1.5% 15px 1.5% !important;
+  }
+
+  .ss-slider .st-title-wrap{
+    position: absolute;
+      overflow: hidden;
+    top: 0;
+  }
+  .section-title .st-wrapped .st-large .st-bold{
+    overflow: hidden;
+  }
 }
 
 
@@ -1172,4 +1205,9 @@ max-height: 120px;
 
 .post_format-post-format-status .post-content > p:first-child{
   display: none;
+}
+
+.post_format-post-format-status .post-content {
+  color:white;
+  background-color: #2b3542;
 }

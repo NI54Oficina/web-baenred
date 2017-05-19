@@ -137,7 +137,7 @@
 
  						?>
 						<div class="">
-							<a href="<?php echo $result[1] ?>"><p class="titulo-biblio"><?php echo $result[0] ?></p></a>
+							<a href="<?php echo $result[1] ?>" target="_blank"><p class="titulo-biblio"><?php echo $result[0] ?></p></a>
 
 						</div>
 						<?php }} ?>

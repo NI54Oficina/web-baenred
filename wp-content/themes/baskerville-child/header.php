@@ -104,9 +104,10 @@
 				$cat= explode("</li>", $categories);
 
 				echo $cat[2];
-				echo $cat[3];
+				echo $cat[4];
 				echo $cat[0];
 				echo $cat[1];
+				echo $cat[3];
 
 
 

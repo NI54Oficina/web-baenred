@@ -11,7 +11,7 @@ $(document).ready( function(){
 	change_class();
 
 		SameHeight();
-
+		unic_height();
 
 
 
@@ -104,6 +104,25 @@ function SameHeight(){
     $("[hid="+auxId+"]").css("height",hidHeight+"px");
     auxId++;
   }
+}
+
+function unic_height(){
+  //console.log("entra same height");
+
+  // var auxId=1;
+  // while($( ".listTercio" ).length){
+    var hidHeight=0;
+    //ResetHeight();
+    $(".listTercio").each(function(){
+      if($(this).innerHeight()>hidHeight){
+        hidHeight= $(this).innerHeight();
+      }
+
+    });
+    //console.log(hidHeight);
+    $(".listTercio").css("height",hidHeight+"px");
+    // auxId++;
+  // }
 }
 
 

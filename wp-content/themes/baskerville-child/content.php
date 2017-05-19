@@ -28,7 +28,7 @@
 
           for($j=0;$j< count($hashtags); $j++ ){
             if(strlen($hashtags[$j])>1){
-              echo "<a class='hash-title' href='?s=".$hashtags[$j]."' >#".$hashtags[$j]."</a>";
+              echo "<span class='hash-title' >#".$hashtags[$j]."</span>";
             }
 
           }
@@ -61,7 +61,7 @@
 	</div> <!-- /featured-media -->
 
 <?php endif; ?>
-<a href="<?php the_permalink(); ?>">
+
 <div class="post-excerpt">
 
 
@@ -69,7 +69,7 @@
 	<?php the_excerpt('100'); ?>
 
 </div> <!-- /post-excerpt -->
-</a>
+
 <?php baskerville_meta_child(); ?>
 
 <div class="clear"></div>
