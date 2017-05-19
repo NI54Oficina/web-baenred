@@ -6,7 +6,7 @@ function theme_add_bootstrap() {
 	wp_enqueue_style( 'bootstrap-css', site_url() . '/bootstrap/css/bootstrap.min.css' );
 	wp_enqueue_script( 'bootstrap-js', site_url() . '/bootstrap/js/bootstrap.min.js');
 	wp_enqueue_script( 'script-js', site_url() . '/script.js');
-	wp_enqueue_script( 'fittext-js', site_url() . '/jquery.fittext.js');
+	// wp_enqueue_script( 'fittext-js', site_url() . '/jquery.fittext.js');
 
 	wp_enqueue_script( 'lightslider-js', site_url() . '/lightslider.js');
 	wp_enqueue_script( 'tipeo-js', site_url() . '/tipeo.js');
