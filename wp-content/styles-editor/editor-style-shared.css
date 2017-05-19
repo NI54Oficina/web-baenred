@@ -45,6 +45,7 @@ strong, .strong, .fett, .bold, .smallBold, .smallerBold { font-weight: bold; }
   font-family: "AsapRegular";
   font-size: 14px;
   color: #5b5b5b;
+  line-height: 20px;
   margin-top: 15px;
   }
 
@@ -52,6 +53,7 @@ strong, .strong, .fett, .bold, .smallBold, .smallerBold { font-weight: bold; }
   display:inline-block;
   width:30%;
   margin:5px;
+  margin-bottom: 15px;
   overflow: hidden;
   font-family: "OswaldBold";
   font-size: 36px;
@@ -113,4 +115,13 @@ strong, .strong, .fett, .bold, .smallBold, .smallerBold { font-weight: bold; }
 
 .fila-tabla:nth-child(odd){
   background-color: #f9f9f9;
+}
+
+
+@media screen and (max-width: 767px){
+  .listTercio {
+
+    width:45%;
+
+    }
 }
