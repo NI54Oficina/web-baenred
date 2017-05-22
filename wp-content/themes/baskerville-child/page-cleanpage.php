@@ -17,22 +17,22 @@
 	}else{
 		$category=0;
 	}
-	
+
     $myposts = get_posts( array(
         'posts_per_page' => 5,
         'offset'         => $offset,
 		"category" => $category
     ) );
- 
+
     if ( $myposts ) {
-        foreach ( $myposts as $post ) : 
+        foreach ( $myposts as $post ) :
             setup_postdata( $post ); ?>
 			<div class="post-container">
 
 				<!-- <a href="<?php the_permalink(); ?>" style="position:absolute; height:100%; width:100%"></a> -->
 
 
-			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<div id="post-<?php the_ID(); ?>" onclick="add_link('<?php the_permalink(); ?>')" <?php post_class(); ?>>
 					<?php get_template_part( 'content', get_post_format() ); ?>
 
 				</div> <!-- /post -->

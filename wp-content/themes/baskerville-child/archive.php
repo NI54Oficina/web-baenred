@@ -43,7 +43,7 @@
 
 					<div class="post-container">
 
-						<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+						<div id="post-<?php the_ID(); ?>" onclick="add_link('<?php the_permalink(); ?>')" <?php post_class(); ?>>
 
 							<?php get_template_part( 'content', get_post_format() ); ?>
 
