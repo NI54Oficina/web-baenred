@@ -1,3 +1,13 @@
+
+<?php if(true){ ?>
+<div class="comments">
+
+<?php echo do_shortcode('[fbcomments]'); ?>
+</div>
+<style>.little-margin{margin-left:5px;}</style>
+<?php } ?>
+
+<?php if(false){ ?>
 <?php if ( post_password_required() )
 	return;
 ?>
@@ -105,3 +115,4 @@
 	comment_form($comments_args);
 
 	?>
+<?php } ?>
