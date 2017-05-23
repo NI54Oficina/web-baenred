@@ -215,7 +215,7 @@
 
 							</div>
 
-							<div class="post-container">
+							<div class="post-container widget widget-content">
 									<div class="twitter-container">
 										<!-- widget twitter -->
 										<?php echo do_shortcode("[custom-twitter-feeds]"); ?>
@@ -294,7 +294,7 @@
 
 									</div>
 									<br>
-									<div class="twitter-container">
+									<div class="twitter-container widget widget-content" style="border:none;">
 										<!-- widget twitter -->
 										<?php echo do_shortcode("[custom-twitter-feeds]"); ?>
 										<!-- widget twitter -->

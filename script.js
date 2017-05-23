@@ -51,11 +51,16 @@ $(".load-post").fadeIn();
 	data=data.replace(/\r?\n|\r/g,"").replace(/\t/g,'');
 
 	data= $(data.trim());
+	console.log(data);
 
   $blocks.append( data );
   SameHeight();
     $blocks.masonry( 'appended', data );
-
+	setTimeout(function(){$blocks.masonry();},500);
+	setTimeout(function(){$blocks.masonry();},1000);
+	setTimeout(function(){$blocks.masonry();},2000);
+	setTimeout(function(){$blocks.masonry();},5000);
+	setTimeout(function(){$blocks.masonry();},10000);
 
 		if(data.length==0){
 			$(".morePost").fadeOut();

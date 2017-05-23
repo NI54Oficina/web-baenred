@@ -567,16 +567,19 @@ section.container.builder{
 
 }
 
-.widget .widget-content p{
+.widget .widget-content p,#ctf .ctf-out-of-tweets p{
   border-bottom: 1px solid black;
   color: black;
   line-height: 24px;
+  font-size:15.4px;
 }
 
 .widget .widget-content p:last-child{
   border-bottom: none;
   color: black;
 }
+
+
 
 .widget .widget-content h3{
   font-size: 1.8em;

@@ -616,55 +616,68 @@
 #ctf.ctf-super-narrow .ctf-quoted-tweet {
     margin-left: 0;
 }
-#ctf.ctf-super-narrow .ctf-author-box{
+#ctf.ctf-narrow .ctf-context,
+#ctf.ctf-narrow .ctf-tweet-content,
+#ctf.ctf-narrow .ctf-tweet-actions,
+#ctf.ctf-narrow .ctf-quoted-tweet {
+    margin-left: 0;
+}
+#ctf.ctf-super-narrow .ctf-author-box,#ctf.ctf-narrow .ctf-author-box{
     min-height: 32px;
     margin-bottom: 2px;
 }
 #ctf.ctf-super-narrow .ctf-author-avatar,
-#ctf.ctf-super-narrow .ctf-author-avatar img{
+#ctf.ctf-super-narrow .ctf-author-avatar img,#ctf.ctf-narrow .ctf-author-avatar img,#ctf.ctf-narrow .ctf-author-avatar{
     width: 32px;
     height: 32px;
 }
-#ctf.ctf-super-narrow .ctf-author-box{
+#ctf.ctf-super-narrow .ctf-author-box,#ctf.ctf-narrow .ctf-author-box{
     margin-left: 38px;
     float: left;
     clear: both;
 }
-#ctf.ctf-super-narrow .ctf-author-avatar {
+
+#ctf.ctf-narrow .ctf-tweet-content{
+	padding-top:5px;
+	padding-bottom:15px;
+}
+#ctf.ctf-super-narrow .ctf-author-avatar,#ctf.ctf-narrow .ctf-author-avatar {
     margin-left: -38px;
     margin-top: 0;
 }
 #ctf.ctf-super-narrow .ctf-author-screenname,
-#ctf.ctf-super-narrow .ctf-screename-sep {
+#ctf.ctf-super-narrow .ctf-screename-sep, #ctf.ctf-narrow .ctf-author-screenname,
+#ctf.ctf-narrow .ctf-screename-sep {
     display: none;
 }
-#ctf.ctf-super-narrow .ctf-context {
+#ctf.ctf-super-narrow .ctf-context, #ctf.ctf-narrow .ctf-context {
     padding-bottom: 5px;
 }
-#ctf.ctf-super-narrow .ctf-author-name{
+#ctf.ctf-super-narrow .ctf-author-name,#ctf.ctf-narrow .ctf-author-name{
     display: inline-block;
+	font-size:15.3px;
 }
-#ctf.ctf-super-narrow .ctf-tweet-content{
+#ctf.ctf-super-narrow .ctf-tweet-content,#ctf.ctf-narrow .ctf-tweet-content{
     float: left;
     clear: both;
 }
-#ctf.ctf-super-narrow .ctf-credit-link{
+#ctf.ctf-super-narrow .ctf-credit-link,#ctf.ctf-super-narrow .ctf-credit-link,#ctf.ctf--narrow .ctf-credit-link,#ctf.ctf-narrow .ctf-credit-link{
     font-size: 10px;
 }
-#ctf.ctf-super-narrow .ctf-header-bio{
+#ctf.ctf-super-narrow .ctf-header-bio,#ctf.ctf-narrow .ctf-header-bio{
     margin: 0 !important;
     padding-top: 5px;
 }
-#ctf.ctf-super-narrow .ctf-header-user{
+#ctf.ctf-super-narrow .ctf-header-user,#ctf.ctf-narrow .ctf-header-user{
     min-height: 48px;
 }
-#ctf.ctf-super-narrow .ctf-header-text{
+#ctf.ctf-super-narrow .ctf-header-text,#ctf.ctf-narrow .ctf-header-text{
     padding-top: 10px;
 }
-#ctf.ctf-super-narrow .ctf-header-follow{
+#ctf.ctf-super-narrow .ctf-header-follow,#ctf.ctf-narrow .ctf-header-follow{
     margin-top: 5px;
 }
-#ctf.ctf-super-narrow .ctf-more span{
+#ctf.ctf-super-narrow .ctf-more span,#ctf.ctf-narrow .ctf-more span{
     display: block;
     margin-top: 3px;
 }
