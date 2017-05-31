@@ -122,7 +122,7 @@
 
 				<div class="biblio">
 
-					<h1>BIBLIO</h1>
+					<h1>BIBLIO #ParaSaberMas</h1>
 
 						<?php
 

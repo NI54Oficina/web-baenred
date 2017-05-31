@@ -31,7 +31,11 @@
 	</div>
 	 <!-- /page-title -->
 
+
+
 	<div class="content section-inner">
+
+
 
 		<?php if ( have_posts() ) : ?>
 
@@ -75,7 +79,12 @@
 
 		<?php endif; ?>
 
+
+
+
 	</div> <!-- /content -->
+
+
 
 	<div style="padding: 50px 0">
 		<div class="morePost" style="text-align:center; position:absolute; left:0; right:0; margin:auto; width: 50px; height:50px;background-image:url('<?php echo site_url(); ?>/wp-content/themes/baskerville-child/images/mas_articulos.svg'); background-repeat:no-repeat; background-position:center; cursor:pointer"></div>
