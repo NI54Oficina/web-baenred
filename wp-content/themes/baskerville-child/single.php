@@ -230,7 +230,8 @@
 
 							wp_link_pages();
 						?>
-
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
 						<div class="clear"></div>
 
 					</div> <!-- /post-content -->
@@ -408,6 +409,36 @@
 
 				</div>
 				<!-- tags -->
+
+				<!-- biblio -->
+				<?php if(get_field('link_de_notas')){ ?>
+
+						<div class="biblio hidden-lg hidden-md">
+
+							<h1>BIBLIO</h1>
+
+								<?php
+
+								$array=get_field('link_de_notas');
+
+								$links=explode(";", $array);
+								foreach ($links as $l) {
+									$result=explode("::", $l);
+
+
+									if( count($result[1])!=0 ){
+
+								?>
+								<div class="">
+									<a href="<?php echo $result[1] ?>" target="_blank"><p class="titulo-biblio"><?php echo $result[0] ?></p></a>
+
+								</div>
+								<?php }} ?>
+
+
+						</div>
+				<?php } ?>
+				<!-- biblio -->
 
 
 		<div class="clear"></div>
