@@ -1214,3 +1214,12 @@ max-height: 120px;
   color:white;
   background-color: #2b3542;
 }
+
+
+.fb_comments_count, ._4qba{
+  display: none !important;
+}
+
+.type-info-author::first-letter{
+  text-transform: uppercase;
+}

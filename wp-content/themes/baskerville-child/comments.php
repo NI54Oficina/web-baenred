@@ -22,8 +22,11 @@
 
 				<h2 class="comments-title fleft">
 
-					<?php echo count($wp_query->comments_by_type[comment]) . ' ';
-					echo _n( 'Comment', 'Comments', count($wp_query->comments_by_type[comment]), 'baskerville' ); ?>
+					Comentarios
+
+					<?php
+					// echo count($wp_query->comments_by_type[comment]) . ' ';
+					//echo _n( 'Comment', 'Comments', count($wp_query->comments_by_type[comment]), 'baskerville' ); ?>
 
 				</h2>
 

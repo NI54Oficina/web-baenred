@@ -295,10 +295,11 @@
 						</div> <!-- /post-author -->
 
 						<div class="post-meta">
+							<p class="type-info-author">
+								<?php echo get_field("blog_tw") ?>
+							</p>
 
-							<p>Twitter</p>
-
-							<a style="padding:0" href="<?php echo get_field('tw_author')?>"><img class="tw-author" src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/twitter_blanco.svg" alt=""> -></a>
+							<a style="padding:0" href="<?php echo get_field('tw_author')?>"><img class="tw-author" src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/<?php echo get_field("blog_tw") ?>_blanco.svg" alt=""> -></a>
 
 
 							<!-- <p class="post-date"><?php the_time( get_option( 'date_format' ) ); ?></p>
