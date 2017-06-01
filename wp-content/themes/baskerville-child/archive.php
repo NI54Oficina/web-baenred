@@ -37,13 +37,14 @@
 
 
 
-		<?php if ( have_posts() ) : ?>
+		<?php $count=1;if ( have_posts() ) : ?>
 
 			<div class="posts">
 
+
 				<?php rewind_posts(); ?>
 
-				<?php while ( have_posts() ) : the_post(); ?>
+				<?php while ( have_posts() ) : the_post();$count++; ?>
 
 					<div class="post-container">
 
@@ -57,9 +58,106 @@
 
 					</div>
 
-				<?php endwhile; ?>
+					<?php if($count==3){?>
+
+						<!-- corte para que tire los mas visto -->
+						<div class="post-container">
+
+
+						<div class="widget-home widget widget_recent_entries">
+
+							<span class="sticky-eye"><?php _e('Sticky post', 'baskerville'); ?></span>
+
+								<div class="widget-content">
+
+										<h3 class="widget-title">LO MÁS VISITADO</h3>
+
+
+								<?php
+									$args = array( 'numberposts' => '4', 'post_status' => 'publish' );
+									$recent_posts = wp_get_recent_posts( $args );
+									foreach( $recent_posts as $recent ){
+										echo '<p><a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </p> ';
+
+
+									}
+								?>
+
+
+						</div>
+
+						<div class="clear"></div>
+
+
+						</div>
+
+
+
+
+						<div class="twitter-container widget widget-content" style="border:none;">
+							<!-- widget twitter -->
+							<?php echo do_shortcode("[custom-twitter-feeds]"); ?>
+							<!-- widget twitter -->
+						</div>
+
+						</div>
+
+					<?php }   ?>
+
+				<?php endwhile;
+
+
+
+				if($count<3){?>
+
+					<div class="post-container">
+
+
+					<div class="widget-home widget widget_recent_entries">
+
+						<span class="sticky-eye"><?php _e('Sticky post', 'baskerville'); ?></span>
+
+							<div class="widget-content">
+
+									<h3 class="widget-title">LO MÁS VISITADO</h3>
+
+
+							<?php
+								$args = array( 'numberposts' => '4', 'post_status' => 'publish' );
+								$recent_posts = wp_get_recent_posts( $args );
+								foreach( $recent_posts as $recent ){
+									echo '<p><a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </p> ';
+
+
+								}
+							?>
+
+
+					</div>
+
+					<div class="clear"></div>
+
+
+					</div>
+
+
+
+
+					<div class="twitter-container widget widget-content" style="border:none;">
+						<!-- widget twitter -->
+						<?php echo do_shortcode("[custom-twitter-feeds]"); ?>
+						<!-- widget twitter -->
+					</div>
+
+					</div>
+
+					<?php } ?>
 
 			</div> <!-- /posts -->
+
+
+
+
 
 			<?php if ( $wp_query->max_num_pages > 1 ) : ?>
 
@@ -83,6 +181,8 @@
 
 
 	</div> <!-- /content -->
+
+
 
 
 

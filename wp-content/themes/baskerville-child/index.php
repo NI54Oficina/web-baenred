@@ -181,47 +181,43 @@
 
 							<?php if($count==3){?>
 
-								<!-- corte para que tire los mas visto -->
 								<div class="post-container">
 
 
-								<div class="widget-home widget widget_recent_entries">
+									<div class="widget-home widget widget_recent_entries">
 
-									<span class="sticky-eye"><?php _e('Sticky post', 'baskerville'); ?></span>
+										<span class="sticky-eye"><?php _e('Sticky post', 'baskerville'); ?></span>
 
-										<div class="widget-content">
+											<div class="widget-content">
 
-												<h3 class="widget-title">LO MÁS VISITADO</h3>
-
-
-										<?php
-											$args = array( 'numberposts' => '4', 'post_status' => 'publish' );
-											$recent_posts = wp_get_recent_posts( $args );
-											foreach( $recent_posts as $recent ){
-												echo '<p><a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </p> ';
+													<h3 class="widget-title">LO MÁS VISITADO</h3>
 
 
-											}
-										?>
+											<?php
+												$args = array( 'numberposts' => '4', 'post_status' => 'publish' );
+												$recent_posts = wp_get_recent_posts( $args );
+												foreach( $recent_posts as $recent ){
+													echo '<p><a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </p> ';
 
 
-								</div>
-
-								<div class="clear"></div>
-
-
-								</div>
+												}
+											?>
 
 
-							</div>
+										</div>
 
-							<div class="post-container widget widget-content">
-									<div class="twitter-container">
+										<div class="clear"></div>
+
+
+									</div>
+									<br>
+									<div class="twitter-container widget widget-content" style="border:none;">
 										<!-- widget twitter -->
 										<?php echo do_shortcode("[custom-twitter-feeds]"); ?>
 										<!-- widget twitter -->
 									</div>
-									</div>
+
+								</div>
 
 							<?php }  	} ?>
 

@@ -1224,3 +1224,9 @@ max-height: 120px;
 .type-info-author::first-letter{
   text-transform: uppercase;
 }
+
+
+.post-content p{
+  margin-bottom: 0;
+  padding-bottom: 1.1em;
+}

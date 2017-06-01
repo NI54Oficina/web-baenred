@@ -299,9 +299,10 @@
 								<?php echo get_field("blog_tw") ?>
 							</p>
 
+							<?php  if(strlen(get_field("blog_tw"))!=0){ ?>
 							<a style="padding:0" href="<?php echo get_field('tw_author')?>"><img class="tw-author" src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/<?php echo get_field("blog_tw") ?>_blanco.svg" alt=""> -></a>
 
-
+							<?php } ?>
 							<!-- <p class="post-date"><?php the_time( get_option( 'date_format' ) ); ?></p>
 
 							<?php if( function_exists('zilla_likes') ) zilla_likes(); ?>
@@ -378,19 +379,62 @@
 
 										<span class="sticky-eye"><?php _e('Sticky post', 'baskerville'); ?></span>
 
-			            <h3 class="widget-title">LO MÁS VISITADO</h3>
+										<h3 class="widget-title">
 
-			            <ul>
-							<?php
-								$args = array( 'numberposts' => '4', 'post_status' => 'publish' );
-								$recent_posts = wp_get_recent_posts( $args );
-								foreach( $recent_posts as $recent ){
-									echo '<p><a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </p> ';
-									// echo '<li><a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </li> ';
+											<?php
 
-								}
-							?>
-						</ul>
+											$section;
+
+												$titles=["Enterate Más", "Más mapeo", "Más DanLaNota", "Enroscate Más", "Más Letras Sueltas"];
+								        $post_categories = wp_get_post_categories( get_the_ID() );
+								        foreach($post_categories as $c){
+
+
+								        $cat = get_category( $c );
+												$section=$c;
+
+
+									        switch ($cat->name) {
+									        	case '#Enterate':
+									        		echo $titles[0];
+
+									        		break;
+
+														case '#Mapeo':
+															echo $titles[1];
+									        		break;
+
+														case '#DanLaNota':
+														echo $titles[2];
+								        		break;
+
+														case '#Enroscate':
+														echo $titles[3];
+														break;
+
+														case '#LetrasSueltas':
+														echo $titles[4];
+														break;
+									        }
+								        }
+
+												echo "</h3><ul>";
+
+									$args = array( 'numberposts' => '4', 'post_status' => 'publish', "category"=>$section );
+									$recent_posts = wp_get_recent_posts( $args );
+
+
+
+									foreach( $recent_posts as $recent ){
+										$post_categories = wp_get_post_categories( $recent["ID"]);
+										$cat = get_category( $post_categories[0] );
+
+										echo '<p><a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </p> ';
+										// echo '<li><a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </li> ';
+
+									}
+								?>
+							</ul>
 
 					</div>
 
