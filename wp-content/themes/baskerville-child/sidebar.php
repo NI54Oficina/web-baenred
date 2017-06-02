@@ -40,9 +40,16 @@
 
 								<?php
 
+								//if(post_type()!="page"){
+
+
+
+
+
 								$section;
 
-									$titles=["Enterate Más", "Más mapeo", "Más DanLaNota", "Enroscate Más", "Más Letras Sueltas"];
+
+									$titles=["Enterate Más", "Más mapeo", "Más Dan La Nota", "Enroscate Más", "Más Letras Sueltas"];
 					        $post_categories = wp_get_post_categories( get_the_ID() );
 					        foreach($post_categories as $c){
 
@@ -81,6 +88,16 @@
 						$recent_posts = wp_get_recent_posts( $args );
 
 
+			//		}else{
+				//		echo "Lo Más Visto</h3><ul>";
+
+				//		$args = array( 'numberposts' => '4', 'post_status' => 'publish' );
+				//		$recent_posts = wp_get_recent_posts( $args );
+
+
+					//}
+
+
 
 						foreach( $recent_posts as $recent ){
 							$post_categories = wp_get_post_categories( $recent["ID"]);
@@ -90,6 +107,12 @@
 							// echo '<li><a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </li> ';
 
 						}
+
+
+
+
+
+
 					?>
 				</ul>
 
