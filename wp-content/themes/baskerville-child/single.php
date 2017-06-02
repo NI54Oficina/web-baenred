@@ -416,7 +416,7 @@
 
 						<div class="biblio hidden-lg hidden-md">
 
-							<h1>BIBLIO #ParaSaberMas</h1>
+							<h1>Biblio #ParaSaberMás</h1>
 
 								<?php
 
