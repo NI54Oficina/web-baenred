@@ -236,7 +236,7 @@
 
 					</div> <!-- /post-content -->
 
-					<?php  $post = get_post(); if( comments_open() && $post->post_type!='menu') : ?>
+
 
 					<div class="post-meta-container">
 
@@ -347,7 +347,7 @@
 
 					</div> <!-- /post-meta-container -->
 
-
+					<?php  $post = get_post(); if( comments_open() && $post->post_type!='menu') : ?>
 
 					<?php comments_template( '', true ); ?>
 
