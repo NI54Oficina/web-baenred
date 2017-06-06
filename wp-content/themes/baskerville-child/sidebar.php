@@ -40,7 +40,9 @@
 
 								<?php
 
-								//if(post_type()!="page"){
+								if(get_post_type()!="menu"){
+
+
 
 
 
@@ -88,14 +90,7 @@
 						$recent_posts = wp_get_recent_posts( $args );
 
 
-			//		}else{
-				//		echo "Lo Más Visto</h3><ul>";
 
-				//		$args = array( 'numberposts' => '4', 'post_status' => 'publish' );
-				//		$recent_posts = wp_get_recent_posts( $args );
-
-
-					//}
 
 
 
@@ -108,6 +103,21 @@
 
 						}
 
+								}else{
+									echo "Lo Más Visto</h3><ul>";
+
+									$args = array( 'numberposts' => '4', 'post_status' => 'publish' );
+									$recent_posts = wp_get_recent_posts( $args );
+
+										foreach( $recent_posts as $recent ){
+											$post_categories = wp_get_post_categories( $recent["ID"]);
+											$cat = get_category( $post_categories[0] );
+
+											echo '<p><a href="' . get_permalink($recent["ID"]) . '" title="'.esc_attr($recent["post_title"]).'" >' .   $recent["post_title"].'</a> </p> ';
+
+										}
+
+								}
 
 
 

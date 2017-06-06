@@ -126,8 +126,11 @@ strong, .strong, .fett, .bold, .smallBold, .smallerBold { font-weight: bold; }
 
     }
 
-    .fila-tabla p:first-child{
-      width: 40%;
+
+    .fila-tabla p{
+      width: 100% !important;
+      text-align: left !important;
+      margin-left: 15px;
     }
 
 }
