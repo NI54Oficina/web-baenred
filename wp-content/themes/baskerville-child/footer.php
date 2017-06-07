@@ -26,7 +26,7 @@
 		<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 footer-text-right" style="background-color:#262626" hid="1">
 
 			<p class="colored"> */ Publicitá /*</p>
-			<p class="asap-regular"> Mandanos un mail a baenred@gmail.com </p>
+			<p class="asap-regular"> Mandanos un mail a comercial@baenred.com </p>
 
 
 		</div>

@@ -53,8 +53,13 @@ c/*
 
 body{
   background-color: white !important;
+
 }
 
+body.home, body.archive, body.post-template-default{
+
+ background: repeating-linear-gradient(-45deg, #f3f3f3, #f3f3f3 12px, #ededed  3px, #ededed   17px);
+}
 /*COMIENZA HEADER*/
 
 .footer-container{
@@ -556,7 +561,7 @@ section.container.builder{
   font-family: 'OswaldRegular';
   margin-top: 3.25%;
   /*margin-top: 20%;*/
-  background-color: transparent;
+  background-color: white;
 }
 
 
