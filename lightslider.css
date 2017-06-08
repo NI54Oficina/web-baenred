@@ -21,6 +21,12 @@
   height: 20px !important;
       margin-bottom: 15px !important;
 }
+
+#lightSlider p{
+  text-align: center;
+    padding-left: 100px;
+  padding-right: 100px
+}
 .lightSlider {
     overflow: hidden;
     margin: 0;

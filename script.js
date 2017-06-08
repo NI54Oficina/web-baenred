@@ -144,7 +144,7 @@ function lightsliderTest(){
 
     $("#lightSlider").lightSlider({
         item: 2,
-        autoWidth: false,
+        autoWidth: true,
         slideMove: 1, // slidemove will be 1 if loop is true
         slideMargin: 20,
 
@@ -154,7 +154,7 @@ function lightsliderTest(){
         cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
         easing: 'linear', //'for jquery animation',////
 
-        speed: 1000, //ms'
+        speed: 900, //ms'
         auto: true,
         loop: true,
         slideEndAnimation:false,

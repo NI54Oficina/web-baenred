@@ -19,7 +19,7 @@
 	}
 
     $myposts = get_posts( array(
-        'posts_per_page' => 5,
+        'posts_per_page' => 10,
         'offset'         => $offset,
 		"category" => $category
     ) );
