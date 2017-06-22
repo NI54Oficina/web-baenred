@@ -49,10 +49,25 @@
 								<div class="slider-container slider-number-3 owl-carousel">
 
 
-									<?php if (have_posts()) : ?>
+									<?php
 
-											<?php while (have_posts()) : the_post();
-												if(get_post_format()=='image' &&  get_field('publicado') == 'si'){?>
+									$all_image_post= get_posts( array('numberposts' => -1) );
+									 //if (have_posts()) :
+									 if ($all_image_post){
+
+
+										 foreach ($all_image_post as $post) {
+										 	  setup_postdata( $post );
+
+												if(get_post_format()=='image' &&  get_field('publicado') == 'si'){
+
+									 ?>
+
+
+
+											<?php
+											//while (have_posts()) : the_post();
+												?>
 
 													<div class="item">
 															<figure class="sc-thumbnail">
@@ -93,10 +108,13 @@
 															</figure>
 													</div>
 
+													<?php } ?>
 
-											<?php } endwhile; ?>
+											<?php }
 
-									<?php endif; ?>
+											wp_reset_postdata(); ?>
+
+									<?php } ?>
 
 
 
