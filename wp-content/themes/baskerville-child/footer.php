@@ -168,9 +168,9 @@
 
 						 <img class="main-logo-footer" src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/logo_footer.png" alt="">
 
-						 <a href="#"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/you_tube_blanco.svg" alt=""></a>
+						 <a href="https://www.youtube.com/channel/UC2hRe8rUbMr5fAedtxdC78w"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/you_tube_blanco.svg" alt=""></a>
 
-						 <a href="https://www.instagram.com/baEnRed/"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/instagram_blanco.svg" alt=""></a>
+						 <a href="https://www.instagram.com/baenredok/"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/instagram_blanco.svg" alt=""></a>
 
 
 						 <a class="tothetop oswald-bold" title="<?php _e('To the top', 'baskerville'); ?>" href="#">UP &uarr;</a>
