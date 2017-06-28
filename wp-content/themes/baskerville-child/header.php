@@ -89,8 +89,8 @@
 				<div class="link-social hidden-lg hidden-md hidden-sm">
 					<a  href="https://www.fb.com/BAenRedOK"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/facebook.svg" alt=""></a>
 					<a  href="https://twitter.com/BAenredOK"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/twitter.svg" alt=""></a>
-					<a  href="#"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/youtube.svg" alt=""></a>
-					<a  href="https://www.instagram.com/baEnRed/"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/instagram.svg" alt=""></a>
+					<a  href="https://www.youtube.com/channel/UC2hRe8rUbMr5fAedtxdC78w"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/youtube.svg" alt=""></a>
+					<a  href="https://www.instagram.com/baenredok/"><img src="<?php echo site_url()?>/wp-content/themes/baskerville-child/images/instagram.svg" alt=""></a>
 				</div>
 
 

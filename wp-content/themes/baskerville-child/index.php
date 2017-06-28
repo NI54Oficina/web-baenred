@@ -230,6 +230,7 @@
 									</div>
 									<br>
 									<div class="twitter-container widget widget-content" style="border:none;">
+										
 										<!-- widget twitter -->
 										<?php echo do_shortcode("[custom-twitter-feeds]"); ?>
 										<!-- widget twitter -->
@@ -308,6 +309,13 @@
 
 									</div>
 									<br>
+									<script type='text/javascript' src='http://v2.envialosimple.com/form/show/AdministratorID/102048/FormID/1/format/widget'></script>
+									<style>.emailMarketingSubscriptionFormContainer.formID_subscriptionForm-102048-1 .emailMarketingFormTitle{font-size:18px;}
+									.emailMarketingSubscriptionFormContainer.formID_subscriptionForm-102048-1{width:100%;border-radius:10px;padding-bottom:20px;}
+									.emailMarketingSubscriptionFormContainer.formID_subscriptionForm-102048-1 .submitButton{padding:10px;background-color:#df1241;color:white;border:none;border-radius:5px;font-size:15px;}
+									.emailMarketingSubscriptionFormContainer.formID_subscriptionForm-102048-1 label{padding-bottom:10px;}
+									</style>
+									
 									<div class="twitter-container widget widget-content" style="border:none;">
 										<!-- widget twitter -->
 										<?php echo do_shortcode("[custom-twitter-feeds]"); ?>
