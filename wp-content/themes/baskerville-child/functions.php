@@ -114,5 +114,14 @@ function create_post_type() {
 
 		    add_option( 'my_theme_active', 'set', '', 'no' );
 		}
+		
+		
+		function excludeCat($query) {
+if ( $query->is_home ) {
+$query->set('cat', '-90');
+}
+return $query;
+}
+add_filter('pre_get_posts', 'excludeCat');
 
 ?>

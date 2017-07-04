@@ -49,25 +49,10 @@
 								<div class="slider-container slider-number-3 owl-carousel">
 
 
-									<?php
+									<?php if (have_posts()) : ?>
 
-									$all_image_post= get_posts( array('numberposts' => -1) );
-									 //if (have_posts()) :
-									 if ($all_image_post){
-
-
-										 foreach ($all_image_post as $post) {
-										 	  setup_postdata( $post );
-
-												if(get_post_format()=='image' &&  get_field('publicado') == 'si'){
-
-									 ?>
-
-
-
-											<?php
-											//while (have_posts()) : the_post();
-												?>
+											<?php while (have_posts()) : the_post();
+												if(get_post_format()=='image' &&  get_field('publicado') == 'si'){?>
 
 													<div class="item">
 															<figure class="sc-thumbnail">
@@ -108,13 +93,10 @@
 															</figure>
 													</div>
 
-													<?php } ?>
 
-											<?php }
+											<?php } endwhile; ?>
 
-											wp_reset_postdata(); ?>
-
-									<?php } ?>
+									<?php endif; ?>
 
 
 
@@ -230,7 +212,6 @@
 									</div>
 									<br>
 									<div class="twitter-container widget widget-content" style="border:none;">
-										
 										<!-- widget twitter -->
 										<?php echo do_shortcode("[custom-twitter-feeds]"); ?>
 										<!-- widget twitter -->
@@ -309,13 +290,6 @@
 
 									</div>
 									<br>
-									<script type='text/javascript' src='http://v2.envialosimple.com/form/show/AdministratorID/102048/FormID/1/format/widget'></script>
-									<style>.emailMarketingSubscriptionFormContainer.formID_subscriptionForm-102048-1 .emailMarketingFormTitle{font-size:18px;}
-									.emailMarketingSubscriptionFormContainer.formID_subscriptionForm-102048-1{width:100%;border-radius:10px;padding-bottom:20px;}
-									.emailMarketingSubscriptionFormContainer.formID_subscriptionForm-102048-1 .submitButton{padding:10px;background-color:#df1241;color:white;border:none;border-radius:5px;font-size:15px;}
-									.emailMarketingSubscriptionFormContainer.formID_subscriptionForm-102048-1 label{padding-bottom:10px;}
-									</style>
-									
 									<div class="twitter-container widget widget-content" style="border:none;">
 										<!-- widget twitter -->
 										<?php echo do_shortcode("[custom-twitter-feeds]"); ?>

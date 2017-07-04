@@ -106,7 +106,7 @@
 
 
 								<?php include 'share.php'; ?>
-							<p class="date-post-body"><?php the_time( 'j F, Y' ); ?> &nbsp &nbsp Edición #<?php echo get_field('numero_de_edicion') ?></p>
+							<p class="date-post-body"><?php the_time( 'j F, Y' ); ?> &nbsp &nbsp Edición #</p>
 							<?php
 							if(get_field('imagen_cabecera')){?>
 
